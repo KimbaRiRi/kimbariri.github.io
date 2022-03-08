@@ -1,5 +1,5 @@
 {
-  "name": "ZeroPoint",
+  "name": "no_nicheclub",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+project_urlname"
   },
-  "author": "MWDelaney",
+  "author": "KimbaRiRi",
   "license": "MIT",
   "dependencies": {
     "@11ty/eleventy": "^1.0.0",
