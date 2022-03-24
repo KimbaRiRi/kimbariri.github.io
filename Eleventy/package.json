@@ -1,0 +1,56 @@
+{
+  "name": "no_nicheclub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "cross-env ELEVENTY_ENV=development eleventy --serve --quiet",
+    "watch": "cross-env ELEVENTY_ENV=production eleventy --watch",
+    "debug": "DEBUG=* npx eleventy",
+    "build": "npm run js-build && eleventy && npm run test",
+    "production": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+project_urlname"
+  },
+  "author": "KimbaRiRi",
+  "license": "MIT",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-cache-assets": "^2.3.0",
+    "@11ty/eleventy-navigation": "^0.1.3",
+    "@11ty/eleventy-plugin-rss": "^1.0.7",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.4",
+    "@babel/cli": "^7.12.1",
+    "@babel/core": "^7.13.14",
+    "@babel/plugin-transform-runtime": "^7.13.10",
+    "@babel/preset-env": "^7.13.12",
+    "autoprefixer": "^10.3.1",
+    "babel-loader": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "markdown-it": "^12.3.2",
+    "markdown-it-obsidian": "^1.1.0",
+    "markdown-it-attrs": "^4.1.3",
+    "markdown-it-footnote": "^3.0.3",
+    "npm-run-all": "^4.1.5",
+    "node-fetch": "^2.6.4",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^7.3.1",
+    "webpack": "^5.28.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "devDependencies": {
+    "@11ty/eleventy-img": "^0.10.0",
+    "eleventy-plugin-local-images": "^0.4.0",
+    "eleventy-plugin-metagen": "^1.4.8",
+    "eleventy-plugin-svg-contents": "^0.7.0",
+    "stylelint": "^14.0.1",
+    "stylelint-config-standard": "^23.0.0",
+    "eslint": "^3.7.1",
+    "markdown-it-testgen": "^0.1.4",
+    "title-case": "^3.0.3"
+  }
+}
