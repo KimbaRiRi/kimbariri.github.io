@@ -1,0 +1,21 @@
+I"k<style>
+.category-content a {
+    text-decoration: none;
+    color: #4183c4;
+}
+
+.category-content a:hover {
+    text-decoration: underline;
+    color: #4183c4;
+}
+</style>
+
+<main>
+    
+    
+        <h3 id="Theme">Theme</h3><li style="padding-bottom: 0.6em; list-style: none;"><a href="/notes/How-to-use-the-special-features">How to use notenote.link features on your website</a></li><li style="padding-bottom: 0.6em; list-style: none;"><a href="/notes/How-to-setup-this-site">How to setup this site</a></li>
+        <h3 id="CMS">Cms</h3><li style="padding-bottom: 0.6em; list-style: none;"><a href="/notes/Obsidian-integration">Obsidian integration</a></li>
+        <h3 id="markdown">Markdown</h3><li style="padding-bottom: 0.6em; list-style: none;"><a href="/notes/how-markdown-is-rendered">Test page to see how the raw markdown is rendered</a></li><br />
+    <br />
+</main>
+:ET
