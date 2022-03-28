@@ -1,0 +1,269 @@
+<h2 id="the-default-features">The default features</h2>
+
+<p>All the default jekyll markdown features are made available such that they don't cause any conflict with the custom features that we have implemented.</p>
+
+<p>Internal links (simple and with alt-text) and LateX delimiters in markdown are compatible with [[Obsidian::https://obsidian.md]]. I'd recommend using it as a CMS for managing your notes. See the page about [[Obsidian integration]] for more details.</p>
+
+<p>To see how to the raw markdown gets generated, go to the [[Test page to see how the raw markdown is rendered]]</p>
+
+<h2 id="the-custom-features">The Custom features</h2>
+
+<h3 id="1-creating-a-wiki-style-link">1. Creating a wiki-style link</h3>
+
+<p><strong><u>General Syntax</u></strong></p>
+
+<ul>
+  <li>
+    <p><strong>Internal links:</strong> <strong>[​[</strong>​Some Link<strong>]]</strong></p>
+  </li>
+  <li>
+    <p><strong>Internal links with alternative text:</strong> <strong>[​[</strong>​Some Link\|Alt text<strong>]]</strong></p>
+  </li>
+  <li>
+    <p><strong>External links:</strong> <strong>[​[​</strong>Some Text::https://address-to-the-website<strong>]]</strong></p>
+  </li>
+</ul>
+
+<p>Anything text inside a double square bracket is considered as an internal link. The text has to be a valid title, if you provide a random text inside double square brackets, it will showup highlighted in yellow telling you that there is no essay/article/file with the mentioned title.</p>
+
+<p>Similarly, for external links all you have to do is add a double colon after the "Alt text" and enter the link to the website after the double colon as seen below.</p>
+
+<p><strong>Examples</strong></p>
+
+<p>Example of an internal link that points to a valid post or page, that is, a page with the title (not url) mentioned in the double brackets.</p>
+
+<blockquote>
+  <p><strong>Raw Syntax:</strong> <strong>[​[</strong>​Obsidian integration<strong>]]</strong></p>
+
+  <p><strong>Rendered Text:</strong> [[Obsidian integration]]</p>
+</blockquote>
+
+<p>Example of an internal link that do not point to a valid post or page, that is, a page with the title (not url) mentioned in the double brackets.</p>
+
+<blockquote>
+  <p><strong>Raw Syntax:</strong> <strong>[​[</strong>Title of a non-existent page<strong>]]</strong></p>
+
+  <p><strong>Rendered Text:</strong> [[Title of a non-existent page]]</p>
+</blockquote>
+
+<h3 id="2-creating-a-sidenote-or-a-marginnote">2. Creating a sidenote or a marginnote</h3>
+
+<p><strong><u>General Syntax</u></strong></p>
+
+<ul>
+  <li>
+    <p><strong>Sidenote:</strong> <strong>[​[</strong>Some Text<strong>::keyword-of-the-type-of-the-sidenote]]</strong></p>
+  </li>
+  <li>
+    <p><strong>Marginnote:</strong> <strong>[​[​</strong>Some Text<strong>::keyword-of-the-type-of-the-marginnote]]</strong></p>
+  </li>
+</ul>
+
+<blockquote>
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: left">Type of the sidenote/marginnote</th>
+        <th style="text-align: left">keyword</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">Left Sidenote</td>
+        <td style="text-align: left"><code class="highlighter-rouge">lsn</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Right Sidenote</td>
+        <td style="text-align: left"><code class="highlighter-rouge">rsn</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Left Marginnote</td>
+        <td style="text-align: left"><code class="highlighter-rouge">lmn</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Right Marginnote</td>
+        <td style="text-align: left"><code class="highlighter-rouge">rmn</code></td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>So, all you have to do is type in the keywords of the corresponding type of sidenote or marginnote after the double colon in the above syntax</p>
+
+<p><strong>Examples</strong></p>
+
+<p>Example of a sidenote to the right side of the page:</p>
+
+<blockquote>
+  <p><strong>Raw Syntax:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. <strong>[​[</strong>Phasellus mollis lectus id efficitur mollis.<strong>::rsn]]</strong> Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.</p>
+
+  <p><strong>Rendered Text:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. [[Phasellus mollis lectus id efficitur mollis.::rsn]] Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.</p>
+</blockquote>
+
+<p>Same goes with <code class="highlighter-rouge">lsn</code>, <code class="highlighter-rouge">rmn</code>, <code class="highlighter-rouge">lmn</code></p>
+
+<h3 id="3-highlighting-a-piece-of-text">3. Highlighting a piece of text</h3>
+
+<p><strong><u>General Syntax</u></strong></p>
+
+<ul>
+  <li><strong>[​[</strong>​Some Link<strong>::highlight]]</strong></li>
+</ul>
+
+<p>There is only one color right now in which it highlights, a light bluish color, but you can easily extend it to support multiple colors by tinkering with it in <code class="highlighter-rouge">content.html</code> file in <code class="highlighter-rouge">_includes</code> directory.</p>
+
+<p><strong>Examples</strong></p>
+
+<blockquote>
+  <p><strong>Raw Syntax:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. <strong>[​[</strong>Phasellus mollis lectus id efficitur mollis.<strong>::highlight]]</strong> Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.</p>
+
+  <p><strong>Rendered Text:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. [[Phasellus mollis lectus id efficitur mollis.::highlight]] Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.</p>
+</blockquote>
+
+<h3 id="4-partial-transclusion">4. Partial Transclusion</h3>
+
+<p>Transclusion is just a natural extension of sidenote and marginnote feature.</p>
+
+<p><strong><u>General Syntax</u></strong></p>
+
+<ul>
+  <li>
+    <p><strong>Sidenote-transclusion:</strong> <strong>[​[</strong>Some Text<strong>::keyword-of-the-type-of-the-sidenote-transclusion]]</strong></p>
+  </li>
+  <li>
+    <p><strong>Marginnote-transclusion:</strong> <strong>[​[​</strong>Some Text<strong>::keyword-of-the-type-of-the-marginnote-transclusion]]</strong></p>
+  </li>
+</ul>
+
+<blockquote>
+  <table>
+    <thead>
+      <tr>
+        <th style="text-align: left">Type of the sidenote/marginnote transclusion</th>
+        <th style="text-align: left">keyword</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="text-align: left">Left Sidenote Transclusion</td>
+        <td style="text-align: left"><code class="highlighter-rouge">lsn-transclude</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Right Sidenote Transclusion</td>
+        <td style="text-align: left"><code class="highlighter-rouge">rsn-transclude</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Left Marginnote Transclusion</td>
+        <td style="text-align: left"><code class="highlighter-rouge">lmn-transclude</code></td>
+      </tr>
+      <tr>
+        <td style="text-align: left">Right Marginnote Transclusion</td>
+        <td style="text-align: left"><code class="highlighter-rouge">rmn-transclude</code></td>
+      </tr>
+    </tbody>
+  </table>
+</blockquote>
+
+<p>So, all you have to do is type in the keywords of the corresponding type of sidenote or marginnote after the double colon in the above syntax</p>
+
+<p><strong>Examples</strong></p>
+
+<p>Example of a transclusion to the right side of the page:</p>
+
+<blockquote>
+  <p><strong>Raw Syntax:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. <strong>[​[</strong>Obsidian integration<strong>::rmn-transclude]]</strong> Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.</p>
+
+  <p><strong>Rendered Text:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. [[Obsidian integration::rmn-transclude]] Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.</p>
+</blockquote>
+
+<p>Same goes with <code class="highlighter-rouge">rsn</code>, <code class="highlighter-rouge">lsn</code>, <code class="highlighter-rouge">lmn</code></p>
+
+<h3 id="5-wrapping-a-text-inside-a-box">5. Wrapping a text inside a box</h3>
+
+<p><strong><u>General Syntax</u></strong></p>
+
+<ul>
+  <li><strong>[​[</strong>Some Text<strong>::wrap]]</strong></li>
+</ul>
+
+<p><strong>Examples</strong></p>
+
+<blockquote>
+  <p><strong>Raw Syntax:</strong> <strong>[​[</strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis<strong>::wrap]]</strong>.</p>
+
+  <p><strong>Rendered Text:</strong> [[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec rutrum tortor in pharetra vehicula. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.::wrap]]</p>
+</blockquote>
+
+<h3 id="6-flashcard">6. Flashcard</h3>
+
+<p><strong><u>General Syntax</u></strong></p>
+
+<ul>
+  <li><strong>[​[</strong>Some Text<strong>::srs]]</strong></li>
+</ul>
+
+<p><strong>Examples</strong></p>
+
+<blockquote>
+  <p><strong>Raw Syntax:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <strong>[​[</strong>Donec rutrum tortor in pharetra vehicula<strong>::srs]]</strong>. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.</p>
+
+  <p><strong>Rendered Text:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. [[Donec rutrum tortor in pharetra vehicula::srs]]. Fusce gravida lacus ac sem luctus congue at id justo. Ut sed tempus ante. Suspendisse sit amet diam nec justo rhoncus tristique. Ut blandit faucibus nisi vitae rutrum. Vivamus fermentum efficitur justo non facilisis.</p>
+</blockquote>
+
+<h3 id="7-specific-classes-for-changing-font-type-font-size-and-font-weight">7. Specific classes for changing font-type, font-size, and font-weight</h3>
+
+<p>There are classes like very-small, medium-small, small, small-medium, medium, medium-large, large, very-large; that can be used to change the size of your text directly from markdown like this:</p>
+
+<blockquote>
+  <p class="regular-sans"><strong>Raw Syntax:</strong></p>
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.large}
+Some text here that needs to be enlarged
+</code></pre></div>  </div>
+
+  <p><strong>Rendered Text:</strong></p>
+
+  <p class="large">Some text here that needs to be enlarged</p>
+</blockquote>
+
+<p>Similarly there are classes like regular-sans, serif, bold, italic, oblique, bolder, etc for formatting the text.</p>
+
+<blockquote>
+  <p><strong>Raw Syntax:</strong></p>
+
+  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{:.medium .serif .oblique}
+Some text here that needs to be enlarged
+</code></pre></div>  </div>
+
+  <p><strong>Rendered Text:</strong></p>
+
+  <p class="medium serif oblique">Some text here that needs to be enlarged</p>
+</blockquote>
+
+<p>Other common classes are .boxit that is used to wrap the text, .disable-user-select to disallow users from being able to select a particular piece of text by selecting it, etc. There are more classes like these which you can see in the file <code class="highlighter-rouge">style.css</code>. Once you figure out which class to use, all you have to do is just add the class before the text you want inside a curl brace like this ​{:&lt;classnames-with-dot-prepended-to-them&gt;​}</p>
+
+<h3 id="8-table-of-content">8. Table of Content</h3>
+
+<p>notenote.link supports automatic table of content (toc) generation. Just add a <code class="highlighter-rouge">toc: true</code> line in the front matter at the beginning of your post.</p>
+
+<p>You can modify the maximum header level included in the toc by changing number in the following option in <code class="highlighter-rouge">config.yml</code> :</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>toc:
+  max_level: 3
+</code></pre></div></div>
+
+<h3 id="9-note-maturity">9. Note maturity</h3>
+<p>Since this jekyll theme aims at mirroring your Obsidian notebook, the note content may note be mature or complete yet.</p>
+
+<p>Therefore, we use front matter to classify the notes in the following categories (in order of appearance in the front page feed) :</p>
+
+<ul>
+  <li><code class="highlighter-rouge">season: summer</code> : the note is near-complete (more than 80% done)</li>
+  <li><code class="highlighter-rouge">season: spring</code> : the note is in progress and has already good content</li>
+  <li><code class="highlighter-rouge">season: winter</code> : the note has just started, a summary is present however.</li>
+  <li><code class="highlighter-rouge">season: automn</code> : the note needs refactoring or some rewriting. It won't appear in the front-page feed.</li>
+</ul>
+
+<p>Why use seasons ? Since this theme is a form of 'digital garden', I thought it would make sense to keep the analogy.</p>
+
+<h3 id="10-other-implicit-features">10. Other implicit features.</h3>
+
+<p>Features like backlinks, context menu, related posts, page preview are available by default as they are implemented using CSS and JS. So, you don't have to do anything other than write as you would normally to make use of those features.</p>

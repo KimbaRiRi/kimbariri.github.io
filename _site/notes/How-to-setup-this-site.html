@@ -1,0 +1,107 @@
+<p>This is going to be a super simple post about how to setup and use this theme for your own website.</p>
+
+<h3 id="setup-prerequisites">Setup Prerequisites</h3>
+
+<p>For this tutorial, we’ll need to install a few things on your machine (you may have some of these already). Following the instructions on each website to install them.</p>
+
+<ul>
+  <li>[[Ruby::https://www.ruby-lang.org/]]</li>
+  <li>[[RubyGems::https://rubygems.org/]]</li>
+  <li>[[Git::https://git-scm.com/downloads]]</li>
+</ul>
+
+<p>You’ll also need to create accounts on the following services:</p>
+
+<ul>
+  <li>[[GitHub::https://www.github.com/join]] (to store the website)</li>
+  <li>[[Netlify::https://app.netlify.com/signup]] (to serve the website so others can see)</li>
+</ul>
+
+<p>Once you are all set with the prerequisites, we can then get to the fun part of getting it to appear on your screen. Let's get started with that.</p>
+
+<h3 id="1-create-a-fork-of-the-template-repository">1. Create a fork of the template repository</h3>
+
+<p>To simplify things, I provide the template showed in the image above to get started. You can always tweak this template to your taste later.</p>
+
+<p>Visit the GitHub page for my template repository [[Maxence-L/notenote.link::https://github.com/Maxence-L/notenote.link]], and fork it to your account using the Fork button:</p>
+
+<blockquote>
+  <p><img src="/assets/img/fork_button.jpg" style="box-shadow: 2px 2px 20px 0 #ddd;" /></p>
+</blockquote>
+
+<p>Once the forking process is complete, you should have a fork (essentially a copy) of my template in your own GitHub account. On the GitHub page for your repository, click on the green “Clone or download” button, and copy the URL: we’ll need it for the next step.</p>
+
+<h3 id="2-clone-your-repository-locally">2. Clone your repository locally</h3>
+
+<p>Next, we want to download the files from your GitHub repository onto your local machine. To do this, replace <YOUR_COPIED_URL_HERE> in the command below with the URL you copied in the previous step, then execute this command:</YOUR_COPIED_URL_HERE></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone &lt;YOUR_COPIED_URL_HERE&gt; my-personal-website
+</code></pre></div></div>
+
+<p>As a reference point, this is how it looks like for me (the difference is likely just the GitHub username):</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git clone git@github.com/Maxence-L/notenote.link my-personal-website
+</code></pre></div></div>
+
+<p>Then, navigate into the directory that was just created:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd my-personal-website
+</code></pre></div></div>
+
+<h3 id="3-test-out-the-site-locally">3. Test out the site locally</h3>
+
+<p>Sweet! You now have your repository’s source code on your machine. Within the my-personal-website directory, run the following command to install the necessary dependencies like Jekyll:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle
+</code></pre></div></div>
+
+<p>Once that’s done, ask Jekyll to start serving the site locally:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ bundle exec jekyll serve
+</code></pre></div></div>
+
+<p>Then, open up [[http://localhost:4000::http://localhost:4000]] in your browser.</p>
+
+<p>If everything’s done correctly, you should now see the home page of your Personal Jekyll Website with notenote.link Theme. 🎉</p>
+
+<p>Keep in mind that this site is only available locally (notice the <code class="highlighter-rouge">localhost</code> part of the URL), so if we want it to be available on the Internet for everyone to enjoy, we need to deploy it to the Internet: we’ll use Netlify for that in the next step.</p>
+
+<h3 id="4-connect-your-github-repository-to-netlify">4. Connect your GitHub repository to Netlify</h3>
+
+<p>Netlify lets you automatically deploy your personal website on to the Internet when you update your GitHub repository. To do this, we need to connect your GitHub repository to Netlify:</p>
+
+<ol>
+  <li>Log in to Netlify</li>
+  <li>Once logged in, click the “New site from Git” button</li>
+  <li>On the next page, select GitHub as the continuous deployment provider (you may need to authorize the connection, in which case, approve it)</li>
+  <li>On the next page, select your website repository from the list.</li>
+  <li>On the next page, replace the basic build settings with the following.
+    <ol>
+      <li>Type in "jekyll build" (without the quotes) inside the text field titled "Build Command".</li>
+      <li>Similarly type in "_site/" (without the quotes) inside the text field titled "Publish Directory".</li>
+    </ol>
+  </li>
+  <li>On the next page, keep the default settings, and click on “Deploy site”.</li>
+</ol>
+
+<p>That was easy! We’re almost done.</p>
+
+<p>Wait a couple of minutes for the initial deploy to complete.</p>
+
+<p>Once that’s done, your website should be available on the Internet via a generic Netlify URL, which you can change to a custom domain later if you’d like.</p>
+
+<p>Now the cool thing is this: whenever you push an update to your GitHub repository, Netlify will automatically deploy your updates to the Internet.</p>
+
+<h3 id="5-start-producing-content-">5. Start producing content :</h3>
+
+<p>At this point, you can start updating the files on your machine (in the my-personal-website folder) to change your jekyll seamless based website to your liking: update the copy, add some notes, tweak the layout, customize the colors, etc. Once you have something you’re happy with, push your changes to your GitHub repository with the following commands:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ git add --all
+$ git commit -m 'Update content'
+$ git push origin master
+</code></pre></div></div>
+
+<p>If that command succeeds and the rest of the tutorial was done correctly, in a couple of minutes, you should see your changes live on your Netlify website. 🚀</p>
+
+<p>And we’re done! You now have your own notenote.link based Personal Website .</p>
+
