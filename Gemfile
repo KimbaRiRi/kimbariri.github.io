@@ -18,4 +18,5 @@ group :jekyll_plugins do
   gem "jekyll-archives"
   gem "jekyll-minifier"
   gem "jekyll-toc"
+  gem 'jekyll-paginate'
 end

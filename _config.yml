@@ -15,6 +15,7 @@ plugins:
   - jekyll-feed 
   - jekyll-sitemap
   - jekyll-toc
+  - jekyll-paginate
 
 markdown: kramdown
 
@@ -26,6 +27,10 @@ kramdown:
   syntax_highlighter: rouge
   auto_ids: true
 
+paginate: 10
+paginator_path: "/blog"
+paginate_path: "/blog/page:num/"
+
 permalink: /:title
 
 sass:
@@ -35,7 +40,9 @@ collections:
     notes:
       output: true
       permalink: /notes/:title
-
+    wiki:
+        output: true
+        permalink: /:collection/:path/
 toc:
   max_level: 3
 
@@ -53,3 +60,11 @@ defaults:
     values:
       layout: post
       content-type: notes
+
+# google_analytics:
+#   ua: UA-110224147-1
+
+# google_adsense:
+#   client: ca-pub-3675948545737694
+
+timezone: "APAC/Sydney"
