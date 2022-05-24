@@ -1,43 +1,20 @@
-title: Couch Druid's Digital Garden
-name: No Niche Notes
-user_description: Ceo of no niche clup
-notes_url: "https://kimbariri.github.io/notes"
+title: My Brain Dumpster
+name: My Brain Dumpster
+user_description: kimbariri.github.io
+notes_url: "https://kimbariri.github.io/"
 profile_pic: /assets/img/profile.png
 favicon: /assets/img/favicon.png
 copyright_name: MIT
-
-include: ["_pages"]
-exclude: ["_includes/notes_graph.json"]
-# You may need to change the base URL depending on your deploy configuration.
-# Specifically, when using GitHub Pages, the baseurl should point to where GitHub
-# Pages deploys your repository (which is usually the repository name).
-
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://kimbariri.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
 
-# If you are using a host that cannot resolve URLs that do
-# not end with .html (such as Neocities), set this to 'true'.
-use_html_extension: false
-
-# Set to `true` to open non-internal links in new tabs, or
-# set to `false` to open non-internal links in current tab.
-open_external_links_in_new_tab: true
-
-# Set to `true` to replace tweet URLs with Twitter embeds.
-# Note that doing so will negatively the reader's privacy
-# as their browser will communicate with Twitter's servers.
-embed_tweets: false
-permalink: pretty
-relative_permalinks: false
-
 # Build settings
 theme: null
 plugins:
-  - jekyll-feed
+  - jekyll-feed 
   - jekyll-sitemap
   - jekyll-toc
-  - jekyll-last-modified-at
 
 markdown: kramdown
 
@@ -47,15 +24,17 @@ kramdown:
   math_engine: null
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
+  auto_ids: true
+
+permalink: /:title
 
 sass:
-  sass_dir: _sass
-  style: :compressed
+  style: compressed
 
 collections:
-  notes:
-    output: true
-    permalink: /notes/:title
+    notes:
+      output: true
+      permalink: /notes/:title
 
 toc:
   max_level: 3
@@ -74,11 +53,3 @@ defaults:
     values:
       layout: post
       content-type: notes
-  - scope:
-      path: "**/*"
-    values:
-      layout: "default"
-  - scope:
-      path: "_notes/**/*.md"
-    values:
-      layout: "note"

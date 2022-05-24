@@ -1,4 +1,171 @@
-<p>The main purpose of this fork, other than cosmetic changes, is to create a web representation of an [[Obsidian::https://obsidian.md]] vault, using the [[Simply-Jekyll::https://github.com/raghuveerdotnet/simply-jekyll]] template.</p>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="My linked notebook" property="og:site_name"/>
+    <meta content="My path to perpetual learning." property="og:description">
+    <meta content="http://localhost:4000/about/" property="article:author"><meta content="Obsidian integration" property="og:title">
+    <meta content="article" property="og:type">
+    <meta content="http://localhost:4000/notes/Obsidian-integration" property="og:url"><title>notenote.link</title>
+
+    <link rel="canonical" href="http://localhost:4000/notes/Obsidian-integration"/>
+    <link rel="apple-touch-icon" href="/assets/img/profile.png">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+
+    <link rel="icon" href="/assets/img/favicon.png" type="image/png" sizes="16x16"/>
+    <link href="/assets/css/style.css" rel="stylesheet" media="all" class="default"/>
+
+    <!--[if IE]>
+        <link href="/assets/css/ie-target.css" rel="stylesheet" type="text/css"/>
+    <![endif]-->
+    <!--<link href="/assets/css/prism.css" rel="stylesheet" />-->
+    <link rel="alternate" type="application/rss+xml" href="http://localhost:4000/feed.xml">
+
+
+</script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
+
+</head>
+
+<body>
+
+
+
+    <div class="container">                    
+        <div class = "box">
+<header>
+    <div class="dashboard disable-select">
+        <div class="site-heading profile-board-col">
+           <h4 class="medium"><a href="/">notenote.link</a></h4>
+        </div>
+        <div class="userboard profile-board-col">
+            <div class="username">
+                <p class="title-sans"><a href="/" style="text-decoration: none;">My linked notebook</a></p>
+            </div>
+            <div class="userdesc">
+                <p class="title-sans">notenote.link</p>
+            </div> 
+
+        </div>
+    </div>
+    <div class="avatar disable-select" title="click me to know more">
+        <a class="avatar-link" href="/">
+            <img src="/assets/img/profile.png" class="avatar-img" alt="avatar"/>
+        </a>
+    </div>
+    <div class="main-site-subheader menu disable-select">
+        <div class="home">
+            <a style="text-decoration: none;" href="/about">
+                <svg class="icon-home" width="18" height="19" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.9777 21.6138V19.6138C20.9777 18.553 20.5563 17.5356 19.8061 16.7854C19.056 16.0353 18.0386 15.6138 16.9777 15.6138H8.97768C7.91682 15.6138 6.8994 16.0353 6.14926 16.7854C5.39911 17.5356 4.97768 18.553 4.97768 19.6138V21.6138"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12.9777 11.6138C15.1868 11.6138 16.9777 9.82298 16.9777 7.61385C16.9777 5.40471 15.1868 3.61385 12.9777 3.61385C10.7685 3.61385 8.97768 5.40471 8.97768 7.61385C8.97768 9.82298 10.7685 11.6138 12.9777 11.6138Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <p class="home-p">About</p>
+            </a>
+        </div>
+        <div class="categories">
+            <a style="text-decoration: none;" href="/tags">
+            <svg class="icon-category" width="18" height="19" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 9.5H20"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M4 15.5H20"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M10 3.5L8 21.5"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16 3.5L14 21.5"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>                               
+            <p class="categories-p">Tags</p>
+            </a>
+        </div>
+        <div class="rss">
+            <a style="text-decoration: none;" href="/feed.xml">
+                <svg class="icon-rss" width="18" height="19" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 11.5C6.38695 11.5 8.67613 12.4482 10.364 14.136C12.0518 15.8239 13 18.1131 13 20.5"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 4.5C8.24346 4.5 12.3131 6.18571 15.3137 9.18629C18.3143 12.1869 20 16.2565 20 20.5"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M5 20.5C5.55228 20.5 6 20.0523 6 19.5C6 18.9477 5.55228 18.5 5 18.5C4.44772 18.5 4 18.9477 4 19.5C4 20.0523 4.44772 20.5 5 20.5Z"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>    
+            <p class="rss-p">RSS</p>
+            </a>
+        </div>
+
+    </div>
+    <div class="searchbar search-container">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <label for="search-input"></label>
+        <input type="text" oninput="changeResultContainerDisp(this.value)" id="search-input" autocomplete="off" placeholder="Search..."/>
+        <ul id="results-container"></ul>
+    </div>
+    <script src="/assets/js/simple-jekyll-search.min.js"></script>
+    <script>
+        function changeResultContainerDisp(val) {
+            if (val) {
+                document.getElementById("results-container").style.display = "block";
+                document.getElementById("search-input").addEventListener('blur', function() {
+                    document.addEventListener('click', function(event) {
+                        var isClickInside = document.getElementById("results-container").contains(event.target);
+                        if (!isClickInside) {
+                            document.getElementById("results-container").style.display = "none";
+                        }
+                    })
+                }) 
+            }  else {
+                document.getElementById("results-container").style.display = "none";
+            }
+        }
+        var sjs = SimpleJekyllSearch({
+                    searchInput: document.getElementById('search-input'),
+                    resultsContainer: document.getElementById('results-container'),
+                    json: '/search.json',
+                    searchResultTemplate: '<li class="search_res" style="list-style: none;"><a href="http://localhost:4000{url}" style="text-decoration: none; color: #555555;"><p style="font-size: 1.0rem; font-family: "Inter !important"; font-weight: 600;">{title}</p></a></li>',
+                    noResultsText: 'No results found',
+                    fuzzy: false,
+                    limit: 4
+                    })
+
+
+
+    </script><div class="main-site-subheader disable-select" id="scroll-head" onclick="window.location.assign('/');">
+        <div class="back-icon">
+            <svg class="ripple" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"/>
+            </svg>
+        </div>
+        <p class="back-p">Accueil</p>
+    </div><script type="text/x-mathjax-config">
+   MathJax.Hub.Config({
+       tex2jax: {
+           inlineMath: [ ['$','$'], ['\\(', '\\)'] ],
+           displayMath: [ ['$$','$$'], ['\\[', '\\]'] ],
+           processEscapes: true
+               }
+           });
+</script>
+
+</header>
+<main>
+                <h1>Obsidian integration</h1><!-- Parse internal links, external links, transclusions etc and manipuate the content to reflect it accordingly --><ul class="tags"><!-- Loop through page categories and print them in tags --><li><a href="/tags/#CMS" class="tag">CMS</a></li></ul><div class="content">
+    
+
+    <!-- We need some hacky code to isolate header link -->
+    
+
+    <!-- We need some hacky code to isolate header link -->
+    
+
+    <!-- We need some hacky code to isolate header link -->
+    
+
+    <!-- We need some hacky code to isolate header link -->
+    
+
+    <!-- We need some hacky code to isolate header link -->
+    
+
+    <!-- We need some hacky code to isolate header link -->
+    
+
+    <!-- We need some hacky code to isolate header link -->
+    
+
+    <!-- We need some hacky code to isolate header link --><p>The main purpose of this fork, other than cosmetic changes, is to create a web representation of an <a href="https://obsidian.md">Obsidian</a> vault, using the <a href="https://github.com/raghuveerdotnet/simply-jekyll">Simply-Jekyll<sup ><i class="fa fa-github"></i></sup></a> template.</p>
 
 <h2 id="usage">Usage</h2>
 
@@ -9,13 +176,13 @@
     <p>Markdown is fully-compatible (including Latex delimiters !)</p>
   </li>
   <li>
-    <p>There are now only notes (no blog posts). If you really want blog posts along notes, a hack is to set the YAML season of blog posts to <code class="highlighter-rouge">summer</code> and notes to <code class="highlighter-rouge">automn</code> - they won't appear in feed but will be searchable and appear in tags page.</p>
+    <p>There are now only notes (no blog posts). If you really want blog posts along notes, a hack is to set the YAML season of blog posts to <code class="language-plaintext highlighter-rouge">summer</code> and notes to <code class="language-plaintext highlighter-rouge">automn</code> - they won't appear in feed but will be searchable and appear in tags page.</p>
   </li>
   <li>
     <p>Code is now correctly indented</p>
   </li>
   <li>
-    <p>You can change the code template by replacing the css in <code class="highlighter-rouge">/assets/css/highlight.css</code> by any template from [[pygment.css::https://github.com/richleland/pygments-css]]</p>
+    <p>You can change the code template by replacing the css in <code class="language-plaintext highlighter-rouge">/assets/css/highlight.css</code> by any template from <a href="https://github.com/richleland/pygments-css">pygment.css<sup ><i class="fa fa-github"></i></sup></a></p>
   </li>
   <li>
     <p>Wikilinks are usable : <strong>[​[</strong>​…<strong>]]</strong>,</p>
@@ -28,32 +195,43 @@
 <p>Please note : You need to escape the pipe character in Obsidian (\| instead of |). This won't break Obsidian's functionality.</p>
 
 <ul>
-  <li><strong>Fresh new feature</strong> : you can also link headers ! Use # when typing the wikilink : <strong>[​[</strong>Obsidian integration#Obsidian setup|Alt-text<strong>]]</strong> will create the following link : [[Obsidian integration#Obsidian setup|Alt-text]] (click on it to see the effect)</li>
+  <li><strong>Fresh new feature</strong> : you can also link headers ! Use # when typing the wikilink : <strong>[​[</strong>Obsidian integration#Obsidian setup|Alt-text<strong>]]</strong> will create the following link : <span class="tooltip"><a href="/notes/Obsidian-integration#obsidian-setup">Alt-text</a><span class="right bottom"><span class="tooltip-title">Obsidian integration</span><br/><span class="tooltip-excerpt">The main purpose of this fork, other than cosmetic changes, is to create a web representation of an <a href="https://obsidian.md">Obsidian</a> vault, using the <a href="https://github.com/raghuveerdotnet/simply-jekyll">Simply-Jekyll<sup ><i class="fa fa-github"></i></sup></a> template.<br />
+<br />
+Usage<br />
+<br />
+Things to know :<br />
+<br />
+<br />
+  <br />
+    Markdown is fully-compatible (including Latex delimiters !)<br />
+  <br />
+  <br />
+    There are now only notes (no blog posts). If you really want blog posts along notes, a hack is to set the YAML season of blog posts to summer and notes to automn - ...</span><i></i></span></span> (click on it to see the effect)</li>
 </ul>
 
 <p>Please note : This feature will work only if you write alternative text in the link : [[Obsidian integration#Obsidian setup]] won't work<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
 
 <ul>
-  <li>You can use [[Simply-Jekyll custom features::https://simply-jekyll.netlify.app/posts/exploring-the-features-of-simply-jekyll]], such as flashcards : [[flashcards !::srs]] - but don't click on it in Obsidian, else it will create a new page.</li>
+  <li>You can use <a href="https://simply-jekyll.netlify.app/posts/exploring-the-features-of-simply-jekyll">Simply-Jekyll custom features</a>, such as flashcards : <label for="srs-0" class="srs-toggle "><svg class="srs-svg" x="0px" y="0px" height="20" width="18" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><path fill="none" d="M41.648,12.407c-0.186-0.286-0.5-0.457-0.841-0.457c-0.191,0-0.379,0.056-0.542,0.162l-5.235,3.396l8.239-0.602  L41.648,12.407z"/><path fill="none" d="M28.45,19.776L8.471,32.737c-0.462,0.3-0.594,0.921-0.294,1.384l23.832,36.736l-3.638-49.85  C28.34,20.584,28.379,20.176,28.45,19.776z"/><path d="M40.055,81.425l0.127-0.082l-1.181,0.086C39.319,81.615,39.731,81.635,40.055,81.425z"/><path d="M94.964,32.733c-0.616-1.185-1.656-2.06-2.93-2.462l-15.315-4.845l-0.576-7.905c-0.2-2.721-2.604-4.834-5.352-4.623  l-22.969,1.676l-2.818-4.344c-0.925-1.428-2.495-2.28-4.197-2.28c-0.966,0-1.907,0.279-2.719,0.806L6.294,29.381  c-2.313,1.5-2.974,4.603-1.473,6.916l30.496,47.008c0.926,1.428,2.495,2.28,4.198,2.28c0.965,0,1.905-0.278,2.717-0.806l1.04-0.675  l28.847,9.123c0.491,0.155,0.999,0.233,1.511,0.233c2.191,0,4.105-1.404,4.764-3.491l16.902-53.424  C95.697,35.273,95.58,33.919,94.964,32.733z M40.266,12.112c0.163-0.106,0.35-0.162,0.542-0.162c0.341,0,0.656,0.17,0.841,0.457  l1.622,2.5l-8.239,0.602L40.266,12.112z M8.177,34.121c-0.3-0.463-0.168-1.083,0.294-1.384l19.979-12.96  c-0.071,0.399-0.11,0.808-0.08,1.23l3.638,49.85L8.177,34.121z M35.678,66.191L32.36,20.716c-0.04-0.55,0.375-1.031,0.924-1.071  l12.471-0.909l4.552-0.332l20.852-1.52c0.519,0,0.955,0.408,0.993,0.928l0.461,6.315L55.9,18.841  c-0.49-0.155-0.997-0.234-1.508-0.234c-1.206,0-2.32,0.437-3.195,1.169c-0.715,0.597-1.274,1.385-1.571,2.324l-0.554,1.75  L35.678,66.191z M91.48,35.34l-11.408,36.06l-2.057,6.5l-3.438,10.867c-0.194,0.614-0.798,0.794-1.253,0.647l-25.706-8.13  l-1.247-0.394l-3.694-1.169l-5.488-1.735c-0.343-0.108-0.514-0.355-0.586-0.493c-0.061-0.116-0.137-0.342-0.093-0.617  c0.007-0.047,0.011-0.093,0.026-0.143l15.354-48.536l1.547-4.891c0.005-0.016,0.016-0.026,0.021-0.041  c0.166-0.451,0.579-0.659,0.932-0.659c0.101,0,0.202,0.016,0.301,0.047l18.233,5.768l4.105,1.299l13.795,4.364  c0.345,0.109,0.516,0.356,0.588,0.494C91.486,34.715,91.59,34.997,91.48,35.34z"/><path d="M40.055,81.425c-0.323,0.21-0.735,0.19-1.054,0.004l1.181-0.086L40.055,81.425z"/></svg></label><input type="checkbox" id="srs-0" class="srs-toggle"/><span class="spaced-rep"><span style="font-size: 14px; color: #555;"><u><strong>Carte mémoire !</strong></u></span><br/>flashcards !</span> - but don't click on it in Obsidian, else it will create a new page.</li>
 </ul>
 
 <h2 id="obsidian-setup">Obsidian setup</h2>
 
 <h3 id="installation">Installation</h3>
-<p>After having forked [[notenote.link::https://github.com/Maxence-L/notenote.link]] on your computer, open Obsidian and create a vault in the root folder (<code class="highlighter-rouge">/notenote.link</code>).</p>
+<p>After having forked <a href="https://github.com/Maxence-L/notenote.link">notenote.link<sup ><i class="fa fa-github"></i></sup></a> on your computer, open Obsidian and create a vault in the root folder (<code class="language-plaintext highlighter-rouge">/notenote.link</code>).</p>
 
 <p>This will allow you to modify all your markdown files inside the directory.</p>
 
-<p><code class="highlighter-rouge">about.md</code> is in the root folder.</p>
+<p><code class="language-plaintext highlighter-rouge">about.md</code> is in the root folder.</p>
 
-<p>Your notes should go to the <code class="highlighter-rouge">_notes</code> folder, images in <code class="highlighter-rouge">assets/img</code>. You need to tell Obsidian where to put the new notes. In Preferences/File, enter the following settings :</p>
+<p>Your notes should go to the <code class="language-plaintext highlighter-rouge">_notes</code> folder, images in <code class="language-plaintext highlighter-rouge">assets/img</code>. You need to tell Obsidian where to put the new notes. In Preferences/File, enter the following settings :</p>
 
 <p><img src="/assets/img/new%20notes%20pref.png#center" alt="" /></p>
 
 <ul>
   <li>Default location for new notes : In the folder specified below`</li>
-  <li>Folder to create new notes in : <code class="highlighter-rouge">_notes</code></li>
-  <li>New link format : <code class="highlighter-rouge">Relative Path to file</code></li>
+  <li>Folder to create new notes in : <code class="language-plaintext highlighter-rouge">_notes</code></li>
+  <li>New link format : <code class="language-plaintext highlighter-rouge">Relative Path to file</code></li>
   <li>Attachment folder path : `assets/img</li>
 </ul>
 
@@ -76,11 +254,11 @@ season: winter
 <p>Images are the tricky part :</p>
 
 <ul>
-  <li>You can use vanilla markdown links: <code class="highlighter-rouge">![](/asset/img/img.png)</code></li>
-  <li>You can drag/drop/paste images in Obsidian, which will create a link such as : <code class="highlighter-rouge">[​[​../assets/img/Pasted image.png]]</code></li>
+  <li>You can use vanilla markdown links: <code class="language-plaintext highlighter-rouge">![](/asset/img/img.png)</code></li>
+  <li>You can drag/drop/paste images in Obsidian, which will create a link such as : <code class="language-plaintext highlighter-rouge">[​[​../assets/img/Pasted image.png]]</code></li>
 </ul>
 
-<p>A quick hack in the last case is just to change the brackets : <code class="highlighter-rouge">![](../assets/img/Pasted image.png)</code></p>
+<p>A quick hack in the last case is just to change the brackets : <code class="language-plaintext highlighter-rouge">![](../assets/img/Pasted image.png)</code></p>
 
 <div class="footnotes" role="doc-endnotes">
   <ol>
@@ -89,3 +267,30 @@ season: winter
     </li>
   </ol>
 </div>
+
+</div>
+<hr><!-- Add backlinks to the current page --><div class="related" id="jekyll-seamless-backlinks">
+    <h4 class="medium-small">Linked Notes</h4>
+    <div class="related-wrapper"><div class="related-group"><a href="/notes/How-to-use-the-special-features">
+                <p class="related-title">How to use notenote.link features on your website</p>
+                <p class="related-excerpt">The default features
+
+All the default jekyll markdown features are made available such that they don't cause any conflict with the custom...</p>
+            </a></div></div>
+    <br/>
+</div></main><div id="copyright">
+    <p id="copyright-notice">Licence MIT</p>
+</div>
+</div>
+        <button class="scroll-to-top" id="scroll-to-top"><i class="fa fa-chevron-up"></i></button>
+    </div>
+
+    <script>
+        document.getElementById("scroll-to-top").addEventListener("click", function() {
+            window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+        });
+    </script></body>
+
+
+
+</html><script>for(let h of document.querySelectorAll('h2[id],h3[id],h4[id]'))h.innerHTML+=` <a href="#${h.id}" aria-hidden="true">#</a>`</script>

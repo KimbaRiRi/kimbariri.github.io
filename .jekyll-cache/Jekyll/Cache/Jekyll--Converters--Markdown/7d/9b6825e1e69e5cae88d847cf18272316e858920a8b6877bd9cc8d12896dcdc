@@ -1,0 +1,92 @@
+I"b<p>The main purpose of this fork, other than cosmetic changes, is to create a web representation of an [[Obsidian::https://obsidian.md]] vault, using the [[Simply-Jekyll::https://github.com/raghuveerdotnet/simply-jekyll]] template.</p>
+
+<h2 id="usage">Usage</h2>
+
+<p>Things to know :</p>
+
+<ul>
+  <li>
+    <p>Markdown is fully-compatible (including Latex delimiters !)</p>
+  </li>
+  <li>
+    <p>There are now only notes (no blog posts). If you really want blog posts along notes, a hack is to set the YAML season of blog posts to <code class="language-plaintext highlighter-rouge">summer</code> and notes to <code class="language-plaintext highlighter-rouge">automn</code> - they won't appear in feed but will be searchable and appear in tags page.</p>
+  </li>
+  <li>
+    <p>Code is now correctly indented</p>
+  </li>
+  <li>
+    <p>You can change the code template by replacing the css in <code class="language-plaintext highlighter-rouge">/assets/css/highlight.css</code> by any template from [[pygment.css::https://github.com/richleland/pygments-css]]</p>
+  </li>
+  <li>
+    <p>Wikilinks are usable : <strong>[​[</strong>​…<strong>]]</strong>,</p>
+  </li>
+  <li>
+    <p>Also alt-text wikilinks (with transclusion !) : <strong>[​[</strong>​original link\|alternative text<strong>]]</strong></p>
+  </li>
+</ul>
+
+<p>Please note : You need to escape the pipe character in Obsidian (\| instead of |). This won't break Obsidian's functionality.</p>
+
+<ul>
+  <li><strong>Fresh new feature</strong> : you can also link headers ! Use # when typing the wikilink : <strong>[​[</strong>Obsidian integration#Obsidian setup|Alt-text<strong>]]</strong> will create the following link : [[Obsidian integration#Obsidian setup|Alt-text]] (click on it to see the effect)</li>
+</ul>
+
+<p>Please note : This feature will work only if you write alternative text in the link : [[Obsidian integration#Obsidian setup]] won't work<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<ul>
+  <li>You can use [[Simply-Jekyll custom features::https://simply-jekyll.netlify.app/posts/exploring-the-features-of-simply-jekyll]], such as flashcards : [[flashcards !::srs]] - but don't click on it in Obsidian, else it will create a new page.</li>
+</ul>
+
+<h2 id="obsidian-setup">Obsidian setup</h2>
+
+<h3 id="installation">Installation</h3>
+<p>After having forked [[notenote.link::https://github.com/Maxence-L/notenote.link]] on your computer, open Obsidian and create a vault in the root folder (<code class="language-plaintext highlighter-rouge">/notenote.link</code>).</p>
+
+<p>This will allow you to modify all your markdown files inside the directory.</p>
+
+<p><code class="language-plaintext highlighter-rouge">about.md</code> is in the root folder.</p>
+
+<p>Your notes should go to the <code class="language-plaintext highlighter-rouge">_notes</code> folder, images in <code class="language-plaintext highlighter-rouge">assets/img</code>. You need to tell Obsidian where to put the new notes. In Preferences/File, enter the following settings :</p>
+
+<p><img src="/assets/img/new%20notes%20pref.png#center" alt="" /></p>
+
+<ul>
+  <li>Default location for new notes : In the folder specified below`</li>
+  <li>Folder to create new notes in : <code class="language-plaintext highlighter-rouge">_notes</code></li>
+  <li>New link format : <code class="language-plaintext highlighter-rouge">Relative Path to file</code></li>
+  <li>Attachment folder path : `assets/img</li>
+</ul>
+
+<h3 id="frontmatter">Frontmatter</h3>
+
+<p>Front matter is needed at the beginning of your note. Here is the template :</p>
+
+<pre><code class="language-YAML">---
+title: My Note
+tags: tag1
+toc: true
+season: winter
+---
+</code></pre>
+
+<p>You can hide it in Obsidian by toggling the option "Show Frontmatter" in the Preferences/Editor menu.</p>
+
+<h3 id="images">Images</h3>
+
+<p>Images are the tricky part :</p>
+
+<ul>
+  <li>You can use vanilla markdown links: <code class="language-plaintext highlighter-rouge">![](/asset/img/img.png)</code></li>
+  <li>You can drag/drop/paste images in Obsidian, which will create a link such as : <code class="language-plaintext highlighter-rouge">[​[​../assets/img/Pasted image.png]]</code></li>
+</ul>
+
+<p>A quick hack in the last case is just to change the brackets : <code class="language-plaintext highlighter-rouge">![](../assets/img/Pasted image.png)</code></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I don't use it, so I didn't change it but if it's important for you open an issue and I may fix it. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+:ET
