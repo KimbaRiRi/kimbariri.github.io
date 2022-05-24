@@ -4,8 +4,6 @@
 
 /node_modules
 node_modules
-/.next
-.next
 
 # Logs
 logs
@@ -33,3 +31,26 @@ lerna-debug.log*
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
+
+
+# Generated website directory
+_site/
+
+# Jekyll cache & metadata
+.jekyll-cache/
+.jekyll-metadata
+
+# Local environment
+vendor/
+.bundle/
+
+# Notes graph metadata
+_includes/notes_graph.json
+
+# Obsidian config
+.obsidian/
+unlinked files output.md
+unresolved links output.md
+
+# MacOS System Files
+.DS_Store
