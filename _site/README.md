@@ -1,14 +1,7 @@
-# Notenote.link
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/7b37d412-1240-44dd-8539-a7001465b57a/deploy-status)](https://app.netlify.com/sites/notenotelink/deploys)
-
-## Update !
-
-Hi everyone ! I've been very busy lately, so I didn't check all of the issues and the PR, but as I have more free time now I'll restart working on the project. Thanks for all the kind messages by the way!
 
 ## What is this?
 
-A digital garden using a custom version of `simply-jekyll`, optimised for integration with [Obsidian](https://obsidian.md). It is more oriented on note-taking and aims to help you build a nice knowledge base that can scale with time. 
+A digital garden using a custom version of `simply-jekyll`, notenote.link's template, meewgumi's greenweb template, and optimised for integration with [Obsidian](https://obsidian.md). It is more oriented on note-taking and aims to help myself build a nice knowledge base (or ramdom things) that can scale with time. 
 
 **Demo is here: [notenote.link](https://notenote.link)**
 
