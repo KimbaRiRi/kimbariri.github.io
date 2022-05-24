@@ -1,12 +1,12 @@
-title: notenote.link
-name: My linked notebook
-user_description: notenote.link
-notes_url: "https://notenote.link.netlify.app"
+title: My Brain Dumpster
+name: My Brain Dumpster
+user_description: kimbariri.github.io
+notes_url: "https://kimbariri.github.io/"
 profile_pic: /assets/img/profile.png
 favicon: /assets/img/favicon.png
 copyright_name: MIT
 baseurl: "/" # the subpath of your site, e.g. /blog
-url: "https://notenote.link.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kimbariri.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
 
 # Build settings
@@ -24,7 +24,9 @@ kramdown:
   math_engine: null
   smart_quotes: ["apos", "apos", "quot", "quot"]
   syntax_highlighter: rouge
+  auto_ids: true
 
+permalink: /:title
 
 sass:
   style: compressed

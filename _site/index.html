@@ -1,4 +1,8 @@
+<section class="callout">
+	This is the exploring project to publish my thoughts and moment.
+</section>
 
+<!-- 
 ## What is this?
 
 A digital garden using a custom version of `simply-jekyll`, notenote.link's template, meewgumi's greenweb template, and optimised for integration with [Obsidian](https://obsidian.md). It is more oriented on note-taking and aims to help myself build a nice knowledge base (or ramdom things) that can scale with time. Another inspiration that I applied from is Johngrib's wiki (https://github.com/johngrib/johngrib-jekyll-skeleton) 
@@ -49,24 +53,7 @@ Things to modify to make it yours:
 
 Delete what's inside [\_includes/feed.html](_includes/feed.html) and replace it with:
 
-```liquid
-{%- if page.permalink == "/" -%}
-    {%- for item in site.notes -%}
-        <div class="feed-title-excerpt-block disable-select" data-url="{{site.url}}{{item.url}}">
-            <a href="{{ item.url }}" style="text-decoration: none; color: #555555;">
-            {%- if item.status == "Ongoing" or item.status == "ongoing" -%}
-                <ul style="padding-left: 20px; margin-top: 20px;" class="tags">
-                    <li style="padding: 0 5px; border-radius: 10px;" class="tag"><b>Status: </b>{{item.status | capitalize }}</li>
-                </ul>
-                <p style="margin-top: 0px;" class="feed-title">{{ item.title }}</p>
-            {%- else -%}
-                <p class="feed-title">{{ item.title }}</p>
-            {%- endif -%}
-                <p class="feed-excerpt">{{ item.content | strip_html | strip | escape | truncate: 200}}</p>
-            </a>
-        </div>
-    {%- endfor -%}
-{%- endif -%}
-````
+```liquid````
 
 On command-line, you can run `bundle exec jekyll serve` then go to `localhost:4000` to check the result.
+ -->
