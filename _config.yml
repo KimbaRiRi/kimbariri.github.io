@@ -12,7 +12,7 @@ encoding: utf-8
 # Build settings
 theme: null
 plugins:
-  - jekyll-feed 
+  - jekyll-feed
   - jekyll-sitemap
   - jekyll-toc
   - jekyll-paginate
@@ -28,17 +28,15 @@ plugins:
 #   syntax_highlighter: rouge
 #   auto_ids: true
 
-
 # Enabled CommonMark instead of default kramdown. All extensions are enabled, but you can choose to remove some by referencing https://github.github.com/gfm/ and https://github.com/gjtorikian/commonmarker#options
 markdown: CommonMarkGhPages
 commonmark:
   options: ["SMART", "FOOTNOTES", "VALIDATE_UTF8", "GITHUB_PRE_LANG", "TABLE_PREFER_STYLE_ATTRIBUTES"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
-
-paginate: 10
-paginator_path: "/blog"
-paginate_path: "/blog/page:num/"
+# paginate: 10
+# paginator_path: "/blog"
+# paginate_path: "/blog/page:num/"
 
 # permalink: /:title
 permarlink: slug
@@ -47,14 +45,14 @@ sass:
   style: compressed
 
 collections:
-    notes:
-      output: true
-      # permalink: /notes/:title
-      permalink: /:slug
-    wiki:
-        output: true
-        permalink: /:collection/:path/
-    pages:
+  notes:
+    output: true
+    # permalink: /notes/:title
+    permalink: /:slug
+  wiki:
+    output: true
+    permalink: /:collection/:path/
+  pages:
     output: true
     permalink: /:slug
 
@@ -98,19 +96,18 @@ timezone: "APAC/Sydney"
 # include:             ['.htaccess']
 
 # Remove obsidian-templates and delete the folder if you aren't using Obsidian Templates plugin
-exclude:             ['_includes/notes_graph.json','obsidian-templates']
+exclude: ["_includes/notes_graph.json", "obsidian-templates"]
 
 # If you are using a host that cannot resolve URLs that do
 # not end with .html (such as Neocities or Dreamhost), set this to 'true'.
-use_html_extension:  true
+use_html_extension: true
 
 # 'True' displays notes graph at bottom of each note
 show_notes_graph: false
-
 
 # Set to `true` to open non-internal links in new tabs, or
 # set to `false` to open non-internal links in current tab.
 open_external_links_in_new_tab: true
 
 # Set to 'true' to generate excerpts for pages. Notes are technically pages.
-page_excerpts:      true
+page_excerpts: true

@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'Inter Variable';
   src: url('../fonts/Inter/Inter-VariableFont_slnt,wght.woff2') format('woff2-variations');
   font-weight: 100 900;
@@ -13,7 +13,7 @@
   font-weight: 100 900;
   font-style: italic;
   font-variation-settings: "slnt"-10;
-}
+} */
 
 @font-face {
   font-family: 'Wremena';
@@ -39,7 +39,7 @@
   font-variant-numeric: tabular-nums;
 }
 
-@font-face {
+/* @font-face {
   font-family: 'Inter';
   src: url('../fonts/Inter/Inter-Thin-slnt=0.woff2') format('woff2');
   font-style: normal;
@@ -100,4 +100,4 @@
   src: url('../fonts/Inter/Inter-Black-slnt=0.woff2') format('woff2');
   font-style: normal;
   font-weight: 900;
-}
+} */

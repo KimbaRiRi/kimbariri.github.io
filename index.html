@@ -3,20 +3,21 @@ layout: page
 title: Welcome!
 adsense: false
 regenerate: true
+id: home
 ---
 
 <section class="callout">
 	Take a look at <a href="/my-first-note.html" class="internal-link">My First Note</a> to get started on my brain exploration.
 </section>
-<section class="">
+<!-- <section class="">
 	<div class="blog-face">
 		<div>
 			This is my digital garden. It's a mix of personal wiki and blog. 
 		</div>
 		<div>
-			<a href="/blog/">블로그</a>
+			<a href="/blog/">Blog</a>
 			/
-			<a href="/tag/">태그</a>
+			<a href="/tag/">Tag</a>
 		</div>
 		<div class="contact">
 			{% if site.github_username %}
@@ -31,39 +32,40 @@ regenerate: true
 			<a href="{{ "/feed.xml" | prepend: site.baseurl }}">RSS</a>
 		</div>
 	</div>
-</section>
+	<div>
+		<H3 class="indent">What's the latest updated</H3>
+		<ul class="post-list">
+			{% assign documents = site.wiki | sort: 'updated' | reverse %}
+			{% for doc in documents limit: 30 %}
+			{% if doc.public == true and doc.title != 'wiki'%}
+			<li>
+				<div>
+					<a class="post-link" href="{{ doc.url | prepend: site.baseurl }}">
+						<div class="post-meta">
+							{{ doc.updated | date: "%Y.%m.%d" }}
+							-
+							{{ doc.title }}
+						</div>
+						<div class="post-excerpt">{{ doc.summary }}</div>
+						<ul class="tag-list">
+							<li class="post-tag">
+								{{ doc. tag }}
+							</li>
+						</ul>
+					</a>
+				</div>
+			</li>
+			{% endif %}
+			{% endfor %}
+		</ul>
+		<h4>
+			<a href="/recent/">The  ({{ site.wiki | size | minus: 1 }} 항목)</a>
+		</h4>
+	</div>
+</section> -->
 
 
-<div>
-	<H3 class="indent">What's the latest updated</H3>
-	<ul class="post-list">
-		{% assign documents = site.wiki | sort: 'updated' | reverse %}
-		{% for doc in documents limit: 30 %}
-		{% if doc.public == true and doc.title != 'wiki'%}
-		<li>
-			<div>
-				<a class="post-link" href="{{ doc.url | prepend: site.baseurl }}">
-					<div class="post-meta">
-						{{ doc.updated | date: "%Y.%m.%d" }}
-						-
-						{{ doc.title }}
-					</div>
-					<div class="post-excerpt">{{ doc.summary }}</div>
-					<ul class="tag-list">
-						<li class="post-tag">
-							{{ doc. tag }}
-						</li>
-					</ul>
-				</a>
-			</div>
-		</li>
-		{% endif %}
-		{% endfor %}
-	</ul>
-	<h4>
-		<a href="/recent/">The  ({{ site.wiki | size | minus: 1 }} 항목)</a>
-	</h4>
-</div>
+
 <!-- {% include createLink.html %} -->
 <!-- © 2022 GitHub, Inc. Terms Privacy -->
 
