@@ -54,6 +54,7 @@ GEM
       jekyll (>= 3.5)
       json-minify (~> 0.0.3)
       uglifier (~> 4.1)
+    jekyll-paginate (1.1.0)
     jekyll-sass-converter (2.2.0)
       sassc (> 2.0.1, < 3.0)
     jekyll-sitemap (1.4.0)
@@ -109,6 +110,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.12)
   jekyll-last-modified-at
   jekyll-minifier
+  jekyll-paginate
   jekyll-sitemap
   jekyll-toc
   nokogiri

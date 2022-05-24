@@ -1,0 +1,12 @@
+---
+layout: default
+---
+
+<section>
+  <h1>{{ page.title }}</h1>
+  {{ content }}
+</section>
+<section>
+  {%- if site.show_notes_graph -%}
+  <p>Here are all the notes in this garden, along with their links, visualized as a graph.</p>
+  {% include notes-graph.html %}{%- endif -%}</section>

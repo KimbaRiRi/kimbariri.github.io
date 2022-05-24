@@ -1,60 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="My Brain Dumpster">
-
-  <meta property="og:site_name" content="My Brain Dumpster">
-
-  
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>/assets/img/favicon.png</text></svg>">
-  
-
-
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  
-  <meta property="og:description" content="My Brain Dumpster">
-  
-
-  
-  <meta property="og:title" content="My Brain Dumpster">
-  <meta property="og:type" content="website">
-  
-
-  
-
-  
-  <meta property="og:url" content="http://localhost:4000/obsidian-templates/page">
-  
-
-  
-
-  <title>
-    
-     &mdash; My Brain Dumpster
-    
-  </title>
-</head>
-
-<body>
-  <nav><div>
-  <a class="internal-link" href="/"><b>My Brain Dumpster</b></a>
-</div></nav>
-  <main><section>
-  <h1></h1>
-  
-
-</section>
-<section></section></main>
-  <footer><p>This is the footer. Here's the <a class="internal-link" href="about.html">About</a> page and the <a class="internal-link" href="archive.html">Archive</a>.</p></footer>
-
-  <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<!-- That file is not particularly elegant. This will need a refactor at some point. -->
 <style>
   content a.internal-link {
     border-color: #8b88e6;
@@ -172,8 +116,5 @@
     });
   }
 
-  document.querySelectorAll('content a').forEach(setupListeners);
+  document.querySelectorAll('{{ include.wrapperQuerySelector }} a').forEach(setupListeners);
 </script>
-</body>
-
-</html>
