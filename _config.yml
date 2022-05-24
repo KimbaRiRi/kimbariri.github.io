@@ -2,10 +2,9 @@ title: My Brain Dumpster
 name: My Brain Dumpster
 user_description: kimbariri.github.io
 notes_url: "https://kimbariri.github.io/"
-profile_pic: /assets/img/profile.png
-favicon: /assets/img/favicon.png
+github_username:  KimbaRiRi
 copyright_name: MIT
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kimbariri.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 encoding: utf-8
 
@@ -17,6 +16,7 @@ plugins:
   - jekyll-toc
   - jekyll-paginate
   - jekyll-last-modified-at
+  - jekyll-gist
 
 # markdown: kramdown
 
@@ -59,6 +59,19 @@ collections:
 toc:
   max_level: 3
 
+# Settings for Jekyll Compose
+jekyll_compose:
+  default_front_matter:
+    drafts:
+      layout:
+      title:
+      date:
+      categories:
+    posts:
+      layout:
+      title:
+      date:
+      categories:
 # defaults:
 #   - scope:
 #       path: ""
