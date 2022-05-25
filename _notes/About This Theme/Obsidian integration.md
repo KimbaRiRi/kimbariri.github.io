@@ -2,6 +2,8 @@
 title: Obsidian integration
 season: summer
 tags: CMS
+toc: true
+comments: true
 ---
 
 The main purpose of this fork, other than cosmetic changes, is to create a web representation of an [[Obsidian::https://obsidian.md]] vault, using the [[Simply-Jekyll::https://github.com/raghuveerdotnet/simply-jekyll]] template.
