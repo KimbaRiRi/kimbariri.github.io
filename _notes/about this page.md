@@ -2,6 +2,7 @@
 title: About this page
 category: Get Started
 tags: CMS, personal, digital garden
+permalink: 
 ---
 
 ## Welcome!
@@ -41,7 +42,7 @@ It was really painstaking to fix the github deployment issue. Alongside the gem 
 
 
 ## Next Milestone is...
-- [WIP] Start migrating css to scss format
+- [x] Start migrating css to scss format
 - [WIP] Add 2nd post
 - [ ] Start migrating all js within html pages and markdowns within organised folder structures
 - [ ] Configure the Obsidian redirect link into based on the folder structure

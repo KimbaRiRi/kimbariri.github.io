@@ -23,7 +23,7 @@ plugins:
 # kramdown:
 #   input: GFM
 #   hard_wrap: false
-#   math_engine: null
+#   math_engine: nulls
 #   smart_quotes: ["apos", "apos", "quot", "quot"]
 #   syntax_highlighter: rouge
 #   auto_ids: true
@@ -50,13 +50,13 @@ collections:
   notes:
     output: true
     # permalink: /notes/:title
-    permalink: /:slug
+    permalink: /:collection/:path/
   wiki:
     output: true
     permalink: /:collection/:path/
   pages:
     output: true
-    permalink: /:slug
+    permalink: /:collection/:path/
 
 toc:
   max_level: 3
@@ -119,7 +119,7 @@ exclude: ["_includes/notes_graph.json", "obsidian-templates"]
 use_html_extension: true
 
 # 'True' displays notes graph at bottom of each note
-show_notes_graph: false
+show_notes_graph: true
 
 # Set to `true` to open non-internal links in new tabs, or
 # set to `false` to open non-internal links in current tab.
