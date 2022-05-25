@@ -1,0 +1,34 @@
+/* Graph */
+.links line {
+  stroke: #ccc;
+  opacity: 0.5;
+}
+
+.nodes circle {
+  cursor: pointer;
+  fill: var(--primary-color);
+  transition: all 0.15s ease-out;
+}
+
+.text text {
+  cursor: pointer;
+  fill: #333;
+  text-shadow: -1px -1px 0 #fafafabb, 1px -1px 0 #fafafabb, -1px 1px 0 #fafafabb, 1px 1px 0 #fafafabb;
+}
+
+.nodes [active],
+.text [active] {
+  cursor: pointer;
+  fill: black;
+}
+
+.inactive {
+  opacity: 0.1;
+  transition: all 0.15s ease-out;
+}
+
+#graph-wrapper {
+  background: var(--callout-background);
+  border-radius: 4px;
+  height: auto;
+}

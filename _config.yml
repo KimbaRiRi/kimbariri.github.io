@@ -1,7 +1,7 @@
 title: My Brain Dumpster
 name: My Brain Dumpster
 user_description: kimbariri.github.io
-notes_url: "https://kimbariri.github.io/"
+# notes_url: "https://kimbariri.github.io/"
 github_username:  KimbaRiRi
 copyright_name: MIT
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -39,9 +39,11 @@ commonmark:
 # paginate_path: "/blog/page:num/"
 
 # permalink: /:title
-permarlink: slug
+# permarlink: slug
+permalink: pretty
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 collections:
@@ -108,6 +110,7 @@ timezone: "APAC/Sydney"
 # Comment out .htaccess if you're uploading to a non-Apache server such as Netlify
 # include:             ['.htaccess']
 
+include:             ['_pages']
 # Remove obsidian-templates and delete the folder if you aren't using Obsidian Templates plugin
 exclude: ["_includes/notes_graph.json", "obsidian-templates"]
 
