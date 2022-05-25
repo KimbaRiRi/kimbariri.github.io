@@ -1,15 +1,66 @@
+
 [
   
 
+  
+    {
+  
+      "url"      : "/about",
+      "category" : "",
+      "description" : "",
+      "tags"     : "",
+      "date"     : "2022-05-25 11:58:34 +0000",
+      "name" : "_pages/about",
+      "title"    : "About",
+      "url"      : "/about",
+      "content"  : "Doing what I do best- documenting every single random thoughts and inspirations.\nWho Am I?\nHey, I am Gyuri. You can perhaps find me somewhere else on my meta id ‘Kimba.RiRi’ or ‘KimbaRiRi’. Some people calls me Kimbo. Some may just butcher my name Gyuri, which is funny because most of people don’t have problem at pronouncing ‘Wagyu’\nEven the AI picks it up perfectly, y’all.\nWhy?\nMostly for my own reference, but also because I’m learning Jekyll as I edit this template. I’m doing this as a replacement for my previous portfolio Digital Spacy Cat which was based in Gatsby and other micro blogs from Tumblr and medium. Markdown and Obsidian help me gather knowledge and thoughts, plus write better content, faster."
+
+    },
+  
+    {
+  
+      "url"      : "/archive",
+      "category" : "",
+      "description" : "",
+      "tags"     : "",
+      "date"     : "2022-05-25 11:58:34 +0000",
+      "name" : "_pages/archive",
+      "title"    : "Archive",
+      "url"      : "/archive",
+      "content"  : "안녕하세요 (May 2022)이게 진짜 되나?\n\nAbout this page in Get Started (May 2022)Welcome!\nThis is my first note of this website. This webs..."
+
+    },
   
 
   
     {
 
+      "url"      : "/testingkorean",
+      "category" : "",
+      "description" : "",
+      "tags"     : "",
+      "date"     : "2022-05-25 11:58:34 +0000",
+      "name" : "_notes/TestingKorean",
+      "title"    : "안녕하세요",
+      "url"      : "/testingkorean",
+      "content"  : "이게 진짜 되나?"
+
+    },
+  
+    {
+
+      "url"      : "/about-this-page",
+      "category" : "Get Started",
+      "description" : "",
+      "tags"     : "CMS,, personal,, digital, garden",
+      "date"     : "2022-05-25 11:58:34 +0000",
+      "name" : "_notes/about this page",
       "title"    : "About this page",
       "url"      : "/about-this-page",
-      "content"  : "Welcome!This is my first note of this website. This website is based from Obsidian and Megumi’s Green Template.In terms of the conceptual structure, This spouting experience is heavily inspired by Maggie’s Digital Gardening Project and 기계인간 Machinery Human’s My Wiki with Vim.This website is currently being hosted on Github. The reason is that:I am a lazy arse who even don’t want to bother to check extra deployment push to another service. That is why.As I am actively pushing my updates to my own Github, it just makes sense to deploy directly to Github.I couldn’t find any valid reason to deploy through Netflify or Vercel. I may consider it in future- I don’t know. This whole Obsidian syncing to Jekyll thing is very experimental to me.Originally, I was publishing my personal website with the Gatsby integrating with WordPress on headless CMS way. However, figuring out how incorporate the Gatsby way with WP API was too much hustles. If this was required by my work, I will do it (well because I am paid for it). For the personal website? That’s too much. The consistent updates and checking the dependencies on node &amp; npm version was exhausting me out as well.The Journey has been so far…25 May 2022It was really painstaking to fix the github deployment issue. Alongside the gem dependency installation conflicts to other dependencies, I couldn’t figure it out why.The solution was:Deleting all Jekyll CachesCheck the passage of your gem env with “gem env” “which ruby” “which gem”nano  ~/.bash_profile check where your home path is located.Bundle clean –forceif it looks a bit messy: rm -rf ~/.gemBundle UpdateGem UpdateRemoving Gemfile.lockRe-do Bundle Install –verboseJEKYLL_ENV=production bundle exec jekyll serve –traceNot sure if this helped but .github-pages.yml setup might do something as well. (Refer to my branch)Next Milestone is…[x] Start migrating css to scss format[WIP] Add 2nd post[ ] Start migrating all js within html pages and markdowns within organised folder structures[ ] Configure the Obsidian redirect link into based on the folder structure[ ] Adding Search Option[ ] Figuring out the Wiki stacks within this website[ ] Add a comments plugin (Disqus)[ ] Install a remote theme[ ] Learn how to add gists to the posts[ ] Add reading time to posts[ ] Install a plugin to speed up post creation (jekyll-compose)[ ] Try out the static comments option[ ] Implementing Google Analytics, AdSense, Adobe Cloud for personal research interest. (I mean, I have a career at this field so it will happen for experimental case studies.)[ ] Building(or Setup if I can find the project repo) a TypeScript NPM to integrate Grammarly API with Obsidian** Do not bloody be nip-picky about the broken grammar and words. I am in dyslexia/dyspraxia spectrum."
+      "content"  : "Welcome!This is my first note of this website. This website is based from Obsidian and Megumi’s Green Template.In terms of the conceptual structure, This spouting experience is heavily inspired by Maggie’s Digital Gardening Project and 기계인간 Machinery Human’s My Wiki with Vim.This website is currently being hosted on Github. The reason is that:I am a lazy arse who even don’t want to bother to check extra deployment push to another service. That is why.As I am actively pushing my updates to my own Github, it just makes sense to deploy directly to Github.I couldn’t find any valid reason to deploy through Netflify or Vercel. I may consider it in future- I don’t know. This whole Obsidian syncing to Jekyll thing is very experimental to me.Originally, I was publishing my personal website with the Gatsby integrating with WordPress on headless CMS way. However, figuring out how incorporate the Gatsby way with WP API was too much hustles. If this was required by my work, I will do it (well because I am paid for it). For the personal website? That’s too much. The consistent updates and checking the dependencies on node &amp; npm version was exhausting me out as well.The Journey has been so far…25 May 2022It was really painstaking to fix the github deployment issue. Alongside the gem dependency installation conflicts to other dependencies, I couldn’t figure it out why.The solution was:Deleting all Jekyll CachesCheck the passage of your gem env with “gem env” “which ruby” “which gem”nano  ~/.bash_profile check where your home path is located.Bundle clean –forceif it looks a bit messy: rm -rf ~/.gemBundle UpdateGem UpdateRemoving Gemfile.lockRe-do Bundle Install –verboseJEKYLL_ENV=production bundle exec jekyll serve –traceNot sure if this helped but .github-pages.yml setup might do something as well. (Refer to my branch)Referenceshttps://github.github.com/gfm/https://jekyllrb.com/docs/permalinks/https://garden.megu.space/your-first-note.htmlhttps://johngrib.github.io/wiki/my-wiki/https://notenote.link/notes/how-to-use-the-special-featuresNext Milestone is…[x] Start migrating css to scss format[WIP] Add 2nd post[ ] Start migrating all js within html pages and markdowns within organised folder structures[ ] Configure the Obsidian redirect link into based on the folder structure[ ] Adding Search Option[ ] Figuring out the Wiki stacks within this website[ ] Add a comments plugin (Disqus)[ ] Install a remote theme[ ] Learn how to add gists to the posts[ ] Add reading time to posts[ ] Install a plugin to speed up post creation (jekyll-compose)[ ] Try out the static comments option[ ] Implementing Google Analytics, AdSense, Adobe Cloud for personal research interest. (I mean, I have a career at this field so it will happen for experimental case studies.)[ ] Building(or Setup if I can find the project repo) a TypeScript NPM to integrate Grammarly API with Obsidian** Do not bloody be nip-picky about the broken grammar and words. I am in dyslexia/dyspraxia spectrum."
 
     }
+  
+
   
 ]
