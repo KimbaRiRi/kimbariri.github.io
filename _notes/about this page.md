@@ -7,7 +7,7 @@ tags: CMS, personal, digital garden
 ### Welcome!
 This is my first note of this website. This website is based from [Obsidian](https://help.obsidian.md/How+to/Internal+link) and Megumi's [Green Template](https://github.com/meewgumi/green-web-template). 
 
-In terms of the conceptual structure, This spouting experience is heavily inspired by [Maggie's Digital Gardening Project](https://github.com/MaggieAppleton/digital-gardeners) and 기계인간 Machinery Human's [Wiki Notes](https://johngrib.github.io/wiki/my-wiki/). 
+In terms of the conceptual structure, This spouting experience is heavily inspired by [Maggie's Digital Gardening Project](https://github.com/MaggieAppleton/digital-gardeners) and 기계인간 Machinery Human's [My Wiki with Vim](https://johngrib.github.io/wiki/my-wiki/). 
 
 This website is currently being hosted on Github. The reason is that: 
 
@@ -30,4 +30,8 @@ Originally, I was publishing my personal website with the Gatsby integrating wit
 - [ ] Add reading time to posts
 - [ ] Install a plugin to speed up post creation (jekyll-compose)
 - [ ] Try out the static comments option
-- [ ] Implementing Google Analytics, AdSense, Adobe Cloud for personal research interest. (I mean, I have a career at this field so it will happen as a case study.)
+- [ ] Implementing Google Analytics, AdSense, Adobe Cloud for personal research interest. (I mean, I have a career at this field so it will happen for experimental case studies.)
+- [ ] Building(or Setup if I can find the project repo) a TypeScript NPM to integrate Grammarly API with Obsidian
+
+
+** Do not bloody nip-picky about the broken grammar and wordings. I am on dyslexia/dyspraxia spectrum. 
