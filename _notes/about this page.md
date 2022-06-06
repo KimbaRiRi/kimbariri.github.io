@@ -47,7 +47,7 @@ It was really painstaking to fix the github deployment issue. Alongside the gem 
 - https://garden.megu.space/your-first-note.html
 - https://johngrib.github.io/wiki/my-wiki/
 - https://notenote.link/notes/how-to-use-the-special-features
-- 
+
 
 ## Next Milestone is...
 - [x] Start migrating css to scss format
