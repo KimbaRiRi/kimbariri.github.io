@@ -6,21 +6,18 @@
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <meta name="description" content="Take a look at My First Note to get started on my brain exploration.">
-
+  <meta name="description" content="Hi there, I'm Kimbo (Real Name: Gyuri Kim)	I'm a MarTech/UX Technologist by day, and a Data Science/Dancing/Drumming student by night.	Take a look at My Firs...">
   <meta property="og:site_name" content="My Brain Dumpster">
-
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
   <link rel="stylesheet" href="styles.css">
 
   
-  <meta property="og:description" content="Take a look at My First Note to get started on my brain exploration.">
+  <meta property="og:description" content="Hi there, I'm Kimbo (Real Name: Gyuri Kim)	I'm a MarTech/UX Technologist by day, and a Data Science/Dancing/Drumming student by night.	Take a look at My Firs...">
   
 
   
-  <meta property="og:title" content="Welcome!">
+  <meta property="og:title" content="Kimba.RiRi Brain Dumpster">
   <meta property="og:type" content="article">
   
 
@@ -32,6 +29,19 @@
 
   
 
+  <!-- Martech Google Data Studio Injection -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-52642322-5');
+  </script>
+ <!-- Martech Google Data Studio Injection Ends-->
+
+   <!-- Martech Adobe Data Studio Injection -->
+    <!-- Martech Adobe Data Studio Injection Ends-->
   <title>
     
     My Brain Dumpster
@@ -40,169 +50,293 @@
 </head>
 
 <body>
-  <nav><div>
-  <a class="internal-link" href="/"><b>My Brain Dumpster</b></a>
+  <nav><div class="topbar">
+  <div class="grid container">
+    <div class="col">
+      <ul>
+        <li><a href="/"><b>Home</b></a></li>
+        <li><a class="internal-link" href="/about"><b>About Me</b></a></li>
+        <li><a class="internal-link" href="/gallery">Gallery</a></li>
+        <li><a class="internal-link" href="/assets/files/GyuriKim.pdf">CV</a></li>
+        <li><a class="internal-link" href="/prejects">Projects</a></li>
+        <li><a class="internal-link" href="/sideproject">Side Gigs</a></li>
+        <li><a class="internal-link" href="/wiki">Digital Garden</a></li>
+        <li><a class="internal-link" href="/blog">Blog</a></li>
+        <li><a class="internal-link" href="/">My Korean Blog</a></li>
+      </ul>
+    </div>
+  </div>
 </div></nav>
   <div class="wrapper">
     <main><section>
-  <h1>Welcome!</h1>
+  <h1>Kimba.RiRi Brain Dumpster</h1>
   <section class="callout">
+	<h2>Hi there, I'm Kimbo (Real Name: Gyuri Kim)</h2>
+	<p>I'm a MarTech/UX Technologist by day, and a Data Science/Dancing/Drumming student by night.</p>
 	Take a look at <a href="/about-this-page.html" class="internal-link">My First Note</a> to get started on my brain exploration.
 </section>
-<!-- <section class="">
-	<div class="blog-face">
-		<div>
-			This is my digital garden. It's a mix of personal wiki and blog. 
-		</div>
-		<div>
-			<a href="/blog/">Blog</a>
-			/
-			<a href="/tag/">Tag</a>
-		</div>
-		<div class="contact">
-			
-			<a href="https://github.com/KimbaRiRi">GitHub</a>
-			
-			
-			
-			<a href="/feed.xml">RSS</a>
-		</div>
-	</div>
-	<div>
-		<H3 class="indent">What's the latest updated</H3>
-		<ul class="post-list">
-			
-			
-		</ul>
-		<h4>
-			<a href="/recent/">The  (-1 항목)</a>
-		</h4>
-	</div>
-</section> -->
 
-
-
-<!-- <script>
-	;(function() {
-			var tags = document.querySelectorAll('.post-tag');
-			if(tags == null || tags.length < 1) {
-					return;
-			}
-
-			for (var i = 0; i < tags.length; i++) {
-					var item = tags[i];
-					var tagList = item.innerHTML.trim();
-
-					if(/^\s*$/.test(tagList)) {
-							continue;
-					}
-					tagList = tagList.split(/\s+/)
-							.map(function(tag) {
-									return `<a href="/tag/#${tag}">#${tag}</a>`;
-							})
-							.join(' ');
-					console.log(tagList);
-					tags[i].innerHTML = tagList;
-			}
-			return;
-	})();
-	;(function() {
-			var post = document.querySelector('article.post-content');
-
-			if(post == null) {
-					return;
-			}
-
-			(function iterate_node(node) {
-
-					if (/^(?:p|ul|h\d|table)$/i.test(node.tagName)) {
-
-							node.innerHTML = link(node.innerHTML);
-
-					} else { // Node.ELEMENT_NODE
-							for (var i = 0; i < node.childNodes.length; i++) {
-									iterate_node(node.childNodes[i]);
-							}
-					}
-			})(post);
-
-			function link(content) {
-					// (1) "\[[escape]]" 와 같이 앞에 "\"가 있다면 "\[\[escape\]\]" 로 바꾸기만 하고 링크는 생성하지 않는다.
-					content = content.replace(/\\\[\[(.+?)\]\]/g, '\\[\\[$1\\]\\]');
-					// (2) 다음과 같은 문자열을 <a href="/wiki/document">document-name</a> 으로 replace하여 링크를 만든다.
-					//  [[document]]{document-name}       => <a href="/wiki/document">document-name</a>
-					//  [[/document]]{document-name}      => <a href="/wiki/document">document-name</a>
-					//  [[/dir/document]]{document-name}  => <a href="/wiki/dir/document">document-name</a>
-					content = content.replace(/\[\[\/?([^\[\]]+?)\]\]\{([^\{\}]+?)\}/g, '<a href="/wiki/$1">$2</a>');
-					// (3) "[[document]]"가 있다면 <a href="/wiki/document">document</a> 와 같이 replace하여 링크를 만든다.
-					//  예제는 (2)와 거의 비슷하다.
-					content = content.replace(/\[\[\/?(.+?)\]\]/g, '<a href="/wiki/$1">$1</a>');
-					// (4) (1)에서 이스케이프한 문자열을 본래 표현하려 한 형식으로 되돌린다.
-					content = content.replace(/\\\[\\\[(.+?)\\\]\\\]/g, '[[$1]]');
-					return content;
-			}
-
-	})();
-</script> -->
-<!-- © 2022 GitHub, Inc. Terms Privacy -->
-
-<!-- 
-## What is this?
-
-A digital garden using a custom version of `simply-jekyll`, notenote.link's template, meewgumi's greenweb template, and optimised for integration with [Obsidian](https://obsidian.md). It is more oriented on note-taking and aims to help myself build a nice knowledge base (or ramdom things) that can scale with time. Another inspiration that I applied from is Johngrib's wiki (https://github.com/johngrib/johngrib-jekyll-skeleton) 
-
-**Demo is here: [kimbariri.github.io](https://kimbariri.github.io)**
-
-For the reference that I got from notenote.link' template, look at [arboretum.link](https://www.arboretum.link/). Build time is approx. 15 seconds, FYI.
-
-
-![screenshot](/assets/img/screenshot.png)
-
-## What is different?
-
-- Markdown is fully-compatible with Obsidian (including Latex delimiters!)
-- There are now only notes (no blog posts).
-- There are cosmetic changes (ADHD-friendly code highlighting, larger font, larger page)
-- Code is now correctly indented
-- Wikilinks, but also alt-text wikilinks (with transclusion!) are usable.
-
-## How do I use this?
-
-Another inspiration from Meewgumi's template is here (https://megu.space/) For further explanation, refer to Meewgumi's guide here (https://garden.megu.space/)
-
-Follow the [How to setup this site](https://notenote.link/notes/how-to-setup-this-site) guide, written by [raghuveerdotnet](https://github.com/raghuveerdotnet) and then adapted for this fork.
-
-If you want to use it with Github Pages, it is possible, [please read this](https://github.com/Maxence-L/notenote.link/issues/5#issuecomment-762508069).
-
-## How can I participate?
-
-Open an issue to share feedback or propose features. Star the repo if you like it! 🌟
-
-## How do I customize this for my needs?
-
-Things to modify to make it yours:
-
-- Meta content in [\_layouts/post.html](_layouts/post.html):
-    ```html
-    <meta content="My linked notebook" property="og:site_name"/>
-    ```
-- The favicon and profile are here: [assets/img/](assets/img/)
-    ```
-- You may want to change the copyright in [\_includes/footer.html](_includes/footer.html):
-   ```html
-   <p id="copyright-notice">Licence MIT</p>
-   ```
-
-## How do I remove the "seasons" feature for the notes?
-
-Delete what's inside [\_includes/feed.html](_includes/feed.html) and replace it with:
-
-```liquid````
-
-On command-line, you can run `bundle exec jekyll serve` then go to `localhost:4000` to check the result.
- -->
 </section>
-<section></section>
+<section><p>Here are all the notes in this garden, along with their links, visualized as a graph.</p><script src="/assets/js/d3.min.js" crossorigin="anonymous"></script>
+
+<div id="graph-wrapper">
+	<script>
+		const MINIMAL_NODE_SIZE = 8;
+		const MAX_NODE_SIZE = 12;
+		const ACTIVE_RADIUS_FACTOR = 1.5;
+		const STROKE = 1;
+		const FONT_SIZE = 16;
+		const TICKS = 200;
+		const FONT_BASELINE = 40;
+		const MAX_LABEL_LENGTH = 50;
+
+		const graphData = {"edges":[],"nodes":[{"id":"8410199104328311697991073284101115116","path":"/notes/TechStackTest.html","label":"Tech Stack Test"},{"id":"236149136235133149237149152236132184236154148","path":"/notes/TestingKorean.html","label":"안녕하세요"},{"id":"6598111117116321161041051153211297103101","path":"/about-this-page.html","label":"About this page"}]}
+		let nodesData = graphData.nodes;
+		let linksData = graphData.edges;
+
+		const nodeSize = {};
+
+		const updateNodeSize = () => {
+			nodesData.forEach((el) => {
+				let weight =
+					3 *
+					Math.sqrt(
+						linksData.filter((l) => l.source === el.id || l.target === el.id)
+						.length + 1
+					);
+				if (weight < MINIMAL_NODE_SIZE) {
+					weight = MINIMAL_NODE_SIZE;
+				} else if (weight > MAX_NODE_SIZE) {
+					weight = MAX_NODE_SIZE;
+				}
+				nodeSize[el.id] = weight;
+			});
+		};
+
+		const onClick = (d) => {
+			window.location = d.path
+		};
+
+		const onMouseover = function (d) {
+			const relatedNodesSet = new Set();
+			linksData
+				.filter((n) => n.target.id == d.id || n.source.id == d.id)
+				.forEach((n) => {
+					relatedNodesSet.add(n.target.id);
+					relatedNodesSet.add(n.source.id);
+				});
+
+			node.attr("class", (node_d) => {
+				if (node_d.id !== d.id && !relatedNodesSet.has(node_d.id)) {
+					return "inactive";
+				}
+				return "";
+			});
+
+			link.attr("class", (link_d) => {
+				if (link_d.source.id !== d.id && link_d.target.id !== d.id) {
+					return "inactive";
+				}
+				return "";
+			});
+
+			link.attr("stroke-width", (link_d) => {
+				if (link_d.source.id === d.id || link_d.target.id === d.id) {
+					return STROKE * 4;
+				}
+				return STROKE;
+			});
+			text.attr("class", (text_d) => {
+				if (text_d.id !== d.id && !relatedNodesSet.has(text_d.id)) {
+					return "inactive";
+				}
+				return "";
+			});
+		};
+
+		const onMouseout = function (d) {
+			node.attr("class", "");
+			link.attr("class", "");
+			text.attr("class", "");
+			link.attr("stroke-width", STROKE);
+		};
+
+		const sameNodes = (previous, next) => {
+			if (next.length !== previous.length) {
+				return false;
+			}
+
+			const map = new Map();
+			for (const node of previous) {
+				map.set(node.id, node.label);
+			}
+
+			for (const node of next) {
+				const found = map.get(node.id);
+				if (!found || found !== node.title) {
+					return false;
+				}
+			}
+
+			return true;
+		};
+
+		const sameEdges = (previous, next) => {
+			if (next.length !== previous.length) {
+				return false;
+			}
+
+			const set = new Set();
+			for (const edge of previous) {
+				set.add(`${edge.source.id}-${edge.target.id}`);
+			}
+
+			for (const edge of next) {
+				if (!set.has(`${edge.source}-${edge.target}`)) {
+					return false;
+				}
+			}
+
+			return true;
+		};
+
+		const graphWrapper = document.getElementById('graph-wrapper')
+		const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
+		element.setAttribute("height", window.innerHeight * 0.8);
+		graphWrapper.appendChild(element);
+
+		const reportWindowSize = () => {
+			element.setAttribute("width", window.innerWidth);
+			element.setAttribute("height", window.innerHeight);
+		};
+
+		window.onresize = reportWindowSize;
+
+		const svg = d3.select("svg");
+		const width = Number(svg.attr("width"));
+		const height = Number(svg.attr("height"));
+		let zoomLevel = 1;
+
+		const simulation = d3
+			.forceSimulation(nodesData)
+			.force("forceX", d3.forceX().x(width / 2))
+			.force("forceY", d3.forceY().y(height / 2))
+			.force("charge", d3.forceManyBody())
+			.force(
+				"link",
+				d3
+				.forceLink(linksData)
+				.id((d) => d.id)
+				.distance(70)
+			)
+			.force("center", d3.forceCenter(width / 2, height / 2))
+			.force("collision", d3.forceCollide().radius(80))
+			.stop();
+
+		const g = svg.append("g");
+		let link = g.append("g").attr("class", "links").selectAll(".link");
+		let node = g.append("g").attr("class", "nodes").selectAll(".node");
+		let text = g.append("g").attr("class", "text").selectAll(".text");
+
+		const resize = () => {
+			if (d3.event) {
+				const scale = d3.event.transform;
+				zoomLevel = scale.k;
+				g.attr("transform", scale);
+			}
+
+			const zoomOrKeep = (value) => (zoomLevel >= 1 ? value / zoomLevel : value);
+
+			const font = Math.max(Math.round(zoomOrKeep(FONT_SIZE)), 1);
+
+			text.attr("font-size", (d) => font);
+			text.attr("y", (d) => d.y - zoomOrKeep(FONT_BASELINE) + 8);
+			link.attr("stroke-width", zoomOrKeep(STROKE));
+			node.attr("r", (d) => {
+				return zoomOrKeep(nodeSize[d.id]);
+			});
+			svg
+				.selectAll("circle")
+				.filter((_d, i, nodes) => d3.select(nodes[i]).attr("active"))
+				.attr("r", (d) => zoomOrKeep(ACTIVE_RADIUS_FACTOR * nodeSize[d.id]));
+		};
+
+		const ticked = () => {
+			node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+			text
+				.attr("x", (d) => d.x)
+				.attr("y", (d) => d.y - (FONT_BASELINE - nodeSize[d.id]) / zoomLevel);
+			link
+				.attr("x1", (d) => d.source.x)
+				.attr("y1", (d) => d.source.y)
+				.attr("x2", (d) => d.target.x)
+				.attr("y2", (d) => d.target.y);
+		};
+
+		const restart = () => {
+			updateNodeSize();
+			node = node.data(nodesData, (d) => d.id);
+			node.exit().remove();
+			node = node
+				.enter()
+				.append("circle")
+				.attr("r", (d) => {
+					return nodeSize[d.id];
+				})
+				.on("click", onClick)
+				.on("mouseover", onMouseover)
+				.on("mouseout", onMouseout)
+				.merge(node);
+
+			link = link.data(linksData, (d) => `${d.source.id}-${d.target.id}`);
+			link.exit().remove();
+			link = link.enter().append("line").attr("stroke-width", STROKE).merge(link);
+
+			text = text.data(nodesData, (d) => d.label);
+			text.exit().remove();
+			text = text
+				.enter()
+				.append("text")
+				.text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
+				.attr("font-size", `${FONT_SIZE}px`)
+				.attr("text-anchor", "middle")
+				.attr("alignment-baseline", "central")
+				.on("click", onClick)
+				.on("mouseover", onMouseover)
+				.on("mouseout", onMouseout)
+				.merge(text);
+
+			node.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+			text.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+
+			simulation.nodes(nodesData);
+			simulation.force("link").links(linksData);
+			simulation.alpha(1).restart();
+			simulation.stop();
+
+			for (let i = 0; i < TICKS; i++) {
+				simulation.tick();
+			}
+
+			ticked();
+		};
+
+		const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
+
+		zoomHandler(svg);
+		restart();
+
+		function isCurrentPath(notePath) {
+			return window.location.pathname.includes(notePath)
+		}
+
+		function shorten(str, maxLen, separator = ' ') {
+			if (str.length <= maxLen) return str;
+			return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
+		}
+	</script>
+</div></section>
 </main>
     <footer><p>This is the footer. Here's the <a class="internal-link" href="/about.html">About</a> page and the <a class="internal-link" href="/archive.html">Archive</a>.</p></footer>
   </div>

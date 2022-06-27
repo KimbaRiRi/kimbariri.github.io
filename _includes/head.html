@@ -6,11 +6,8 @@
   {% endif %}
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip | strip_newlines | truncate: 160 }}{% else %}{{ site.title }}{% endif %}">
-
   <meta property="og:site_name" content="{{ site.title }}">
-
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
   <link rel="stylesheet" href="styles.css">
@@ -44,6 +41,19 @@
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
   {% endif %}
 
+  <!-- Martech Google Data Studio Injection -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-52642322-5');
+  </script>
+ <!-- Martech Google Data Studio Injection Ends-->
+
+   <!-- Martech Adobe Data Studio Injection -->
+    <!-- Martech Adobe Data Studio Injection Ends-->
   <title>
     {% if page.id == "home" %}
     {{ site.title }}

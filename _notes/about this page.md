@@ -2,7 +2,7 @@
 title: About this page
 category: Get Started
 tags: CMS, personal, digital garden
-permalink: 
+permalink: /about-this-page
 ---
 
 ## Welcome!

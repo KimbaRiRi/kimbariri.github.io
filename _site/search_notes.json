@@ -6,11 +6,8 @@
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <meta name="description" content="My Brain Dumpster">
-
   <meta property="og:site_name" content="My Brain Dumpster">
-
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
   <link rel="stylesheet" href="styles.css">
@@ -32,6 +29,19 @@
 
   
 
+  <!-- Martech Google Data Studio Injection -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-52642322-5');
+  </script>
+ <!-- Martech Google Data Studio Injection Ends-->
+
+   <!-- Martech Adobe Data Studio Injection -->
+    <!-- Martech Adobe Data Studio Injection Ends-->
   <title>
     
      &mdash; My Brain Dumpster
@@ -40,16 +50,40 @@
 </head>
 
 <body>
-  <nav><div>
-  <a class="internal-link" href="/"><b>My Brain Dumpster</b></a>
+  <nav><div class="topbar">
+  <div class="grid container">
+    <div class="col">
+      <ul>
+        <li><a href="/"><b>Home</b></a></li>
+        <li><a class="internal-link" href="/about"><b>About Me</b></a></li>
+        <li><a class="internal-link" href="/gallery">Gallery</a></li>
+        <li><a class="internal-link" href="/assets/files/GyuriKim.pdf">CV</a></li>
+        <li><a class="internal-link" href="/prejects">Projects</a></li>
+        <li><a class="internal-link" href="/sideproject">Side Gigs</a></li>
+        <li><a class="internal-link" href="/wiki">Digital Garden</a></li>
+        <li><a class="internal-link" href="/blog">Blog</a></li>
+        <li><a class="internal-link" href="/">My Korean Blog</a></li>
+      </ul>
+    </div>
+  </div>
 </div></nav>
   <div class="wrapper">
     <main>[
   
     {
 
+      "title"    : "Tech Stack Test",
+      "url"      : "/notes/TechStackTest",
+      "category" : "",
+      "tags"     : "",
+      "content"  : "Tech Stack Test"
+
+    } ,
+  
+    {
+
       "title"    : "안녕하세요",
-      "url"      : "/testingkorean",
+      "url"      : "/notes/TestingKorean",
       "category" : "",
       "tags"     : "",
       "content"  : "이게 진짜 되나?"
@@ -62,7 +96,7 @@
       "url"      : "/about-this-page",
       "category" : "Get Started",
       "tags"     : "CMS,, personal,, digital, garden",
-      "content"  : "Welcome!\nThis is my first note of this website. This website is based from Obsidian and Megumi’s Green Template.\nIn terms of the conceptual structure, This spouting experience is heavily inspired by Maggie’s Digital Gardening Project and 기계인간 Machinery Human’s My Wiki with Vim.\nThis website is currently being hosted on Github. The reason is that:\n\nI am a lazy arse who even don’t want to bother to check extra deployment push to another service. That is why.\nAs I am actively pushing my updates to my own Github, it just makes sense to deploy directly to Github.\nI couldn’t find any valid reason to deploy through Netflify or Vercel. I may consider it in future- I don’t know. This whole Obsidian syncing to Jekyll thing is very experimental to me.\n\nOriginally, I was publishing my personal website with the Gatsby integrating with WordPress on headless CMS way. However, figuring out how incorporate the Gatsby way with WP API was too much hustles. If this was required by my work, I will do it (well because I am paid for it). For the personal website? That’s too much. The consistent updates and checking the dependencies on node &amp; npm version was exhausting me out as well.\nThe Journey has been so far…\n25 May 2022\nIt was really painstaking to fix the github deployment issue. Alongside the gem dependency installation conflicts to other dependencies, I couldn’t figure it out why.\nThe solution was:\n\nDeleting all Jekyll Caches\nCheck the passage of your gem env with “gem env” “which ruby” “which gem”\nnano  ~/.bash_profile check where your home path is located.\nBundle clean –force\nif it looks a bit messy: rm -rf ~/.gem\nBundle Update\nGem Update\nRemoving Gemfile.lock\nRe-do Bundle Install –verbose\nJEKYLL_ENV=production bundle exec jekyll serve –trace\nNot sure if this helped but .github-pages.yml setup might do something as well. (Refer to my branch)\n\n\nReferences\n\nhttps://github.github.com/gfm/\nhttps://jekyllrb.com/docs/permalinks/\nhttps://garden.megu.space/your-first-note.html\nhttps://johngrib.github.io/wiki/my-wiki/\nhttps://notenote.link/notes/how-to-use-the-special-features\n\n\nNext Milestone is…\n\n[x] Start migrating css to scss format\n[WIP] Add 2nd post\n[ ] Start migrating all js within html pages and markdowns within organised folder structures\n[ ] Configure the Obsidian redirect link into based on the folder structure\n[ ] Adding Search Option\n[ ] Figuring out the Wiki stacks within this website\n[ ] Add a comments plugin (Disqus)\n[ ] Install a remote theme\n[ ] Learn how to add gists to the posts\n[ ] Add reading time to posts\n[ ] Install a plugin to speed up post creation (jekyll-compose)\n[ ] Try out the static comments option\n[ ] Implementing Google Analytics, AdSense, Adobe Cloud for personal research interest. (I mean, I have a career at this field so it will happen for experimental case studies.)\n[ ] Building(or Setup if I can find the project repo) a TypeScript NPM to integrate Grammarly API with Obsidian\n\n** Do not bloody be nip-picky about the broken grammar and words. I am in dyslexia/dyspraxia spectrum."
+      "content"  : "Welcome!\nThis is my first note of this website. This website is based from Obsidian and Megumi’s Green Template.\nIn terms of the conceptual structure, This spouting experience is heavily inspired by Maggie’s Digital Gardening Project and 기계인간 Machinery Human’s My Wiki with Vim.\nThis website is currently being hosted on Github. The reason is that:\n\nI am a lazy arse who even don’t want to bother to check extra deployment push to another service. That is why.\nAs I am actively pushing my updates to my own Github, it just makes sense to deploy directly to Github.\nI couldn’t find any valid reason to deploy through Netflify or Vercel. I may consider it in future- I don’t know. This whole Obsidian syncing to Jekyll thing is very experimental to me.\n\nOriginally, I was publishing my personal website with the Gatsby integrating with WordPress on headless CMS way. However, figuring out how incorporate the Gatsby way with WP API was too much hustles. If this was required by my work, I will do it (well because I am paid for it). For the personal website? That’s too much. The consistent updates and checking the dependencies on node &amp; npm version was exhausting me out as well.\nThe Journey has been so far…\n25 May 2022\nIt was really painstaking to fix the github deployment issue. Alongside the gem dependency installation conflicts to other dependencies, I couldn’t figure it out why.\nThe solution was:\n\nDeleting all Jekyll Caches\nCheck the passage of your gem env with “gem env” “which ruby” “which gem”\nnano  ~/.bash_profile check where your home path is located.\nBundle clean –force\nif it looks a bit messy: rm -rf ~/.gem\nBundle Update\nGem Update\nRemoving Gemfile.lock\nRe-do Bundle Install –verbose\nJEKYLL_ENV=production bundle exec jekyll serve –trace\nNot sure if this helped but .github-pages.yml setup might do something as well. (Refer to my branch)\n\n\nReferences\n\nhttps://github.github.com/gfm/\nhttps://jekyllrb.com/docs/permalinks/\nhttps://garden.megu.space/your-first-note.html\nhttps://johngrib.github.io/wiki/my-wiki/\nhttps://notenote.link/notes/how-to-use-the-special-features\n\nNext Milestone is…\n\n[x] Start migrating css to scss format\n[WIP] Add 2nd post\n[ ] Start migrating all js within html pages and markdowns within organised folder structures\n[ ] Configure the Obsidian redirect link into based on the folder structure\n[ ] Adding Search Option\n[ ] Figuring out the Wiki stacks within this website\n[ ] Add a comments plugin (Disqus)\n[ ] Install a remote theme\n[ ] Learn how to add gists to the posts\n[ ] Add reading time to posts\n[ ] Install a plugin to speed up post creation (jekyll-compose)\n[ ] Try out the static comments option\n[ ] Implementing Google Analytics, AdSense, Adobe Cloud for personal research interest. (I mean, I have a career at this field so it will happen for experimental case studies.)\n[ ] Building(or Setup if I can find the project repo) a TypeScript NPM to integrate Grammarly API with Obsidian\n\n** Do not bloody be nip-picky about the broken grammar and words. I am in dyslexia/dyspraxia spectrum."
 
     } 
   

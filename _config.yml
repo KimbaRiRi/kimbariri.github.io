@@ -11,34 +11,24 @@ encoding: utf-8
 # Build settings
 theme: null
 plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-toc
-  - jekyll-paginate
   - jekyll-last-modified-at
-  - jekyll-gist
 
 # markdown: kramdown
-
-# kramdown:
-#   input: GFM
-#   hard_wrap: false
-#   math_engine: nulls
-#   smart_quotes: ["apos", "apos", "quot", "quot"]
-#   syntax_highlighter: rouge
-#   auto_ids: true
-
 # Enabled CommonMark instead of default kramdown. All extensions are enabled, but you can choose to remove some by referencing https://github.github.com/gfm/ and https://github.com/gjtorikian/commonmarker#options
 markdown: CommonMarkGhPages
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  math_engine: nulls
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  syntax_highlighter: rouge
+  auto_ids: true
+
 commonmark:
   options: ["SMART", "FOOTNOTES", "VALIDATE_UTF8", "GITHUB_PRE_LANG", "TABLE_PREFER_STYLE_ATTRIBUTES"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
-# paginate: 10
-# paginator_path: "/blog"
-# paginate_path: "/blog/page:num/"
-
-# permalink: /:title
 # permarlink: slug
 permalink: pretty
 
@@ -49,45 +39,11 @@ sass:
 collections:
   notes:
     output: true
-    # permalink: /notes/:title
-    permalink: /:collection/:path/
-  wiki:
-    output: true
-    permalink: /:collection/:path/
+    permalink: /notes/:title
   pages:
     output: true
-    permalink: /:collection/:path/
-
-toc:
-  max_level: 3
-
-# Settings for Jekyll Compose
-jekyll_compose:
-  default_front_matter:
-    drafts:
-      layout:
-      title:
-      date:
-      categories:
-    posts:
-      layout:
-      title:
-      date:
-      categories:
-# defaults:
-#   - scope:
-#       path: ""
-#       type: posts
-#     values:
-#       layout: post
-#       permalink: /posts/:title
-#       content-type: post
-#   - scope:
-#       path: ""
-#       type: notes
-#     values:
-#       layout: post
-#       content-type: notes
+    permalink: /page/:name
+    # permalink: /:collection/:path/
 
 defaults:
   - scope:
@@ -99,18 +55,10 @@ defaults:
     values:
       layout: "note"
 
-# google_analytics:
-#   ua: UA-110224147-1
-
-# google_adsense:
-#   client: ca-pub-3675948545737694
-
 timezone: "APAC/Sydney"
 
 # Comment out .htaccess if you're uploading to a non-Apache server such as Netlify
 # include:             ['.htaccess']
-
-include:             ['_pages']
 # Remove obsidian-templates and delete the folder if you aren't using Obsidian Templates plugin
 exclude: ["_includes/notes_graph.json", "obsidian-templates"]
 

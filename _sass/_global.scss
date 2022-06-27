@@ -1,0 +1,49 @@
+
+/* Global Styles */
+body {
+  box-sizing: content-box;
+  font-family: $font-family;
+  margin: 0 auto;
+  line-height: 1.7;
+  padding: 4vh 6vw;
+  overflow-x: hidden;
+  color: $color-text;
+  font-size: 1rem;
+  max-width: 63em;
+  background-color: $backgroundColor;
+
+  @media (min-width: 820px) {
+    font-size: 1.2rem;
+  }
+}
+
+*:focus {
+  background: #ffe8bc !important;
+  color: black !important;
+}
+
+nav {
+  margin: 1em 0 3em
+}
+
+#notes-entry-container, main {
+  display: grid;
+  grid-gap: 2em;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas: "article aside"
+}
+
+article {
+  display: grid;
+}
+
+main section {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 1200px) {
+  content, side, article, aside {
+    grid-column: 1 / -1;
+    max-width: calc(100vw - 12vw)
+  }
+}

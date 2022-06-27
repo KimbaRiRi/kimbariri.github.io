@@ -1,7 +1,10 @@
+/*
+ * Variables
+ * =========
+ *
+ */
 
-
-/* Global Styles */
-:root {
+ :root {
   --heading-color: rgb(29, 31, 32);
   --text-color: rgba(29, 31, 32, .85);
   --text-color-faded: rgb(29, 31, 32, 0.5);
@@ -29,50 +32,48 @@ $border-radius: 4px;
 $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 $heading-font: "Wremena", "Times", "Times New Roman", serif;
 
-body {
-  box-sizing: content-box;
-  font-family: $font-family;
-  margin: 0 auto;
-  line-height: 1.7;
-  padding: 4vh 6vw;
-  overflow-x: hidden;
-  color: $color-text;
-  font-size: 1rem;
-  max-width: 63em;
-  background-color: $backgroundColor;
 
-  @media (min-width: 820px) {
-    font-size: 1.2rem;
+// For breakpoint mixins.
+$small-width: 600px;
+$medium-width: 1024px;
+$large-width: 1140px;
+$unit-half: 1.5rem;
+
+:root {
+  --sans-serif-fallback: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  --sans-serif: 'Dia', 'Nitti Grotesk', Graphik, Isidora Sans, Tofino,
+    var(--sans-serif-fallback);
+  --serif: IBM Plex Serif, Tramuntana Text Pro, Tiempos Text, Georgia, serif;
+  --bold: 800;
+  --text-color: #020202;
+  --meta-color: #a0a6ad;
+  --meta-color: #909090;
+  --fade-color: #f8f8f9;
+  --paragraph-color: #111;
+  --border-color: #eee;
+  --accent-color: #6256f6;
+  --backdrop: rgba(26, 28, 70, 0.1);
+  --unit: 3rem;
+  --unit-half: calc(var(--unit) / 2);
+  --unit-quarter: calc(var(--unit) / 4);
+  --unit-double: calc(var(--unit) * 2);
+
+  --content-width: 1140px;
+  --outer-rim: 2000px;
+  --col-half: calc(50% - var(--unit-half));
+
+  --h1-min: 20px;
+  --h1-max: 54px;
+  --viewport-min: 480;
+  --viewport-max: 1400;
+
+  @include medium {
+    --unit: 2rem;
   }
-}
 
-*:focus {
-  background: #ffe8bc !important;
-  color: black !important;
-}
-
-nav {
-  margin: 1em 0 3em
-}
-
-#notes-entry-container, main {
-  display: grid;
-  grid-gap: 2em;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "article aside"
-}
-
-article {
-  display: grid;
-}
-
-main section {
-  grid-column: 1 / -1;
-}
-
-@media (max-width: 1200px) {
-  content, side, article, aside {
-    grid-column: 1 / -1;
-    max-width: calc(100vw - 12vw)
+  @include small {
+    --unit: 1.5rem;
   }
 }
