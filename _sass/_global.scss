@@ -1,4 +1,3 @@
-
 /* Global Styles */
 body {
   box-sizing: content-box;
@@ -11,9 +10,21 @@ body {
   font-size: 1rem;
   max-width: 63em;
   background-color: $backgroundColor;
+  font-feature-settings: 'calt', 'liga', 'onum', 'pnum';
+  text-rendering: optimizeLegibility;
 
-  @media (min-width: 820px) {
-    font-size: 1.2rem;
+  // @media (min-width: 820px) {
+  //   font-size: 1.2rem;
+  // }
+
+  @include large {
+    font-size: 130%;
+  }
+  @include medium {
+    font-size: 100%;
+  }
+  @include small {
+    font-size: 90%;
   }
 }
 
@@ -22,16 +33,40 @@ body {
   color: black !important;
 }
 
-nav {
-  margin: 1em 0 3em
+/* Base Layout */
+.grid {
+  display: flex;
+  flex-flow: wrap;
 }
 
-#notes-entry-container, main {
-  display: grid;
-  grid-gap: 2em;
-  grid-template-columns: 3fr 1fr;
-  grid-template-areas: "article aside"
+.col {
+  margin-right: var(--unit);
+
+  @include small {
+    margin-right: 0;
+
+    flex: 0 0 100%;
+  }
+
+  flex: 0 0 calc(50% - var(--unit-half));
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
 }
+
+.container {
+  position: relative;
+
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--unit-half);
+
+  &.slim {
+    max-width: 650px;
+  }
+}
+
 
 article {
   display: grid;
@@ -47,3 +82,4 @@ main section {
     max-width: calc(100vw - 12vw)
   }
 }
+

@@ -1,14 +1,17 @@
 ---
 ---
 @import "../_sass/normalize";
+@import "../_sass/highlight";
+
+@import "../_sass/variables";
 
 @import "../_sass/mixins";
 @import "../_sass/keyframes";
-@import "../_sass/variables";
 
+@import "../_sass/global";
 @import "../_sass/base";
 @import "../_sass/code";
 @import '../_sass/fonts';
-@import "../_sass/global";
-@import "../_sass/highlight";
+
+
 @import "../_sass/graph";

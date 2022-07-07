@@ -1,6 +1,89 @@
 
-
+// Components
 /* Nav */
+.topbar {
+  width: 100%;
+  margin-bottom: var(--unit);
+  padding: var(--unit) 0 0;
+
+  transition: background-color 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
+
+  // @include small {
+  //   position: fixed;
+  //   z-index: 10;
+  //   top: 0;
+
+  //   height: 48px;
+  //   margin-top: 0;
+  //   padding: 0;
+
+  //   color: var(--text-color);
+  //   background-color: rgba(255, 255, 255, 0.95);
+
+  //   backdrop-filter: blur(5px);
+  // }
+
+  // .col {
+  //   @include small {
+  //     flex: 1;
+  //   }
+  // }
+
+  // a {
+  //   text-decoration: none;
+  // }
+
+  // nav {
+  //   @include small {
+  //     display: none;
+  //   }
+  // }
+
+  // ul {
+  //   margin: 0;
+  //   padding: 0;
+
+  //   list-style: none;
+
+  //   @include small {
+  //     width: 100%;
+  //   }
+  // }
+
+  // li {
+  //   position: relative;
+  //   z-index: 0;
+
+  //   display: inline-block;
+  //   overflow: visible;
+
+  //   transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+
+  //   @include small {
+  //     display: block;
+
+  //     animation: fadeup 0.5s ease-in-out backwards;
+  //   }
+
+  //   & + li {
+  //     margin-left: var(--unit);
+
+  //     @include small {
+  //       margin-top: var(--unit-half);
+  //       margin-left: 0;
+  //     }
+  //   }
+  // }
+
+  & > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+  }
+}
 
 /* Footer */
 footer {
@@ -173,3 +256,12 @@ header, .archive span {
     border-radius: 4px;
     font-size: 0.5rem;
   }
+
+  /* notes */
+  #notes-entry-container, main {
+    display: grid;
+    grid-gap: 2em;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "article aside"
+  }
+  

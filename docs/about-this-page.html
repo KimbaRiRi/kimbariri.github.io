@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome!This is my first note of this website. This website is based from Obsidian and Megumi’s Green Template.">
+  <meta property="og:site_name" content="My Brain Dumpster">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+
+  <link rel="stylesheet" href="styles.css">
+
+  
+  <meta property="og:description" content="Welcome!This is my first note of this website. This website is based from Obsidian and Megumi’s Green Template.">
+  
+
+  
+  <meta property="og:title" content="About this page">
+  <meta property="og:type" content="article">
+  
+
+  
+  <meta property="article:published_time" content="2022-07-07T12:44:19+00:00">
+  <meta property="article:author" content="http://localhost:4000/">
+  
+
+  
+  <meta property="og:url" content="http://localhost:4000//about-this-page.html">
+  
+
+  
+
+  <!-- Martech Google Data Studio Injection -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-52642322-5');
+  </script>
+ <!-- Martech Google Data Studio Injection Ends-->
+
+   <!-- Martech Adobe Data Studio Injection -->
+    <!-- Martech Adobe Data Studio Injection Ends-->
+  <title>
+    
+    About this page &mdash; My Brain Dumpster
+    
+  </title>
+</head>
+
+<body>
+  <div class="topbar">
+  <div class="grid container">
+    <div class="col">
+      <ul>
+        <li><a href="/"><b>Home</b></a></li>
+        <li><a class="internal-link" href="/about"><b>About Me</b></a></li>
+        <li><a class="internal-link" href="/gallery">Gallery</a></li>
+        <li><a class="internal-link" href="/assets/files/GyuriKim_ui_dev_cv_IL.pdf">CV</a></li>
+        <li><a class="internal-link" href="/prejects">Projects</a></li>
+        <li><a class="internal-link" href="/sideproject">Side Gigs</a></li>
+        <li><a class="internal-link" href="/wiki">Digital Garden</a></li>
+        <li><a class="internal-link" href="/blog">Blog</a></li>
+        <li><a class="internal-link" href="https://brunch.co.kr/@kimba">My Korean Blog</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+  <div class="wrapper">
+    <main><article>
+    <h1>About this page</h1>
+    <header><p><time datetime="2022-06-27T01:50:11+00:00">Last updated June 27, 2022</time> &ndash; Get Started</p></header>
+
+  <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body>
+<h2 id="welcome">Welcome!</h2>
+<p>This is my first note of this website. This website is based from <a href="https://help.obsidian.md/How+to/Internal+link" target="blank">Obsidian</a> and Megumi’s <a href="https://github.com/meewgumi/green-web-template" target="blank">Green Template</a>.</p>
+<p>In terms of the conceptual structure, This spouting experience is heavily inspired by <a href="https://github.com/MaggieAppleton/digital-gardeners" target="blank">Maggie’s Digital Gardening Project</a> and 기계인간 Machinery Human’s <a href="https://johngrib.github.io/wiki/my-wiki/" target="blank">My Wiki with Vim</a>.</p>
+<p>This website is currently being hosted on Github. The reason is that:</p>
+<ol>
+<li>I am a lazy arse who even don’t want to bother to check extra deployment push to another service. That is why.</li>
+<li>As I am actively pushing my updates to my own Github, it just makes sense to deploy directly to Github.</li>
+<li>I couldn’t find any valid reason to deploy through <strong>Netflify</strong> or <strong>Vercel</strong>. I may consider it in future- I don’t know. This whole <strong>Obsidian</strong> syncing to <strong>Jekyll</strong> thing is very experimental to me.</li>
+</ol>
+<p>Originally, I was publishing my personal website with the Gatsby integrating with WordPress on headless CMS way. However, figuring out how incorporate the Gatsby way with WP API was too much hustles. If this was required by my work, I will do it (well because I am paid for it). For the personal website? That’s too much. The consistent updates and checking the dependencies on node &amp; npm version was exhausting me out as well.</p>
+<h2 id="the-journey-has-been-so-far">The Journey has been so far…</h2>
+<p>25 May 2022</p>
+<p>It was really painstaking to fix the github deployment issue. Alongside the gem dependency installation conflicts to other dependencies, I couldn’t figure it out why.</p>
+<h4 id="the-solution-was">The solution was:</h4>
+<ul>
+<li>Deleting all Jekyll Caches</li>
+<li>Check the passage of your gem env with “gem env” “which ruby” “which gem”</li>
+<li>nano  ~/.bash_profile check where your home path is located.</li>
+<li>Bundle clean –force</li>
+<li>if it looks a bit messy: rm -rf ~/.gem</li>
+<li>Bundle Update</li>
+<li>Gem Update</li>
+<li>Removing Gemfile.lock</li>
+<li>Re-do Bundle Install –verbose</li>
+<li>JEKYLL_ENV=production bundle exec jekyll serve –trace</li>
+<li>Not sure if this helped but .github-pages.yml setup might do something as well. (Refer to my branch)</li>
+</ul>
+<img src="/assets/images/the%20initial%20workflow.jpeg">
+<h6 id="references">References</h6>
+<ul>
+<li><a href="https://github.github.com/gfm/" target="blank">https://github.github.com/gfm/</a></li>
+<li><a href="https://jekyllrb.com/docs/permalinks/" target="blank">https://jekyllrb.com/docs/permalinks/</a></li>
+<li><a href="https://garden.megu.space/your-first-note.html" target="blank">https://garden.megu.space/your-first-note.html</a></li>
+<li><a href="https://johngrib.github.io/wiki/my-wiki/" target="blank">https://johngrib.github.io/wiki/my-wiki/</a></li>
+<li><a href="https://notenote.link/notes/how-to-use-the-special-features" target="blank">https://notenote.link/notes/how-to-use-the-special-features</a></li>
+</ul>
+<h2 id="next-milestone-is">Next Milestone is…</h2>
+<ul>
+<li>[x] Start migrating css to scss format</li>
+<li>[WIP] Add 2nd post</li>
+<li>[ ] Start migrating all js within html pages and markdowns within organised folder structures</li>
+<li>[ ] Configure the Obsidian redirect link into based on the folder structure</li>
+<li>[ ] Adding Search Option</li>
+<li>[ ] Figuring out the Wiki stacks within this website</li>
+<li>[ ] Add a comments plugin (Disqus)</li>
+<li>[ ] Install a remote theme</li>
+<li>[ ] Learn how to add gists to the posts</li>
+<li>[ ] Add reading time to posts</li>
+<li>[ ] Install a plugin to speed up post creation (jekyll-compose)</li>
+<li>[ ] Try out the static comments option</li>
+<li>[ ] Implementing Google Analytics, AdSense, Adobe Cloud for personal research interest. (I mean, I have a career at this field so it will happen for experimental case studies.)</li>
+<li>[ ] Building(or Setup if I can find the project repo) a TypeScript NPM to integrate Grammarly API with Obsidian</li>
+</ul>
+<p>** Do not bloody be nip-picky about the broken grammar and words. I am in dyslexia/dyspraxia spectrum.</p>
+</body></html>
+
+</article>
+<aside>
+  <h5>Notes mentioning this note</h5>
+  
+
+  <div>
+    <p>
+      There are no notes linking to this note.
+    </p>
+  </div>
+  
+</aside>
+<section><p>Here are all the notes in this garden, along with their links, visualized as a graph.</p><script src="/assets/js/d3.min.js" crossorigin="anonymous"></script>
+
+<div id="graph-wrapper">
+	<script>
+		const MINIMAL_NODE_SIZE = 8;
+		const MAX_NODE_SIZE = 12;
+		const ACTIVE_RADIUS_FACTOR = 1.5;
+		const STROKE = 1;
+		const FONT_SIZE = 16;
+		const TICKS = 200;
+		const FONT_BASELINE = 40;
+		const MAX_LABEL_LENGTH = 50;
+
+		const graphData = {"edges":[],"nodes":[{"id":"8410199104328311697991073284101115116","path":"/notes/TechStackTest.html","label":"Tech Stack Test"},{"id":"236149136235133149237149152236132184236154148","path":"/notes/TestingKorean.html","label":"안녕하세요"},{"id":"6598111117116321161041051153211297103101","path":"/about-this-page.html","label":"About this page"}]}
+		let nodesData = graphData.nodes;
+		let linksData = graphData.edges;
+
+		const nodeSize = {};
+
+		const updateNodeSize = () => {
+			nodesData.forEach((el) => {
+				let weight =
+					3 *
+					Math.sqrt(
+						linksData.filter((l) => l.source === el.id || l.target === el.id)
+						.length + 1
+					);
+				if (weight < MINIMAL_NODE_SIZE) {
+					weight = MINIMAL_NODE_SIZE;
+				} else if (weight > MAX_NODE_SIZE) {
+					weight = MAX_NODE_SIZE;
+				}
+				nodeSize[el.id] = weight;
+			});
+		};
+
+		const onClick = (d) => {
+			window.location = d.path
+		};
+
+		const onMouseover = function (d) {
+			const relatedNodesSet = new Set();
+			linksData
+				.filter((n) => n.target.id == d.id || n.source.id == d.id)
+				.forEach((n) => {
+					relatedNodesSet.add(n.target.id);
+					relatedNodesSet.add(n.source.id);
+				});
+
+			node.attr("class", (node_d) => {
+				if (node_d.id !== d.id && !relatedNodesSet.has(node_d.id)) {
+					return "inactive";
+				}
+				return "";
+			});
+
+			link.attr("class", (link_d) => {
+				if (link_d.source.id !== d.id && link_d.target.id !== d.id) {
+					return "inactive";
+				}
+				return "";
+			});
+
+			link.attr("stroke-width", (link_d) => {
+				if (link_d.source.id === d.id || link_d.target.id === d.id) {
+					return STROKE * 4;
+				}
+				return STROKE;
+			});
+			text.attr("class", (text_d) => {
+				if (text_d.id !== d.id && !relatedNodesSet.has(text_d.id)) {
+					return "inactive";
+				}
+				return "";
+			});
+		};
+
+		const onMouseout = function (d) {
+			node.attr("class", "");
+			link.attr("class", "");
+			text.attr("class", "");
+			link.attr("stroke-width", STROKE);
+		};
+
+		const sameNodes = (previous, next) => {
+			if (next.length !== previous.length) {
+				return false;
+			}
+
+			const map = new Map();
+			for (const node of previous) {
+				map.set(node.id, node.label);
+			}
+
+			for (const node of next) {
+				const found = map.get(node.id);
+				if (!found || found !== node.title) {
+					return false;
+				}
+			}
+
+			return true;
+		};
+
+		const sameEdges = (previous, next) => {
+			if (next.length !== previous.length) {
+				return false;
+			}
+
+			const set = new Set();
+			for (const edge of previous) {
+				set.add(`${edge.source.id}-${edge.target.id}`);
+			}
+
+			for (const edge of next) {
+				if (!set.has(`${edge.source}-${edge.target}`)) {
+					return false;
+				}
+			}
+
+			return true;
+		};
+
+		const graphWrapper = document.getElementById('graph-wrapper')
+		const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+		element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
+		element.setAttribute("height", window.innerHeight * 0.8);
+		graphWrapper.appendChild(element);
+
+		const reportWindowSize = () => {
+			element.setAttribute("width", window.innerWidth);
+			element.setAttribute("height", window.innerHeight);
+		};
+
+		window.onresize = reportWindowSize;
+
+		const svg = d3.select("svg");
+		const width = Number(svg.attr("width"));
+		const height = Number(svg.attr("height"));
+		let zoomLevel = 1;
+
+		const simulation = d3
+			.forceSimulation(nodesData)
+			.force("forceX", d3.forceX().x(width / 2))
+			.force("forceY", d3.forceY().y(height / 2))
+			.force("charge", d3.forceManyBody())
+			.force(
+				"link",
+				d3
+				.forceLink(linksData)
+				.id((d) => d.id)
+				.distance(70)
+			)
+			.force("center", d3.forceCenter(width / 2, height / 2))
+			.force("collision", d3.forceCollide().radius(80))
+			.stop();
+
+		const g = svg.append("g");
+		let link = g.append("g").attr("class", "links").selectAll(".link");
+		let node = g.append("g").attr("class", "nodes").selectAll(".node");
+		let text = g.append("g").attr("class", "text").selectAll(".text");
+
+		const resize = () => {
+			if (d3.event) {
+				const scale = d3.event.transform;
+				zoomLevel = scale.k;
+				g.attr("transform", scale);
+			}
+
+			const zoomOrKeep = (value) => (zoomLevel >= 1 ? value / zoomLevel : value);
+
+			const font = Math.max(Math.round(zoomOrKeep(FONT_SIZE)), 1);
+
+			text.attr("font-size", (d) => font);
+			text.attr("y", (d) => d.y - zoomOrKeep(FONT_BASELINE) + 8);
+			link.attr("stroke-width", zoomOrKeep(STROKE));
+			node.attr("r", (d) => {
+				return zoomOrKeep(nodeSize[d.id]);
+			});
+			svg
+				.selectAll("circle")
+				.filter((_d, i, nodes) => d3.select(nodes[i]).attr("active"))
+				.attr("r", (d) => zoomOrKeep(ACTIVE_RADIUS_FACTOR * nodeSize[d.id]));
+		};
+
+		const ticked = () => {
+			node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
+			text
+				.attr("x", (d) => d.x)
+				.attr("y", (d) => d.y - (FONT_BASELINE - nodeSize[d.id]) / zoomLevel);
+			link
+				.attr("x1", (d) => d.source.x)
+				.attr("y1", (d) => d.source.y)
+				.attr("x2", (d) => d.target.x)
+				.attr("y2", (d) => d.target.y);
+		};
+
+		const restart = () => {
+			updateNodeSize();
+			node = node.data(nodesData, (d) => d.id);
+			node.exit().remove();
+			node = node
+				.enter()
+				.append("circle")
+				.attr("r", (d) => {
+					return nodeSize[d.id];
+				})
+				.on("click", onClick)
+				.on("mouseover", onMouseover)
+				.on("mouseout", onMouseout)
+				.merge(node);
+
+			link = link.data(linksData, (d) => `${d.source.id}-${d.target.id}`);
+			link.exit().remove();
+			link = link.enter().append("line").attr("stroke-width", STROKE).merge(link);
+
+			text = text.data(nodesData, (d) => d.label);
+			text.exit().remove();
+			text = text
+				.enter()
+				.append("text")
+				.text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
+				.attr("font-size", `${FONT_SIZE}px`)
+				.attr("text-anchor", "middle")
+				.attr("alignment-baseline", "central")
+				.on("click", onClick)
+				.on("mouseover", onMouseover)
+				.on("mouseout", onMouseout)
+				.merge(text);
+
+			node.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+			text.attr("active", (d) => isCurrentPath(d.path) ? true : null);
+
+			simulation.nodes(nodesData);
+			simulation.force("link").links(linksData);
+			simulation.alpha(1).restart();
+			simulation.stop();
+
+			for (let i = 0; i < TICKS; i++) {
+				simulation.tick();
+			}
+
+			ticked();
+		};
+
+		const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
+
+		zoomHandler(svg);
+		restart();
+
+		function isCurrentPath(notePath) {
+			return window.location.pathname.includes(notePath)
+		}
+
+		function shorten(str, maxLen, separator = ' ') {
+			if (str.length <= maxLen) return str;
+			return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
+		}
+	</script>
+</div></section>
+</main>
+    <footer><p>This is the footer. Here's the <a class="internal-link" href="/about.html">About</a> page and the <a class="internal-link" href="/archive.html">Archive</a>.</p></footer>
+  </div>
+  <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      iframe.src = event.target.href
+      iframe.onload = function() {
+        tooltipContentHtml = ''
+        tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+        tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+        tooltipContent.innerHTML = tooltipContentHtml
+
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+</body>
+
+</html>

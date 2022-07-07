@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Wremena';
   src: url('../assets/fonts/Wremena/WremenaLight.woff') format('woff2');
@@ -32,7 +31,14 @@
   color: black;
   background: var(--primary-color);
 }
-h1, h2, h3, h4, h5, h6, a {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
   font-family: var(--heading-font);
   color: var(--heading-color);
   line-height: 1.3;
@@ -41,7 +47,13 @@ h1, h2, h3, h4, h5, h6, a {
 }
 
 /* Hyphenate long headings and links */
-h1, h2, h3, h4, h5, h6, a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
   word-break: break-word;
   word-wrap: break-word;
   hyphens: auto;
@@ -56,7 +68,9 @@ h2+h3 {
   margin-top: 0.25em;
 }
 
-h1+p, h2+p, h3+p {
+h1+p,
+h2+p,
+h3+p {
   margin-top: 0.25em;
 }
 
