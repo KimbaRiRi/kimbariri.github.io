@@ -36,3 +36,71 @@ $small-width: 600px;
 $medium-width: 1024px;
 $large-width: 1140px;
 $unit-half: 1.5rem;
+
+
+/*
+ * Mixins
+ * ======
+ *
+ */
+
+ @mixin small {
+  @media (max-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin medium-only {
+  @media (max-width: #{$medium-width}) and (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: #{$large-width}) {
+    @content;
+  }
+}
+
+/*
+ * Keyframes
+ * =========
+ *
+ */
+
+ @keyframes fadeup {
+  0% {
+    transform: translateY(15px);
+
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+
+@keyframes bg {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    min-height: 100vh;
+  }
+  100% {
+    min-height: 90vh;
+  }
+}

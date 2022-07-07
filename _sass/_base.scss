@@ -1,267 +1,111 @@
+/* Global Styles */
+body {
+  box-sizing: content-box;
+  font-family: $font-family;
+  margin: 0 auto;
+  line-height: 1.7;
+  padding: 4vh 6vw;
+  overflow-x: hidden;
+  color: $color-text;
+  font-size: 1rem;
+  max-width: 63em;
+  background-color: $backgroundColor;
+  font-feature-settings: 'calt', 'liga', 'onum', 'pnum';
+  text-rendering: optimizeLegibility;
 
-// Components
-/* Nav */
-.topbar {
-  width: 100%;
-  margin-bottom: var(--unit);
-  padding: var(--unit) 0 0;
-
-  transition: background-color 0.13s ease-in-out, box-shadow 0.13s ease-in-out;
-
-  // @include small {
-  //   position: fixed;
-  //   z-index: 10;
-  //   top: 0;
-
-  //   height: 48px;
-  //   margin-top: 0;
-  //   padding: 0;
-
-  //   color: var(--text-color);
-  //   background-color: rgba(255, 255, 255, 0.95);
-
-  //   backdrop-filter: blur(5px);
-  // }
-
-  // .col {
-  //   @include small {
-  //     flex: 1;
-  //   }
-  // }
-
-  // a {
-  //   text-decoration: none;
-  // }
-
-  // nav {
-  //   @include small {
-  //     display: none;
-  //   }
-  // }
-
-  // ul {
-  //   margin: 0;
-  //   padding: 0;
-
-  //   list-style: none;
-
-  //   @include small {
-  //     width: 100%;
-  //   }
-  // }
-
-  // li {
-  //   position: relative;
-  //   z-index: 0;
-
-  //   display: inline-block;
-  //   overflow: visible;
-
-  //   transition: color 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-
-
-  //   @include small {
-  //     display: block;
-
-  //     animation: fadeup 0.5s ease-in-out backwards;
-  //   }
-
-  //   & + li {
-  //     margin-left: var(--unit);
-
-  //     @include small {
-  //       margin-top: var(--unit-half);
-  //       margin-left: 0;
-  //     }
-  //   }
-  // }
-
-  & > .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    height: 100%;
+  @include large {
+    font-size: 130%;
+  }
+  @include medium {
+    font-size: 100%;
+  }
+  @include small {
+    font-size: 90%;
   }
 }
 
-/* Footer */
-footer {
-    margin: 2em 0;
-    /* color: var(--text-color-faded); */
-    padding-top: 1em
-  }
+*:focus {
+  background: #ffe8bc !important;
+  color: black !important;
+}
 
-/* Archive Page */
-ul.archive, .archive li {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0
-  }
-  
-  .archive li {
-    margin: 1em 0 1.25em
-  }
-  
-  .archive p {
-    margin-top: 0
-  }
-  
-  .archive span {
-    opacity: 0.6
-  }
-/* Tables in Markdown */
-table {
-    max-width: min-content;
-  }
-  
-  table, table>*>*>* {
-    border: 1px solid var(--text-color-faded);
-    border-collapse: collapse;
-    color: var(--heading-color);
-  }
-  
-  table th, table td {
-    padding: 0.25em 0.5em
-  }
+
+// Global elements
+img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px
+}
+
+blockquote {
+  padding: 1.5em;
+  margin: 0;
+  font-size: 0.88em;
+  background: var(--callout-background);
+  border-radius: 4px
+}
+
+blockquote p {
+  margin: 0
+}
+
+hr {
+  width: 100%;
+  border: 0;
+  height: 1px;
+  margin: 1.5em 0;
+  /* background: #d9d9d9 */
+}
+
+strong, b {
+  font-weight: 600;
+  color: var(--heading-color);
+}
 
 /* Links */
 a {
-    transition: all 300ms;
-    font-weight: 600;
-    color: var(--heading-color);
-    border-bottom: 4px solid var(--primary-color);
-    text-decoration: none;
-  }
-  
-  a:hover, a:focus {
-    transition: all 300ms;
-    background: var(--primary-color);
-  }
-  
-  a::after {
-    font-size: 0.7em;
-    content: "↗";
-    color: var(--text-color-faded);
-    top: -0.5em;
-    position: relative;
-  }
+  transition: all 300ms;
+  font-weight: 600;
+  color: var(--heading-color);
+  border-bottom: 4px solid var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  transition: all 300ms;
+  background: var(--primary-color);
+}
+
+a::after {
+  font-size: 0.7em;
+  content: "↗";
+  color: var(--text-color-faded);
+  top: -0.5em;
+  position: relative;
+}
 
 /* Need to exclude a img arrow for external links eventually */
-a.internal-link:after, a.footnote-backref:after {
-    content: "";
-  }
-  
-  *:focus {
-    background: var(--primary-color);
-  }
-  
-  .invalid-link {
-    color: var(--text-color-faded);
-    cursor: help;
-    background: var(--callout-background);
-    padding: 0 0.1em
-  }
-  
-  .invalid-link-brackets {
-    color: #ccc;
-    cursor: help
-  }
-/* Footnotes */
-.footnote-ref a, a.footnote-backref {
-    background-color: var(--primary-color);
-    border-radius: 10em;
-    padding: 0 .3em;
-  }
-  
-  .footnote-ref a {
-    font-feature-settings: "sups"1;
-    letter-spacing: 1px;
-    height: 1em;
-    display: table-caption;
-  }
-  
-  .footnote-ref a::before {
-    content: "["
-  }
-  
-  .footnote-ref a::after {
-    content: "]";
-    top: inherit;
-    color: inherit;
-    font-size: inherit;
-  }
+a.internal-link:after,
+a.footnote-backref:after {
+  content: "";
+}
 
-  /* Article */
-header, .archive span {
-    font-feature-settings: "ss01"1, "zero"1, "case"1;
-    font-variant-numeric: slashed-zero;
-  }
-  
-  header p {
-    color: var(--text-color-faded);
-    font-size: 0.5rem;
-    margin-top: 0;
-    padding-bottom: 2em;
-  }
-  
-  img {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    border-radius: 4px
-  }
-  
-  blockquote {
-    padding: 1.5em;
-    margin: 0;
-    font-size: 0.88em;
-    background: var(--callout-background);
-    border-radius: 4px
-  }
-  
-  blockquote p {
-    margin: 0
-  }
-  
-  hr {
-    width: 100%;
-    border: 0;
-    height: 1px;
-    margin: 1.5em 0;
-    /* background: #d9d9d9 */
-  }
-  
-  strong, b {
-    font-weight: 600;
-    color: var(--heading-color);
-  }
-  section.callout {
-    padding: 3em 2em;
-    background: var(--callout-background);
-    border-radius: 4px;
-    margin: 1em 0;
-  }
-  
-  /* Backlink box */
-  aside {
-    display: grid;
-    grid-gap: 1em;
-    align-content: start;
-  }
-  
-  .backlink-box {
-    background: var(--callout-background);
-    padding: 1em;
-    border-radius: 4px;
-    font-size: 0.5rem;
-  }
+*:focus {
+  background: var(--primary-color);
+}
 
-  /* notes */
-  #notes-entry-container, main {
-    display: grid;
-    grid-gap: 2em;
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas: "article aside"
-  }
-  
+/* Tables in Markdown */
+table {
+  max-width: min-content;
+}
+
+table, table>*>*>* {
+  border: 1px solid var(--text-color-faded);
+  border-collapse: collapse;
+  color: var(--heading-color);
+}
+
+table th, table td {
+  padding: 0.25em 0.5em
+}

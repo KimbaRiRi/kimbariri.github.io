@@ -10,8 +10,13 @@
   <meta property="og:site_name" content="{{ site.title }}">
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
-  <link rel="stylesheet" href="styles.css">
+  {% if page.url == "/" %}
+  <link rel="stylesheet" href="{{ "styles.css" | prepend: site.baseurl }}">
+  {% else %}
+  <link rel="stylesheet" href="{{ "/../styles.css" }}">
+  {% endif %}
 
+  
   {% if page.excerpt %}
   <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | strip | truncate: 160 }}">
   {% else %}
@@ -34,7 +39,7 @@
   {% if page.url == "/" %}
   <meta property="og:url" content="{{ site.url }}/{{ site.baseurl }}">
   {% else %}
-  <meta property="og:url" content="{{ site.url }}/{{ site.baseurl }}{{ page.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">
+  <meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}{%- if site.use_html_extension -%}.html{%- endif -%}">
   {% endif %}
 
   {% if page.image %}
