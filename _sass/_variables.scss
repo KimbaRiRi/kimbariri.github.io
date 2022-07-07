@@ -20,18 +20,16 @@
   letter-spacing: -0.015em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  --unit: 3rem;
+  --unit-half: calc(var(--unit) / 2);
+  --unit-quarter: calc(var(--unit) / 4);
+  --unit-double: calc(var(--unit) * 2);
+  --content-width: 1140px;
 }
 
 $backgroundColor: rgba(156, 213, 56, .15);
-$color-primary: hsl(0, 0%, 10%);
 $color-text: hsl(0, 0%, 20%);
-$color-subtext: hsl(0, 0%, 30%);
-$primary-color: rgb(156, 213, 56);
-$color-box-background: rgba(156, 213, 56, .08);
-$border-radius: 4px;
 $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
-$heading-font: "Wremena", "Times", "Times New Roman", serif;
-
 
 // For breakpoint mixins.
 $small-width: 600px;
@@ -39,41 +37,70 @@ $medium-width: 1024px;
 $large-width: 1140px;
 $unit-half: 1.5rem;
 
-:root {
-  --sans-serif-fallback: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
-  --sans-serif: 'Dia', 'Nitti Grotesk', Graphik, Isidora Sans, Tofino,
-    var(--sans-serif-fallback);
-  --serif: IBM Plex Serif, Tramuntana Text Pro, Tiempos Text, Georgia, serif;
-  --bold: 800;
-  --text-color: #020202;
-  --meta-color: #a0a6ad;
-  --meta-color: #909090;
-  --fade-color: #f8f8f9;
-  --paragraph-color: #111;
-  --border-color: #eee;
-  --accent-color: #6256f6;
-  --backdrop: rgba(26, 28, 70, 0.1);
-  --unit: 3rem;
-  --unit-half: calc(var(--unit) / 2);
-  --unit-quarter: calc(var(--unit) / 4);
-  --unit-double: calc(var(--unit) * 2);
 
-  --content-width: 1140px;
-  --outer-rim: 2000px;
-  --col-half: calc(50% - var(--unit-half));
+/*
+ * Mixins
+ * ======
+ *
+ */
 
-  --h1-min: 20px;
-  --h1-max: 54px;
-  --viewport-min: 480;
-  --viewport-max: 1400;
-
-  @include medium {
-    --unit: 2rem;
+ @mixin small {
+  @media (max-width: #{$small-width}) {
+    @content;
   }
+}
 
-  @include small {
-    --unit: 1.5rem;
+@mixin medium {
+  @media (max-width: #{$medium-width}) {
+    @content;
+  }
+}
+
+@mixin medium-only {
+  @media (max-width: #{$medium-width}) and (min-width: #{$small-width}) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (max-width: #{$large-width}) {
+    @content;
+  }
+}
+
+/*
+ * Keyframes
+ * =========
+ *
+ */
+
+ @keyframes fadeup {
+  0% {
+    transform: translateY(15px);
+
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+
+    opacity: 1;
+  }
+}
+
+@keyframes bg {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: rgba(0, 0, 0, 0.95);
+  }
+}
+
+@keyframes shrink {
+  0% {
+    min-height: 100vh;
+  }
+  100% {
+    min-height: 90vh;
   }
 }

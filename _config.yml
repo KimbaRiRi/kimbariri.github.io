@@ -1,30 +1,23 @@
 title: My Brain Dumpster
 name: My Brain Dumpster
-user_description: kimbariri.github.io
 # notes_url: "https://kimbariri.github.io/"
 github_username:  KimbaRiRi
-copyright_name: MIT
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://kimbariri.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-encoding: utf-8
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Comment out .htaccess if you're uploading to a non-Apache server such as Netlify
+# include:             ['.htaccess']
+# Remove obsidian-templates and delete the folder if you aren't using Obsidian Templates plugin
+exclude: ["_includes/notes_graph.json", "obsidian-templates"]
+destination:        docs
 
 # Build settings
-theme: null
 plugins:
   - jekyll-last-modified-at
 
 # markdown: kramdown
 # Enabled CommonMark instead of default kramdown. All extensions are enabled, but you can choose to remove some by referencing https://github.github.com/gfm/ and https://github.com/gjtorikian/commonmarker#options
 markdown: CommonMarkGhPages
-
-kramdown:
-  input: GFM
-  hard_wrap: false
-  math_engine: nulls
-  smart_quotes: ["apos", "apos", "quot", "quot"]
-  syntax_highlighter: rouge
-  auto_ids: true
-
 commonmark:
   options: ["SMART", "FOOTNOTES", "VALIDATE_UTF8", "GITHUB_PRE_LANG", "TABLE_PREFER_STYLE_ATTRIBUTES"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
@@ -42,8 +35,7 @@ collections:
     permalink: /notes/:title
   pages:
     output: true
-    permalink: /page/:name
-    # permalink: /:collection/:path/
+    permalink: /pages/:title
 
 defaults:
   - scope:
@@ -54,13 +46,6 @@ defaults:
       path: "_notes/**/*.md"
     values:
       layout: "note"
-
-timezone: "APAC/Sydney"
-
-# Comment out .htaccess if you're uploading to a non-Apache server such as Netlify
-# include:             ['.htaccess']
-# Remove obsidian-templates and delete the folder if you aren't using Obsidian Templates plugin
-exclude: ["_includes/notes_graph.json", "obsidian-templates"]
 
 # If you are using a host that cannot resolve URLs that do
 # not end with .html (such as Neocities or Dreamhost), set this to 'true'.

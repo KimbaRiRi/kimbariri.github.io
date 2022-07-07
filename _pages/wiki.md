@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Kimba.RiRi's Tremendous Repository of Knowledge, Opinions and Trivia
-permalink: /wiki
+favicon: 
 ---
 	<h1>{{ page.title }}</h1>
 
@@ -37,7 +37,6 @@ permalink: /wiki
 <br/>
 
 <p>Idea and a bit of the code were taken from <a href='https://tomcritchlow.com/wiki/'>Tom Critchlow's Digital Garden</a>. </p>
-
 
 <!-- Script pointing to search-script.js -->
 <script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>

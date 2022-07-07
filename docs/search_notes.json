@@ -10,8 +10,11 @@
   <meta property="og:site_name" content="My Brain Dumpster">
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
-  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="stylesheet" href="/../styles.css">
+  
 
+  
   
   <meta property="og:description" content="My Brain Dumpster">
   
@@ -24,7 +27,7 @@
   
 
   
-  <meta property="og:url" content="http://localhost:4000//search_notes.json.html">
+  <meta property="og:url" content="http://localhost:4000/search_notes.json.html">
   
 
   
@@ -50,23 +53,22 @@
 </head>
 
 <body>
-  <nav><div class="topbar">
-  <div class="grid container">
-    <div class="col">
-      <ul>
-        <li><a href="/"><b>Home</b></a></li>
-        <li><a class="internal-link" href="/about"><b>About Me</b></a></li>
-        <li><a class="internal-link" href="/gallery">Gallery</a></li>
-        <li><a class="internal-link" href="/assets/files/GyuriKim_ui_dev_cv_IL.pdf">CV</a></li>
-        <li><a class="internal-link" href="/prejects">Projects</a></li>
-        <li><a class="internal-link" href="/sideproject">Side Gigs</a></li>
-        <li><a class="internal-link" href="/wiki">Digital Garden</a></li>
-        <li><a class="internal-link" href="/blog">Blog</a></li>
-        <li><a class="internal-link" href="https://brunch.co.kr/@kimba">My Korean Blog</a></li>
-      </ul>
-    </div>
-  </div>
-</div></nav>
+  <nav>
+  <ul>
+    <li><a class="internal-link" href="/"><b>Home</b></a></li>
+    <li><a class="internal-link" href="/about"><b>About Me</b></a></li>
+    <li><a class="internal-link" href="/gallery">My Arts</a></li>
+    <li><a class="internal-link" href="/assets/files/GyuriKim_ui_dev_cv_IL.pdf">CV</a></li>
+    <li><a class="internal-link" href="/prejects">Projects</a></li>
+    <li><a class="internal-link" href="/sideproject">Hobbies</a></li>
+    <li><a class="internal-link" href="/wiki">Digital Garden</a></li>
+    <li><a class="internal-link" href="/blog">Blog-EN</a></li>
+    <li><a class="internal-link" href="https://brunch.co.kr/@kimba">Blog-KR</a></li>
+  </ul>
+</nav>
+      
+
+
   <div class="wrapper">
     <main>[
   

@@ -10,8 +10,11 @@
   <meta property="og:site_name" content="My Brain Dumpster">
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
-  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="stylesheet" href="/../styles.css">
+  
 
+  
   
   <meta property="og:description" content="Tech Stack Test (June 2022)Tech Stack Test안녕하세요 (May 2022)이게 진짜 되나?About this page in Get Started (June 2022)Welcome!This is my first note of this website. T...">
   
@@ -22,12 +25,12 @@
   
 
   
-  <meta property="article:published_time" content="2022-07-08T00:16:05+10:00">
+  <meta property="article:published_time" content="2022-07-08T00:17:26+10:00">
   <meta property="article:author" content="http://localhost:4000/">
   
 
   
-  <meta property="og:url" content="http://localhost:4000//pages/archive.html">
+  <meta property="og:url" content="http://localhost:4000/pages/archive.html">
   
 
   
@@ -53,23 +56,22 @@
 </head>
 
 <body>
-  <nav><div class="topbar">
-  <div class="grid container">
-    <div class="col">
-      <ul>
-        <li><a href="/"><b>Home</b></a></li>
-        <li><a class="internal-link" href="/about"><b>About Me</b></a></li>
-        <li><a class="internal-link" href="/gallery">Gallery</a></li>
-        <li><a class="internal-link" href="/assets/files/GyuriKim_ui_dev_cv_IL.pdf">CV</a></li>
-        <li><a class="internal-link" href="/prejects">Projects</a></li>
-        <li><a class="internal-link" href="/sideproject">Side Gigs</a></li>
-        <li><a class="internal-link" href="/wiki">Digital Garden</a></li>
-        <li><a class="internal-link" href="/blog">Blog</a></li>
-        <li><a class="internal-link" href="https://brunch.co.kr/@kimba">My Korean Blog</a></li>
-      </ul>
-    </div>
-  </div>
-</div></nav>
+  <nav>
+  <ul>
+    <li><a class="internal-link" href="/"><b>Home</b></a></li>
+    <li><a class="internal-link" href="/about"><b>About Me</b></a></li>
+    <li><a class="internal-link" href="/gallery">My Arts</a></li>
+    <li><a class="internal-link" href="/assets/files/GyuriKim_ui_dev_cv_IL.pdf">CV</a></li>
+    <li><a class="internal-link" href="/prejects">Projects</a></li>
+    <li><a class="internal-link" href="/sideproject">Hobbies</a></li>
+    <li><a class="internal-link" href="/wiki">Digital Garden</a></li>
+    <li><a class="internal-link" href="/blog">Blog-EN</a></li>
+    <li><a class="internal-link" href="https://brunch.co.kr/@kimba">Blog-KR</a></li>
+  </ul>
+</nav>
+      
+
+
   <div class="wrapper">
     <main><section>
   <h1>Archive</h1>
@@ -83,266 +85,6 @@ This is my first note of this website. This webs...</p></li>
 </ul>
 
 </section>
-<section><p>Here are all the notes in this garden, along with their links, visualized as a graph.</p><script src="/assets/js/d3.min.js" crossorigin="anonymous"></script>
-
-<div id="graph-wrapper">
-	<script>
-		const MINIMAL_NODE_SIZE = 8;
-		const MAX_NODE_SIZE = 12;
-		const ACTIVE_RADIUS_FACTOR = 1.5;
-		const STROKE = 1;
-		const FONT_SIZE = 16;
-		const TICKS = 200;
-		const FONT_BASELINE = 40;
-		const MAX_LABEL_LENGTH = 50;
-
-		const graphData = {"edges":[],"nodes":[{"id":"8410199104328311697991073284101115116","path":"/notes/TechStackTest.html","label":"Tech Stack Test"},{"id":"236149136235133149237149152236132184236154148","path":"/notes/TestingKorean.html","label":"안녕하세요"},{"id":"6598111117116321161041051153211297103101","path":"/about-this-page.html","label":"About this page"}]}
-		let nodesData = graphData.nodes;
-		let linksData = graphData.edges;
-
-		const nodeSize = {};
-
-		const updateNodeSize = () => {
-			nodesData.forEach((el) => {
-				let weight =
-					3 *
-					Math.sqrt(
-						linksData.filter((l) => l.source === el.id || l.target === el.id)
-						.length + 1
-					);
-				if (weight < MINIMAL_NODE_SIZE) {
-					weight = MINIMAL_NODE_SIZE;
-				} else if (weight > MAX_NODE_SIZE) {
-					weight = MAX_NODE_SIZE;
-				}
-				nodeSize[el.id] = weight;
-			});
-		};
-
-		const onClick = (d) => {
-			window.location = d.path
-		};
-
-		const onMouseover = function (d) {
-			const relatedNodesSet = new Set();
-			linksData
-				.filter((n) => n.target.id == d.id || n.source.id == d.id)
-				.forEach((n) => {
-					relatedNodesSet.add(n.target.id);
-					relatedNodesSet.add(n.source.id);
-				});
-
-			node.attr("class", (node_d) => {
-				if (node_d.id !== d.id && !relatedNodesSet.has(node_d.id)) {
-					return "inactive";
-				}
-				return "";
-			});
-
-			link.attr("class", (link_d) => {
-				if (link_d.source.id !== d.id && link_d.target.id !== d.id) {
-					return "inactive";
-				}
-				return "";
-			});
-
-			link.attr("stroke-width", (link_d) => {
-				if (link_d.source.id === d.id || link_d.target.id === d.id) {
-					return STROKE * 4;
-				}
-				return STROKE;
-			});
-			text.attr("class", (text_d) => {
-				if (text_d.id !== d.id && !relatedNodesSet.has(text_d.id)) {
-					return "inactive";
-				}
-				return "";
-			});
-		};
-
-		const onMouseout = function (d) {
-			node.attr("class", "");
-			link.attr("class", "");
-			text.attr("class", "");
-			link.attr("stroke-width", STROKE);
-		};
-
-		const sameNodes = (previous, next) => {
-			if (next.length !== previous.length) {
-				return false;
-			}
-
-			const map = new Map();
-			for (const node of previous) {
-				map.set(node.id, node.label);
-			}
-
-			for (const node of next) {
-				const found = map.get(node.id);
-				if (!found || found !== node.title) {
-					return false;
-				}
-			}
-
-			return true;
-		};
-
-		const sameEdges = (previous, next) => {
-			if (next.length !== previous.length) {
-				return false;
-			}
-
-			const set = new Set();
-			for (const edge of previous) {
-				set.add(`${edge.source.id}-${edge.target.id}`);
-			}
-
-			for (const edge of next) {
-				if (!set.has(`${edge.source}-${edge.target}`)) {
-					return false;
-				}
-			}
-
-			return true;
-		};
-
-		const graphWrapper = document.getElementById('graph-wrapper')
-		const element = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-		element.setAttribute("width", graphWrapper.getBoundingClientRect().width);
-		element.setAttribute("height", window.innerHeight * 0.8);
-		graphWrapper.appendChild(element);
-
-		const reportWindowSize = () => {
-			element.setAttribute("width", window.innerWidth);
-			element.setAttribute("height", window.innerHeight);
-		};
-
-		window.onresize = reportWindowSize;
-
-		const svg = d3.select("svg");
-		const width = Number(svg.attr("width"));
-		const height = Number(svg.attr("height"));
-		let zoomLevel = 1;
-
-		const simulation = d3
-			.forceSimulation(nodesData)
-			.force("forceX", d3.forceX().x(width / 2))
-			.force("forceY", d3.forceY().y(height / 2))
-			.force("charge", d3.forceManyBody())
-			.force(
-				"link",
-				d3
-				.forceLink(linksData)
-				.id((d) => d.id)
-				.distance(70)
-			)
-			.force("center", d3.forceCenter(width / 2, height / 2))
-			.force("collision", d3.forceCollide().radius(80))
-			.stop();
-
-		const g = svg.append("g");
-		let link = g.append("g").attr("class", "links").selectAll(".link");
-		let node = g.append("g").attr("class", "nodes").selectAll(".node");
-		let text = g.append("g").attr("class", "text").selectAll(".text");
-
-		const resize = () => {
-			if (d3.event) {
-				const scale = d3.event.transform;
-				zoomLevel = scale.k;
-				g.attr("transform", scale);
-			}
-
-			const zoomOrKeep = (value) => (zoomLevel >= 1 ? value / zoomLevel : value);
-
-			const font = Math.max(Math.round(zoomOrKeep(FONT_SIZE)), 1);
-
-			text.attr("font-size", (d) => font);
-			text.attr("y", (d) => d.y - zoomOrKeep(FONT_BASELINE) + 8);
-			link.attr("stroke-width", zoomOrKeep(STROKE));
-			node.attr("r", (d) => {
-				return zoomOrKeep(nodeSize[d.id]);
-			});
-			svg
-				.selectAll("circle")
-				.filter((_d, i, nodes) => d3.select(nodes[i]).attr("active"))
-				.attr("r", (d) => zoomOrKeep(ACTIVE_RADIUS_FACTOR * nodeSize[d.id]));
-		};
-
-		const ticked = () => {
-			node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
-			text
-				.attr("x", (d) => d.x)
-				.attr("y", (d) => d.y - (FONT_BASELINE - nodeSize[d.id]) / zoomLevel);
-			link
-				.attr("x1", (d) => d.source.x)
-				.attr("y1", (d) => d.source.y)
-				.attr("x2", (d) => d.target.x)
-				.attr("y2", (d) => d.target.y);
-		};
-
-		const restart = () => {
-			updateNodeSize();
-			node = node.data(nodesData, (d) => d.id);
-			node.exit().remove();
-			node = node
-				.enter()
-				.append("circle")
-				.attr("r", (d) => {
-					return nodeSize[d.id];
-				})
-				.on("click", onClick)
-				.on("mouseover", onMouseover)
-				.on("mouseout", onMouseout)
-				.merge(node);
-
-			link = link.data(linksData, (d) => `${d.source.id}-${d.target.id}`);
-			link.exit().remove();
-			link = link.enter().append("line").attr("stroke-width", STROKE).merge(link);
-
-			text = text.data(nodesData, (d) => d.label);
-			text.exit().remove();
-			text = text
-				.enter()
-				.append("text")
-				.text((d) => shorten(d.label.replace(/_*/g, ""), MAX_LABEL_LENGTH))
-				.attr("font-size", `${FONT_SIZE}px`)
-				.attr("text-anchor", "middle")
-				.attr("alignment-baseline", "central")
-				.on("click", onClick)
-				.on("mouseover", onMouseover)
-				.on("mouseout", onMouseout)
-				.merge(text);
-
-			node.attr("active", (d) => isCurrentPath(d.path) ? true : null);
-			text.attr("active", (d) => isCurrentPath(d.path) ? true : null);
-
-			simulation.nodes(nodesData);
-			simulation.force("link").links(linksData);
-			simulation.alpha(1).restart();
-			simulation.stop();
-
-			for (let i = 0; i < TICKS; i++) {
-				simulation.tick();
-			}
-
-			ticked();
-		};
-
-		const zoomHandler = d3.zoom().scaleExtent([0.2, 3]).on("zoom", resize);
-
-		zoomHandler(svg);
-		restart();
-
-		function isCurrentPath(notePath) {
-			return window.location.pathname.includes(notePath)
-		}
-
-		function shorten(str, maxLen, separator = ' ') {
-			if (str.length <= maxLen) return str;
-			return str.substr(0, str.lastIndexOf(separator, maxLen)) + '...';
-		}
-	</script>
-</div></section>
 </main>
     <footer><p>This is the footer. Here's the <a class="internal-link" href="/about.html">About</a> page and the <a class="internal-link" href="/archive.html">Archive</a>.</p></footer>
   </div>
