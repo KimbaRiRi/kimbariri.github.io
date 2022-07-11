@@ -4,8 +4,9 @@ class WikiImages < Jekyll::Generator
 
     all_notes = site.collections['notes'].docs
     all_pages = site.collections['pages'].docs
+    all_posts = site.collections['posts'].docs
 
-    all_docs = all_notes + all_pages
+    all_docs = all_notes + all_pages + all_posts
 
     all_docs.each do |current_note|
 

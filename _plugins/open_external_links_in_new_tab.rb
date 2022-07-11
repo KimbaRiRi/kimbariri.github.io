@@ -6,6 +6,7 @@ require 'nokogiri'
 
 Jekyll::Hooks.register [:notes], :post_convert do |doc|
   convert_links(doc)
+  next unless doc.path.start_with?('_notes/')
 end
 
 Jekyll::Hooks.register [:pages], :post_convert do |doc|

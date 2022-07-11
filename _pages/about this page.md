@@ -1,5 +1,6 @@
 ---
 title: About this page
+layout: page
 category: Get Started
 tags: CMS, personal, digital garden
 permalink: /about-this-page

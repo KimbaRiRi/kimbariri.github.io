@@ -2,6 +2,7 @@
 layout: page
 title: About
 favicon: 
+permalink: /about-me
 ---
 
 **Doing what I do best**- documenting every single random thoughts and inspirations.

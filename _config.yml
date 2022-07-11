@@ -36,6 +36,9 @@ collections:
   pages:
     output: true
     permalink: /pages/:title
+  posts:
+    output: true
+    permalink: /posts/:title
 
 defaults:
   - scope:
@@ -44,8 +47,16 @@ defaults:
       layout: "default"
   - scope:
       path: "_notes/**/*.md"
+      type: notes
     values:
       layout: "note"
+      content-type: notes
+  - scope:
+      path: "_posts/*.md"
+      type: posts
+    values:
+      layout: post
+      content-type: post
 
 # If you are using a host that cannot resolve URLs that do
 # not end with .html (such as Neocities or Dreamhost), set this to 'true'.

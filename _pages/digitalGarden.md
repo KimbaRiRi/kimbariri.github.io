@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Kimba.RiRi's Tremendous Repository of Knowledge, Opinions and Trivia
+permalink: /digital-garden
 favicon: 
 ---
 	<h1>{{ page.title }}</h1>

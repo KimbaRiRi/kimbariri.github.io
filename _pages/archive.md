@@ -2,6 +2,7 @@
 layout: page
 title: Archive
 favicon: 
+permalink: /archive
 ---
 <ul class="archive">
 {% for note in site.notes %}
