@@ -5,7 +5,11 @@
 <body>
   {% include nav.html %}
   <div class="wrapper">
-    <main>{{ content }}</main>
+    {%- if page.content-type == "notes" -%}
+    <main class="notes">{{ content }}</main>
+    {%- else -%}
+    <main class="container">{{ content }}</main>
+    {%- endif -%}
     <footer>{% include footer.html %}</footer>
   </div>
   {% include link-previews.html wrapperQuerySelector="content" %}

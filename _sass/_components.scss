@@ -1,4 +1,8 @@
 // Components
+/* Page Intro*/
+.intro {
+  
+}
 
 /* Footer */
 footer {
@@ -102,21 +106,31 @@ aside {
 }
 
 /* notes */
-#notes-entry-container,
-main {
+main.notes {
   display: grid;
   grid-gap: 2em;
   grid-template-columns: 3fr 1fr;
   grid-template-areas: "article aside"
 }
 
+section.graphs {
+  grid-column: 1 / -1;
+}
+
+
 /* Nav */
 nav {
+  margin-bottom: 2rem;
   ul {
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
     li {
-      display: inline;
-      margin-right: 20px;
+      flex-grow: 1;
+      text-transform: uppercase;
     }
   }
 }
@@ -150,4 +164,54 @@ div.highlight {
   overflow: scroll;
   margin: 1em 0;
   display: grid
+}
+
+
+/* Links */
+a {
+  transition: all 300ms;
+  font-weight: 600;
+  color: var(--heading-color);
+  border-bottom: 4px solid var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  transition: all 300ms;
+  background: var(--primary-color);
+}
+
+a::after {
+  font-size: 0.7em;
+  content: "";
+  color: var(--text-color-faded);
+  top: -0.5em;
+  position: relative;
+}
+
+/* Need to exclude a img arrow for external links eventually */
+a.external-link:after,
+a.footnote-backref:after {
+  content: "↗";
+}
+
+*:focus {
+  background: var(--primary-color);
+  color: black !important;
+}
+
+
+/* Tables in Markdown */
+table {
+  max-width: min-content;
+}
+
+table, table > * > * > * {
+  border: 1px solid var(--text-color-faded);
+  border-collapse: collapse;
+  color: var(--heading-color);
+}
+
+table th, table td {
+  padding: 0.25em 0.5em
 }
