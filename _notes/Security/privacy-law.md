@@ -1,9 +1,9 @@
 ---
 title: Privacy Policies
 layout: note
-category: security
-tags:
-language:
+category: Privacy
+tags: Privacy
+language: English
 favicon: 
 ---
 

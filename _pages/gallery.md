@@ -8,7 +8,6 @@ permalink: /gallery
 <div class="intro grid">
 	<div class="col">
 		<div class="figure">
-			Test
 		</div>
 	</div>
 	<div class="col">

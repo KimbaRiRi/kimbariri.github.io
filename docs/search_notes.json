@@ -5,7 +5,7 @@
       "title"    : "Marketing stack test",
       "url"      : "/notes/TechStackTest",
       "category" : "Martech",
-      "tags"     : "CMS,, personal,, digital, garden",
+      "tags"     : "CMS",
       "content"  : "Tech Stack Test"
 
     } ,
@@ -15,7 +15,7 @@
       "title"    : "Neuro Divergency",
       "url"      : "/notes/Neuro-Divergency",
       "category" : "Neuro Divergency",
-      "tags"     : "",
+      "tags"     : "ADHD",
       "content"  : "Privacy law testing"
 
     } ,
@@ -24,8 +24,8 @@
 
       "title"    : "Privacy Policies",
       "url"      : "/notes/privacy-law",
-      "category" : "security",
-      "tags"     : "",
+      "category" : "Privacy",
+      "tags"     : "Privacy",
       "content"  : "Privacy law testing"
 
     } ,
@@ -35,7 +35,7 @@
       "title"    : "안녕하세요",
       "url"      : "/notes/TestingKorean",
       "category" : "",
-      "tags"     : "",
+      "tags"     : "Korean",
       "content"  : "이게 진짜 되나?"
 
     } 

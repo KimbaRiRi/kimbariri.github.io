@@ -1,7 +1,8 @@
 ---
 title: Marketing stack test
 category: Martech
-tags: CMS, personal, digital garden
+language: English
+tags: CMS
 ---
 
 Tech Stack Test

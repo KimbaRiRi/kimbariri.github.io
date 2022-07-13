@@ -1,0 +1,65 @@
+---
+layout: page
+title: Kimbo's Tremendous Repository of Knowledge, Opinions, Notes, Inspirations, and Trivia
+permalink: /digital-garden
+favicon:
+---
+
+
+<article id="digitalgarden">
+	<div>
+		<p>Below are lists with every notes in this digital-garden. Each of notes has a tag. All notes are sorted by written language and tag word.</p>
+		<!-- Html Elements for Search -->
+		<div class="searchbar search-container sans">
+			<i aria-hidden="true" class="fa fa-search"></i>
+			<input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)"
+				placeholder="Search Enjoyment Work..." type="text" />
+			<label for="search-input"></label>
+			<ul id="results-container"></ul>
+		</div>
+	</div>
+	<div>
+		<div class="block" style="margin-top: 1%;">
+			<h2>Notes in English</h2>
+			{% assign tags =  site.notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
+			{% for tag in tags %}
+			{%- for note in site.notes -%}
+			{%- if note.tags contains tag and note.language == 'English' -%}
+			<h3 id="{{ tag }}">{{ tag | capitalize }}</h3>
+			<a href="{{note.url}}">{{ note.title }}</a>
+			{%- endif -%}
+			{%- endfor -%}
+			{%- endfor -%}
+		</div>
+
+		<div class="block" style="margin-top: 1%;">
+			<h2>Notes in Korean</h2>
+			{% assign tags =  site.notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
+			{% for tag in tags %}
+			{%- for note in site.notes -%}
+			{%- if note.tags contains tag and note.language == 'Korean' -%}
+			<h3 id="{{ tag }}">{{ tag | capitalize }}</h3>
+			<a href="{{note.url}}">{{ note.title }}</a>
+			{%- endif -%}
+			{%- endfor -%}
+			{%- endfor -%}
+		</div>
+	</div>
+</article>
+
+
+<p>Idea was inspired & referenced from <a href='https://tomcritchlow.com/wiki/'>Tom Critchlow's Digital
+		Garden</a> and StrikingLoo's <a href="https://github.com/StrikingLoo/strikingloo.github.io/">git repository</a></p>
+
+
+<!-- Script pointing to search-script.js -->
+<script src="/assets/js/simple-jekyll-search.min.js" type="text/javascript"></script>
+
+<!-- Configuration -->
+<script>
+	SimpleJekyllSearch({
+		searchInput: document.getElementById('search-input'),
+		resultsContainer: document.getElementById('results-container'),
+		json: '/search.json'
+	})
+</script>

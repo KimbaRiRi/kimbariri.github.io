@@ -334,6 +334,13 @@ section.graphs {
   grid-column: 1 / -1;
 }
 
+/* Wiki commands */
+.wiki-item {
+  display: inline-block;
+  margin: 3px;
+}
+
+
 /* Code blocks */
 code {
   background: var(--callout-background);
