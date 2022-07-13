@@ -19,6 +19,13 @@ This website is currently being hosted on Github. The reason is that:
 
 Originally, I was publishing my personal website with the Gatsby integrating with WordPress on headless CMS way. However, figuring out how incorporate the Gatsby way with WP API was too much hustles. If this was required by my work, I will do it (well because I am paid for it). For the personal website? That's too much. The consistent updates and checking the dependencies on node & npm version was exhausting me out as well. 
 
+## Why?
+Mostly for my own reference, but also because I'm learning Jekyll as I edit this template. I'm doing this as a
+replacement for my previous portfolio [Digital Spacy Cat](https://spacecat.surge.sh/) which was based in Gatsby and
+other micro blogs from Tumblr and medium. Markdown and Obsidian help me gather knowledge and thoughts, plus write better
+content, faster.
+
+
 ## The Journey has been so far...
 
 25 May 2022
