@@ -55,10 +55,14 @@ Quite tricky to make the wiki graph-related note hubs.
 ##### What I have done? 
 - Updated the nav menu. Now it has quite multiple selections. 
 - Built the digital garden page. It's a sorta wiki page type of architecture that is organised by tag words. 
-- Some of the styling improvements. 
+
+![[/notes/Screen Shot 2022-07-14 at 11.45.47 am.png]]
+
+- Some of the styling improvements.  
 - Changed all CSS structures into scss structures. 
 - Added extra page stylings for art presentation page and showcase of commercial projects.
-- 
+
+![[/notes/Screen Shot 2022-07-14 at 11.45.59 am.png]]
 
 ###### References 
 
@@ -84,7 +88,7 @@ Quite tricky to make the wiki graph-related note hubs.
 - [WIP] Implementing Adobe Target and Analytics
 - [WIP] Implementing Google Analytics, AdSense
 - [ ] Figure out how image link insertion from Obsidian won't break the localhost links
-- [ ] Making a blog page that shows the post journal sorted by written date.
+- [ ] Make a blog page that shows the post journal sorted by written date.
 
 
-** Do not bloody be nip-picky about the broken grammar and words. I am in dyslexia/dyspraxia spectrum. 
+** Do not bloody be nip-picky about the broken grammar and words. No grammar nagging, please. 
