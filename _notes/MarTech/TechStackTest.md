@@ -1,7 +1,8 @@
 ---
-title: Marketing stack test
+title: How does Target perform A/B testing?
 category: Martech
-tags: CMS, personal, digital garden
+language: English
+tags: Target
 ---
 
-Tech Stack Test
+This page will describe what the target is. 

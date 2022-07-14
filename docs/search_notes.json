@@ -2,41 +2,51 @@
   
     {
 
-      "title"    : "Marketing stack test",
+      "title"    : "Adobe Target 페이지의 오역부분",
+      "url"      : "/notes/Kor.AdobeTranslation",
+      "category" : "",
+      "tags"     : "Korean",
+      "content"  : "어도비 타겟 페이지의 한글어 번역의 오역된 부분에 대한 부가 설명."
+
+    } ,
+  
+    {
+
+      "title"    : "How does Target perform A/B testing?",
       "url"      : "/notes/TechStackTest",
       "category" : "Martech",
-      "tags"     : "CMS,, personal,, digital, garden",
-      "content"  : "Tech Stack Test"
+      "tags"     : "Target",
+      "content"  : "This page will describe what the target is."
 
     } ,
   
     {
 
-      "title"    : "Neuro Divergency",
+      "title"    : "My current Franken drumkit",
+      "url"      : "/notes/E-Drumming",
+      "category" : "music",
+      "tags"     : "drumming",
+      "content"  : "My Franken’s current status\nI name my drum as Franken from Frankenstein."
+
+    } ,
+  
+    {
+
+      "title"    : "ADHD accessibilities",
       "url"      : "/notes/Neuro-Divergency",
       "category" : "Neuro Divergency",
-      "tags"     : "",
-      "content"  : "Privacy law testing"
+      "tags"     : "Neurodivergent",
+      "content"  : "This post is about how neurodivergent struggles at work."
 
     } ,
   
     {
 
-      "title"    : "Privacy Policies",
+      "title"    : "Privacy Act. and GDPR",
       "url"      : "/notes/privacy-law",
-      "category" : "security",
-      "tags"     : "",
-      "content"  : "Privacy law testing"
-
-    } ,
-  
-    {
-
-      "title"    : "안녕하세요",
-      "url"      : "/notes/TestingKorean",
-      "category" : "",
-      "tags"     : "",
-      "content"  : "이게 진짜 되나?"
+      "category" : "Privacy",
+      "tags"     : "Privacy",
+      "content"  : "This page will talk about privacy policies, politics, and law."
 
     } 
   

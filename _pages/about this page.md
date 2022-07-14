@@ -7,7 +7,7 @@ permalink: /about-this-page
 ---
 
 ## Welcome!
-This is my first note of this website. This website is based from [Obsidian](https://help.obsidian.md/How+to/Internal+link) and Megumi's [Green Template](https://github.com/meewgumi/green-web-template). 
+This is my first note on this website. This website is based on [Obsidian](https://help.obsidian.md/How+to/Internal+link) and Megumi's [Green Template](https://github.com/meewgumi/green-web-template). 
 
 In terms of the conceptual structure, This spouting experience is heavily inspired by [Maggie's Digital Gardening Project](https://github.com/MaggieAppleton/digital-gardeners) and 기계인간 Machinery Human's [My Wiki with Vim](https://johngrib.github.io/wiki/my-wiki/). 
 
@@ -17,15 +17,22 @@ This website is currently being hosted on Github. The reason is that:
 2. As I am actively pushing my updates to my own Github, it just makes sense to deploy directly to Github. 
 3. I couldn't find any valid reason to deploy through **Netflify** or **Vercel**. I may consider it in future- I don't know. This whole **Obsidian** syncing to **Jekyll** thing is very experimental to me. 
 
-Originally, I was publishing my personal website with the Gatsby integrating with WordPress on headless CMS way. However, figuring out how incorporate the Gatsby way with WP API was too much hustles. If this was required by my work, I will do it (well because I am paid for it). For the personal website? That's too much. The consistent updates and checking the dependencies on node & npm version was exhausting me out as well. 
+Initially, I was publishing my personal website with the Gatsby integrating with WordPress on headless CMS way. However, there were too many hustles to figure out how to incorporate the Gatsby way with WP API. If my work requires this, I will do it (well, because I am paid for it). For the personal website? That's too much—the consistent updates and checking the dependencies on node & npm versions are also exhausting me. 
+
+## Why?
+Primarily for my reference, I'm learning Jekyll as I edit this template. I'm doing this as a
+replacement for my previous portfolio [Digital Spacy Cat](https://spacecat.surge.sh/) which was based on Gatsby and
+other microblogs from Tumblr and mediums. Markdown and Obsidian help me gather knowledge and thoughts, plus write better
+content, faster.
+
 
 ## The Journey has been so far...
 
-25 May 2022
+#### 25 May 2022
 
-It was really painstaking to fix the github deployment issue. Alongside the gem dependency installation conflicts to other dependencies, I couldn't figure it out why. 
+It was painstaking to fix the GitHub deployment issue. Alongside the gem dependency installation conflicts with other dependencies, I couldn't figure out why. 
 
-#### The solution was: 
+##### The solution was: 
 
 - Deleting all Jekyll Caches
 - Check the passage of your gem env with "gem env" "which ruby" "which gem"
@@ -37,9 +44,25 @@ It was really painstaking to fix the github deployment issue. Alongside the gem 
 - Removing Gemfile.lock
 - Re-do Bundle Install --verbose
 - JEKYLL_ENV=production bundle exec jekyll serve --trace
-- Not sure if this helped but .github-pages.yml setup might do something as well. (Refer to my branch)
+- Not sure if this helped, but .github-pages.yml setup might do something as well. (Refer to my branch)
 
-![[the initial workflow.jpeg]]
+![[/notes/the initial workflow.jpeg]]
+
+#### 14 July 2022
+
+Quite tricky to make the wiki graph-related note hubs. 
+
+##### What I have done? 
+- Updated the nav menu. Now it has quite multiple selections. 
+- Built the digital garden page. It's a sorta wiki page type of architecture that is organised by tag words. 
+
+![[/notes/Screen Shot 2022-07-14 at 11.45.47 am.png]]
+
+- Some of the styling improvements.  
+- Changed all CSS structures into scss structures. 
+- Added extra page stylings for art presentation page and showcase of commercial projects.
+
+![[/notes/Screen Shot 2022-07-14 at 11.45.59 am.png]]
 
 ###### References 
 
@@ -51,20 +74,21 @@ It was really painstaking to fix the github deployment issue. Alongside the gem 
 
 
 ## Next Milestone is...
-- [x] Start migrating css to scss format
-- [WIP] Add 2nd post
-- [ ] Start migrating all js within html pages and markdowns within organised folder structures
-- [ ] Configure the Obsidian redirect link into based on the folder structure
-- [ ] Adding Search Option
-- [ ] Figuring out the Wiki stacks within this website
+- [x] Start migrating CSS to scss format
+- [x] Add 2nd post placeholders
+- [WIP] Start migrating all js within HTML pages and markdowns within organised folder structures.
+- [WIP] Configure the Obsidian redirect link based on the folder structure
+- [Done but needs to be improved] Adding Search Option
+- [x] Figuring out the Wiki stacks within this website
+- [x] Construct a page that shows sorted notes based on the tag word
 - [ ] Add a comments plugin (Disqus)
-- [ ] Install a remote theme
-- [ ] Learn how to add gists to the posts
-- [ ] Add reading time to posts
-- [ ] Install a plugin to speed up post creation (jekyll-compose)
-- [ ] Try out the static comments option
-- [ ] Implementing Google Analytics, AdSense, Adobe Cloud for personal research interest. (I mean, I have a career at this field so it will happen for experimental case studies.)
-- [ ] Building(or Setup if I can find the project repo) a TypeScript NPM to integrate Grammarly API with Obsidian
+- [WIP] Brushing up the Gallery and Showcase pages
+- [WIP] Brushing up styles on the Digital Garden page along with the search bar
+- [ ] Changing nav menu to Hamburg bar when it goes to the mobile page.
+- [WIP] Implementing Adobe Target and Analytics
+- [WIP] Implementing Google Analytics, AdSense
+- [ ] Figure out how image link insertion from Obsidian won't break the localhost links
+- [ ] Make a blog page that shows the post journal sorted by written date.
 
 
-** Do not bloody be nip-picky about the broken grammar and words. I am in dyslexia/dyspraxia spectrum. 
+** Do not bloody be nip-picky about the broken grammar and words. No grammar nagging, please. 

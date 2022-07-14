@@ -4,11 +4,11 @@ body {
   font-family: $font-family;
   margin: 0 auto;
   line-height: 1.7;
-  padding: 4vh 6vw;
+  padding: 3vh 5vw;
   overflow-x: hidden;
   color: $color-text;
   font-size: 1rem;
-  max-width: 63em;
+  max-width: 65em;
   background-color: $backgroundColor;
   font-feature-settings: 'calt', 'liga', 'onum', 'pnum';
   text-rendering: optimizeLegibility;
@@ -24,10 +24,60 @@ body {
   }
 }
 
-*:focus {
-  background: #ffe8bc !important;
-  color: black !important;
+/* Layout */
+// main {
+//   display: grid;
+//   grid-gap: 2em;
+//   grid-template-columns: 3fr 1fr;
+//   grid-template-areas: "article aside"
+// }
+
+// section {
+//   grid-column: 1 / -1;
+// }
+
+.container {
+  position: relative;
+
+  max-width: var(--content-width);
+  margin: 0 auto;
+  padding: 0 var(--unit-half);
+
+  &.slim {
+    max-width: 650px;
+  }
 }
+
+.grid {
+  display: flex;
+  flex-flow: wrap;
+}
+
+.col {
+  margin-right: var(--unit);
+
+  @include small {
+    margin-right: 0;
+    flex: 0 0 100%;
+  }
+
+  flex: 0 0 calc(50% - var(--unit-half));
+
+  &:nth-child(2) {
+    margin-right: 0;
+  }
+}
+
+/* Pages default*/
+article {
+  position: relative;
+  overflow: auto;
+  & > div {
+    display: flex;
+    flex-flow: row wrap;
+  }
+}
+
 
 // Global elements
 img {
@@ -62,83 +112,74 @@ strong, b {
   color: var(--heading-color);
 }
 
-/* Links */
-a {
-  transition: all 300ms;
-  font-weight: 600;
-  color: var(--heading-color);
-  border-bottom: 4px solid var(--primary-color);
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  transition: all 300ms;
-  background: var(--primary-color);
-}
-
-a::after {
-  font-size: 0.7em;
-  content: "↗";
-  color: var(--text-color-faded);
-  top: -0.5em;
-  position: relative;
-}
-
-/* Need to exclude a img arrow for external links eventually */
-a.internal-link:after,
-a.footnote-backref:after {
-  content: "";
-}
-
-*:focus {
-  background: var(--primary-color);
-}
-
-/* Tables in Markdown */
-table {
-  max-width: min-content;
-}
-
-table, table > * > * > * {
-  border: 1px solid var(--text-color-faded);
-  border-collapse: collapse;
-  color: var(--heading-color);
-}
-
-table th, table td {
-  padding: 0.25em 0.5em
-}
-/* Layout */
-
-.container {
-  position: relative;
-
-  max-width: var(--content-width);
-  margin: 0 auto;
-  padding: 0 var(--unit-half);
-
-  &.slim {
-    max-width: 650px;
-  }
-}
-
-.grid {
-  display: flex;
-  flex-flow: wrap;
-}
-
-.col {
-  margin-right: var(--unit);
+/* default content block */
+.block {
+  max-width: calc(50% - var(--unit-half));
+  margin-bottom: var(--unit-double);
 
   @include small {
-    margin-right: 0;
-
-    flex: 0 0 100%;
+    max-width: 100%;
+    flex-shrink: 0;
   }
 
-  flex: 0 0 calc(50% - var(--unit-half));
+  flex: 1 1 100%;
 
-  &:nth-child(2) {
-    margin-right: 0;
+  &.pull {
+    margin-bottom: var(--unit);
+  }
+
+  &.mobile-pull {
+    @include small {
+      margin-bottom: var(--unit);
+    }
+  }
+
+  &.center {
+    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    flex-shrink: 0;
+
+    @include small {
+      text-align: left;
+    }
+  }
+
+  &.full {
+    width: 100%;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    flex-shrink: 0;
+  }
+
+  &.right {
+    margin-left: auto;
+  }
+
+  &.vc {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+  }
+
+  p {
+    padding-right: var(--unit-half);
+    & + h3 {
+      margin-top: var(--unit-double);
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 }

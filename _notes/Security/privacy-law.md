@@ -1,10 +1,10 @@
 ---
-title: Privacy Policies
+title: Privacy Act. and GDPR
 layout: note
-category: security
-tags:
-language:
+category: Privacy
+tags: Privacy
+language: English
 favicon: 
 ---
 
-Privacy law testing
+This page will talk about privacy policies, politics, and law. 
