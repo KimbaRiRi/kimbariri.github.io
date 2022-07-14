@@ -1,11 +1,11 @@
 ---
-title: Neuro Divergency
+title: ADHD accessibilities
 layout: note
 category: Neuro Divergency
 date: [[2022-07-11]]
-tags: ADHD
+tags: Neurodivergent
 language: English
 favicon: 
 ---
 
-Privacy law testing
+This post is about how neurodivergent struggles at work.

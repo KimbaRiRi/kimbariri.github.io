@@ -8,7 +8,8 @@ permalink: /sideproject
 <article id="sideproject">
 	<div>
 		<div class="block" style="margin-top: 1%;">
-			<h3>Mini code showcases on codepen.</h3>
+		This page is currently under the construction.
+			<!-- <h3>Mini code showcases on codepen.</h3>
 			<p>I regulary doodle codes here. More actively updated than my github. I love codepen. I regulary post my
 				processing, animations, simple JS apps, and media API stuff.</p>
 			<p><a href="https://codepen.io/space-cat/pens/public/">Check it out</a></p>
@@ -26,7 +27,7 @@ permalink: /sideproject
 				yet so will present them later.</p>
 			<h3>Axis drawings of generative arts</h3>
 			<p>My partner just bought axis-drawing robot arm, and we are currently figuring out to convert SVG into robot arm
-				drawing format. The updates will be posted on my blog.</p>
+				drawing format. The updates will be posted on my blog.</p> -->
 		</div>
 	</div>
 </article>

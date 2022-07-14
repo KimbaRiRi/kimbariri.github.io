@@ -1,8 +1,7 @@
 ---
 title: 
 layout: note
-category: 
-date:
+category:
 description:
 tags:
 language:

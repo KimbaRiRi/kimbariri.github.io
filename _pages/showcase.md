@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Showcase of Projects I am involved in
+title: Showcase of Projects I worked
 favicon:
 permalink: /showcase
 ---
@@ -8,17 +8,29 @@ permalink: /showcase
 <div class="intro grid">
 	<div class="col">
 		<div class="figure">
+		<img src= "/assets/images/spacecat.jpg"/>
 		</div>
 	</div>
 	<div class="col">
 		<div class="meta">
 			<div class="title">
 				<div class="title">
-					<h2>Showcase Title.</h2>
+					<h2>Commercial Projects(Web)</h2>
 				</div>
 			</div>
 			<div class="summary">
-				<p>Showcase summary</p>
+				<p>I have been working for digital banks, government-sponsored events, commercial platform, brand promotion, and so on.</p>
+				<p>On those development projects, those are stacks that I work with: </p>
+				<ul>
+					<li>JavaScript(TypeScript/GSAP/jQuery/React/Preact/Vue)</li>
+					<li>WebPack/Gulp</li>
+					<li>CSS3/SCSS</li>
+					<li>SEO-friendly Semantic Structure</li>
+					<li>Analytics Integration</li>
+					<li>Development Process Improvement</li>
+					<li>Technical Compliance Review</li>
+					<li>Functional Requirements/Context Documentation</li>
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -31,7 +43,7 @@ permalink: /showcase
 						<h2>Macquarie - Wealth Contents</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div></div><img />
+								<div>** This page is currently under the construction.</div><img />
 							</div>
 						</div>
 					</div>
