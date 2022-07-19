@@ -13,6 +13,7 @@ destination:        docs
 
 # Build settings
 plugins:
+  - jekyll-redirect-from  
   - jekyll-last-modified-at
 
 # markdown: kramdown

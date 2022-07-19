@@ -10,4 +10,6 @@ favicon:
 
 ## My Franken's current status
 
-I name my drum as Franken from Frankenstein. 
+I name my drum Franken from Frankenstein. 
+
+I found learning drumming is somehow linked to [[fencing]]

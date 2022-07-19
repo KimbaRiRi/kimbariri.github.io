@@ -10,9 +10,9 @@
   
     {
 
-      "title"    : "Testing Post",
-      "url"      : "/posts/testingPost",
-      "content"  : "Post 1"
+      "title"    : "Testing Post 1",
+      "url"      : "/posts/testingPost1",
+      "content"  : "Post 1\nLink to 2022-07-19-testingPost2"
 
     },
   
@@ -22,7 +22,7 @@
 
       "title"    : "My current Franken drumkit",
       "url"      : "/notes/E-Drumming",
-      "content"  : "My Franken’s current statusI name my drum as Franken from Frankenstein."
+      "content"  : "My Franken’s current statusI name my drum Franken from Frankenstein.I found learning drumming is somehow linked to fencing"
 
     },
   
