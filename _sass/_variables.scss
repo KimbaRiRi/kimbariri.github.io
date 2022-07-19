@@ -8,9 +8,14 @@
   --heading-color: rgb(29, 31, 32);
   --text-color: rgba(29, 31, 32, .85);
   --text-color-faded: rgb(29, 31, 32, 0.5);
+  --text-color-blue: #10284b;
   --primary-color: rgb(156, 213, 56);
-  --background-color: rgba(156, 213, 56, .15);
+  --background-color-greenish: rgba(156, 213, 56, .15);
+  --background-color-bonebase:  #f3f2fc;
+  --subprimary-color: rgb(153, 214, 204);
   --callout-background: rgba(156, 213, 56, .08);
+  --color-button-primary: #381fd1;
+  --color-sea-blue: #04A5BB;
   --primary-font: "Inter Variable", "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
   --heading-font: "Wremena", "Times", "Times New Roman", serif;
   /* Set headings to large size by increasing :root em font size */
@@ -27,7 +32,6 @@
   --content-width: 1140px;
 }
 
-$backgroundColor: rgba(156, 213, 56, .15);
 $color-text: hsl(0, 0%, 20%);
 $font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 

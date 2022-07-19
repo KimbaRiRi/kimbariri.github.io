@@ -8,14 +8,14 @@ permalink: /showcase
 <div class="intro grid">
 	<div class="col">
 		<div class="figure">
-		<img src= "/assets/images/spacecat.jpg"/>
+		<img src= "/assets/images/mydrawings/munch.jpg"/>
 		</div>
 	</div>
 	<div class="col">
 		<div class="meta">
 			<div class="title">
 				<div class="title">
-					<h2>Commercial Projects(Web)</h2>
+					<h2>Commercial Projects <br/>- UI Development/MarTech</h2>
 				</div>
 			</div>
 			<div class="summary">
@@ -38,75 +38,75 @@ permalink: /showcase
 <div id="showcase" class="posts">
 	<div class="grid">
 		<div class="col">
-			<div class="post"><a href="/work/macquarie">
+			<div class="post"><a href="/pages/macquarie">
 					<div class="cover">
 						<h2>Macquarie - Wealth Contents</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div>** This page is currently under the construction.</div><img />
+								<div></div><img src= "/assets/images/work/macquarie/macquarie-thumb.png" />
 							</div>
 						</div>
 					</div>
 				</a></div>
-			<div class="post"><a href="/work/gcc2018">
+				<div class="post"><a href="/pages/sample">
 					<div class="cover">
-						<h2>Gold Coast Commonwealth Game 2018</h2>
+						<h2>This page is WIP</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div></div><img />
+								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
 							</div>
 						</div>
 					</div>
 				</a></div>
-			<div class="post"><a href="/work/tourismoz">
+				<div class="post"><a href="/pages/sample">
 					<div class="cover">
-						<h2>Tourism Australia</h2>
+						<h2>This page is WIP</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div></div><img />
+								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
 							</div>
 						</div>
 					</div>
 				</a></div>
 		</div>
+		<!--  Right Columns !-->
 		<div class="col">
-			<div class="post"><a href="/work/bcsonline">
+		<div class="post"><a href="/work/tourismoz">
 					<div class="cover">
-						<h2>BCS online</h2>
+						<h2>Tourism Australia</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div></div><img />
+								<div></div><img src="/assets/images/work/tourismoz/landing.png"/>
 							</div>
 						</div>
 					</div>
 				</a></div>
-			<div class="post"><a href="/work/yranz">
+		<div class="post"><a href="/pages/sample">
 					<div class="cover">
-						<h2>YR Brand</h2>
+						<h2>This page is WIP</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div></div><img />
+								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
 							</div>
 						</div>
 					</div>
 				</a></div>
-			<div class="post"><a href="/work/carsguide">
+			<div class="post"><a href="/pages/sample">
 					<div class="cover">
-						<h2>Carsguide.com.au</h2>
+						<h2>This page is WIP</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div></div><img />
+								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
 							</div>
 						</div>
 					</div>
 				</a></div>
-			<div class="post"><a href="/work/hcfquiz">
+			<div class="post"><a href="/pages/sample">
 					<div class="cover">
-						<h2>HCF intelligence challenge quiz app</h2>
+						<h2>This page is WIP</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div></div>
-								<img />
+								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
 							</div>
 						</div>
 					</div>

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Testing Post
+title: Testing Post 2
 favicon: 
 ---
 
-Post 1
+Post 2

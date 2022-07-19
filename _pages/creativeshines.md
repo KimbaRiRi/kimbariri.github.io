@@ -1,25 +1,26 @@
 ---
 layout: page
 title: Where my creativity shines
-favicon: 
-permalink: /gallery
+favicon:
+permalink: /showmustgoon
 ---
 
 <div class="intro grid">
 	<div class="col">
 		<div class="figure">
-		<img src= "/assets/images/boys-in-flowers.jpg"/>
+		<img src= "/assets/images/mydrawings/munch.jpg"/>
 		</div>
 	</div>
 	<div class="col">
 		<div class="meta">
 			<div class="title">
 				<div class="title">
-					<h2>Comics/Drawing</h2>
+					<h2>Visual Arts/Comics/Music Producing</h2>
 				</div>
 			</div>
 			<div class="summary">
-				<p>You may laugh about it, but I still dream of being a mangaka/artist(만화가 or 웹툰작가/예술가)</p>
+				<em><b>**I am still recovering my note and images relating to this page content.</b></em>
+				<p>You may laugh about it, but I still dream of being an artist.</p>
 			</div>
 		</div>
 	</div>
@@ -27,23 +28,25 @@ permalink: /gallery
 <div id="showcase" class="posts">
 	<div class="grid">
 		<div class="col">
-			<div class="post"><a href="/work/macquarie">
+			<div class="post"><a href="/pages/sample">
 					<div class="cover">
-						<h2>Showcase 1</h2>
+						<h2>This page is WIP</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div>**This page is under the construction.</div><img />
+								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
 							</div>
 						</div>
 					</div>
 				</a></div>
+		</div>
+		<!--  Right Columns !-->
 		<div class="col">
-			<div class="post"><a href="/work/bcsonline">
+		<div class="post"><a href="/pages/sample">
 					<div class="cover">
-						<h2>Showcase 2</h2>
+						<h2>This page is WIP</h2>
 						<div class="image-outer-wrapper">
 							<div class="image-wrapper">
-								<div></div><img />
+								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
 							</div>
 						</div>
 					</div>

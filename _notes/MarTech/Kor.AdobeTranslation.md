@@ -1,7 +1,7 @@
 ---
 title: Adobe Target 페이지의 오역부분
 layout: note
-tags: Korean
+tags: 마케팅테크
 language: Korean
 ---
 

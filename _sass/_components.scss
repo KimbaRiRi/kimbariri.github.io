@@ -30,14 +30,17 @@ nav {
   @include small {
     margin-bottom: var(--unit);
     padding-top: calc(48px + var(--unit-double));
+
     &.grid {
       flex-flow: column-reverse;
     }
   }
+
   .title {
     @include small {
       margin-bottom: var(--unit-half);
     }
+
     flex: 1 1 100%;
   }
 
@@ -56,12 +59,14 @@ nav {
     flex-flow: wrap;
     height: 100%;
   }
+
   figure {
     position: relative;
     width: 100%;
     margin: 0;
     text-align: center;
     color: var(--meta-color);
+
     &:hover .link {
       opacity: 1;
     }
@@ -88,7 +93,7 @@ nav {
     }
 
     &.frame {
-      .gatsby-image-outer-wrapper:before {
+      .image-outer-wrapper:before {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -99,6 +104,7 @@ nav {
         z-index: 2;
       }
     }
+
     .link {
       position: absolute;
       z-index: 1;
@@ -111,7 +117,8 @@ nav {
     img {
       max-width: calc(50% - var(--unit));
     }
-        @include small {
+
+    @include small {
       min-height: 150px;
       margin-top: var(--unit);
     }
@@ -135,9 +142,30 @@ nav {
   }
 }
 
-/* Gallery Tiles */
+/* Post Tiles */
+
+
+.post {
+  position: relative;
+  margin-bottom: var(--unit);
+  transition: 0.2s transform cubic-bezier(0.19, 1, 0.22, 1);
+
+  &:hover .cover .image-outer-wrapper {
+    transform: scale(1.05);
+
+    @include small {
+      transform: scale(1);
+    }
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
 .post:hover .cover:after {
   background-color: rgba(#191c1e, 0.85);
+
   @include small {
     background-color: rgba(#000, 0);
   }
@@ -167,14 +195,15 @@ nav {
   overflow: hidden;
   transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
+
   h2 {
     position: absolute;
     z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 65%;
     margin: 0;
     padding: var(--unit);
     transition: 1s transform cubic-bezier(0.19, 1, 0.22, 1), 1s opacity cubic-bezier(0.19, 1, 0.22, 1);
@@ -183,6 +212,11 @@ nav {
     opacity: 0;
     color: #fff;
     text-shadow: 0 0 40px rgba(#000, 0.1);
+
+    @include medium {
+      width: 70%;
+      height: 50%;
+    }
   }
 
   &:after {
@@ -198,29 +232,12 @@ nav {
     background-color: rgba(0, 0, 0, 0);
     box-shadow: inset 0 0 0 0 #fff;
   }
+
   .image-outer-wrapper {
     z-index: 0;
     position: relative;
     transition: 1s transform cubic-bezier(0.19, 1, 0.22, 1);
   }
-}
-
-/* image tile wrapper */
-.image-wrapper img[src^='data:image'] {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-  filter: blur(30px);
-  transform: scale(1.1);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  transition: opacity 0.5s ease 0.25s;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
 }
 
 /* Footer */
@@ -308,6 +325,38 @@ section.callout {
   margin: 1em 0;
 }
 
+
+/* Search box */
+
+.searchbar {
+  flex: 0 0 auto;
+  vertical-align: top;
+  display: inline-block;
+  position: relative;
+  margin-right: 1rem;
+  #search-input {
+    cursor: text;
+    width: 15rem;
+    height: 3rem;
+    color: #4e6e8e;
+    display: inline-block;
+    border: 1px solid #cfd4db;
+    border-radius: 2rem;
+    font-size: .9rem;
+    line-height: 2rem;
+    padding: 0 0.5rem 0 1rem;
+    outline: none;
+    transition: all .2s ease;
+    background: #fff 0.6rem 0.5rem no-repeat;
+    background-size: 2rem;
+    white-space: nowrap;
+  }
+}
+
+#results-container {
+  list-style: lower-greek;
+}
+
 /* Backlink box */
 aside {
   display: grid;
@@ -370,52 +419,4 @@ div.highlight {
   overflow: scroll;
   margin: 1em 0;
   display: grid
-}
-/* Links */
-a {
-  transition: all 300ms;
-  font-weight: 600;
-  color: var(--heading-color);
-  border-bottom: 4px solid var(--primary-color);
-  text-decoration: none;
-}
-
-a:hover,
-a:focus {
-  transition: all 300ms;
-  background: var(--primary-color);
-}
-
-a::after {
-  font-size: 0.7em;
-  content: "";
-  color: var(--text-color-faded);
-  top: -0.5em;
-  position: relative;
-}
-
-/* Need to exclude a img arrow for external links eventually */
-a.external-link:after,
-a.footnote-backref:after {
-  content: "↗";
-}
-
-*:focus {
-  background: var(--primary-color);
-  color: black !important;
-}
-
-/* Tables in Markdown */
-table {
-  max-width: min-content;
-}
-
-table,table>*>*>* {
-  border: 1px solid var(--text-color-faded);
-  border-collapse: collapse;
-  color: var(--heading-color);
-}
-
-table th, table td {
-  padding: 0.25em 0.5em
 }

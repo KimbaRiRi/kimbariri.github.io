@@ -8,7 +8,7 @@ permalink: /about-me
 <div class="intro grid">
 	<div class="col">
 		<div class="figure">
-			<img src= "/assets/images/spacecat.jpg"/>
+			<img src= "/assets/images/mydrawings/josh.jpg"/>
 		</div>
 	</div>
 	<div class="col">

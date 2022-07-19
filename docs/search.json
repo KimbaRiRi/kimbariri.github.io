@@ -2,13 +2,37 @@
   
     {
 
+      "title"    : "Testing Post 2",
+      "url"      : "/posts/testingPost2",
+      "content"  : "Post 2"
+
+    },
+  
+    {
+
       "title"    : "Testing Post",
       "url"      : "/posts/testingPost",
-      "content"  : "Post"
+      "content"  : "Post 1"
 
     },
   
 
+  
+    {
+
+      "title"    : "My current Franken drumkit",
+      "url"      : "/notes/E-Drumming",
+      "content"  : "My Franken’s current statusI name my drum as Franken from Frankenstein."
+
+    },
+  
+    {
+
+      "title"    : "What I learnt from Fencing",
+      "url"      : "/notes/fencing",
+      "content"  : "Sabre - FencingAll I found is that Fencing may not be a ND-friendly sport."
+
+    },
   
     {
 
@@ -28,17 +52,9 @@
   
     {
 
-      "title"    : "My current Franken drumkit",
-      "url"      : "/notes/E-Drumming",
-      "content"  : "My Franken’s current statusI name my drum as Franken from Frankenstein."
-
-    },
-  
-    {
-
-      "title"    : "ADHD accessibilities",
-      "url"      : "/notes/Neuro-Divergency",
-      "content"  : "This post is about how neurodivergent struggles at work."
+      "title"    : "ADHD/ASD accomodations",
+      "url"      : "/notes/Neurodivergency",
+      "content"  : "This post is about how neurodivergent struggles at work or school and what support they may need."
 
     },
   
