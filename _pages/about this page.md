@@ -1,15 +1,17 @@
 ---
 title: About this page
 layout: page
-category: Get Started
-tags: CMS, personal, digital garden
+category: Web Development
+tags: CMS
 permalink: /about-this-page
+language: English
+favicon: 
 ---
 
 ## Welcome!
-This is my first note on this website. This website is based on [Obsidian](https://help.obsidian.md/How+to/Internal+link) and Megumi's [Green Template](https://github.com/meewgumi/green-web-template). 
+This is my first note on this website. This website is based on <a href="https://help.obsidian.md/How+to/Internal+link" target="_blank">Obsidian</a> and Megumi's <a  href="https://github.com/meewgumi/green-web-template" target="_blank">Green Template</a>. 
 
-In terms of the conceptual structure, This spouting experience is heavily inspired by [Maggie's Digital Gardening Project](https://github.com/MaggieAppleton/digital-gardeners) and 기계인간 Machinery Human's [My Wiki with Vim](https://johngrib.github.io/wiki/my-wiki/). 
+In terms of the conceptual structure, This spouting experience is heavily inspired by <a href="https://github.com/MaggieAppleton/digital-gardeners" target="_blank">Maggie's Digital Gardening Project</a> and 기계인간 Machinery Human's <a href="https://johngrib.github.io/wiki/my-wiki/" target="_blank">My Wiki with Vim</a>. 
 
 This website is currently being hosted on Github. The reason is that: 
 
@@ -21,14 +23,12 @@ Initially, I was publishing my personal website with the Gatsby integrating with
 
 ## Why?
 Primarily for my reference, I'm learning Jekyll as I edit this template. I'm doing this as a
-replacement for my previous portfolio [Digital Spacy Cat](https://spacecat.surge.sh/) which was based on Gatsby and
-other microblogs from Tumblr and mediums. Markdown and Obsidian help me gather knowledge and thoughts, plus write better
-content, faster.
+replacement for my previous portfolio <a href="https://spacecat.surge.sh" target="_blank">Digital Space Cat</a>which was based on Gatsby and other microblogs from Tumblr and mediums. Markdown and Obsidian help me gather knowledge and thoughts, plus write better content, faster.
 
 
 ## The Journey has been so far...
 
-#### 25 May 2022
+##### 25 May 2022
 
 It was painstaking to fix the GitHub deployment issue. Alongside the gem dependency installation conflicts with other dependencies, I couldn't figure out why. 
 
@@ -48,23 +48,29 @@ It was painstaking to fix the GitHub deployment issue. Alongside the gem depende
 
 ![[/notes/the initial workflow.jpeg]]
 
-#### 14 July 2022
 
-Quite tricky to make the wiki graph-related note hubs. 
+##### 14 July 2022
 
-##### What I have done? 
-- Updated the nav menu. Now it has quite multiple selections. 
-- Built the digital garden page. It's a sorta wiki page type of architecture that is organised by tag words. 
+The log is described here. 
 
-![[/notes/Screen Shot 2022-07-14 at 11.45.47 am.png]]
+[Update Log on 22.07.14](/posts/Update-Logs-of-day.22.07.14)
 
-- Some of the styling improvements.  
-- Changed all CSS structures into scss structures. 
-- Added extra page stylings for art presentation page and showcase of commercial projects.
 
-![[/notes/Screen Shot 2022-07-14 at 11.45.59 am.png]]
+##### 19 July 2022
 
-###### References 
+The log is described here. 
+
+[Update Log on 22.07.19](</posts/Update-Logs-of-day.22.07.19>)
+
+
+##### 20 July 2022
+
+The log is described here. 
+
+[Update-Logs-of-day on 22.07.20](</posts/Update-Logs-of-day.22.07.20>)
+
+
+#### References 
 
 - https://github.github.com/gfm/
 - https://jekyllrb.com/docs/permalinks/
@@ -74,21 +80,20 @@ Quite tricky to make the wiki graph-related note hubs.
 
 
 ## Next Milestone is...
-- [x] Start migrating CSS to scss format
-- [x] Add 2nd post placeholders
+- [x] Start migrating CSS to scss format.
+- [x] Add 2nd post placeholders.
 - [WIP] Start migrating all js within HTML pages and markdowns within organised folder structures.
-- [WIP] Configure the Obsidian redirect link based on the folder structure
-- [Done but needs to be improved] Adding Search Option
+- [x] Configure the Obsidian redirect link based on the folder structure
+- [x] Adding Search Option
 - [x] Figuring out the Wiki stacks within this website
 - [x] Construct a page that shows sorted notes based on the tag word
 - [ ] Add a comments plugin (Disqus)
 - [WIP] Brushing up the Gallery and Showcase pages
 - [WIP] Brushing up styles on the Digital Garden page along with the search bar
-- [ ] Changing nav menu to Hamburg bar when it goes to the mobile page.
 - [WIP] Implementing Adobe Target and Analytics
 - [WIP] Implementing Google Analytics, AdSense
-- [ ] Figure out how image link insertion from Obsidian won't break the localhost links
-- [ ] Make a blog page that shows the post journal sorted by written date.
+- [x] Figure out how image link insertion from Obsidian won't break the localhost links
+- [x] Make a blog page that shows the post journal sorted by written date.
 
 
 ** Do not bloody be nip-picky about the broken grammar and words. No grammar nagging, please. 

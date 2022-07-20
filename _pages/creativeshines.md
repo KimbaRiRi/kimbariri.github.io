@@ -7,9 +7,9 @@ permalink: /showmustgoon
 
 <div class="intro grid">
 	<div class="col">
-		<div class="figure">
+		<figure>
 		<img src= "/assets/images/mydrawings/munch.jpg"/>
-		</div>
+		</figure>
 	</div>
 	<div class="col">
 		<div class="meta">
@@ -26,7 +26,8 @@ permalink: /showmustgoon
 	</div>
 </div>
 <div id="showcase" class="posts">
-	<div class="grid">
+<!--  Left Columns !-->
+	<!-- <div class="grid">
 		<div class="col">
 			<div class="post"><a href="/pages/sample">
 					<div class="cover">
@@ -38,9 +39,9 @@ permalink: /showmustgoon
 						</div>
 					</div>
 				</a></div>
-		</div>
+		</div> -->
 		<!--  Right Columns !-->
-		<div class="col">
+		<!-- <div class="col">
 		<div class="post"><a href="/pages/sample">
 					<div class="cover">
 						<h2>This page is WIP</h2>
@@ -52,5 +53,5 @@ permalink: /showmustgoon
 					</div>
 				</a></div>
 		</div>
-	</div>
+	</div> -->
 </div>

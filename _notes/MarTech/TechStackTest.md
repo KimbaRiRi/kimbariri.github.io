@@ -1,8 +1,8 @@
 ---
-title: How does Target perform A/B testing?
+title: How To Install Marketing Technology on your website?
 category: Martech
 language: English
-tags: Target
+tags: Marketing
 ---
 
-This page will describe what the target is. 
+This page will describe install processes of some marketing tools, such as target or google analytics. 

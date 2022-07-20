@@ -2,61 +2,61 @@
   
     {
 
-      "title"    : "My current Franken drumkit",
+      "title"    : "E Drumming",
       "url"      : "/notes/E-Drumming",
-      "category" : "music",
-      "tags"     : "drumming",
-      "content"  : "My Franken’s current status\nI name my drum Franken from Frankenstein.\nI found learning drumming is somehow linked to fencing"
+      "category" : "",
+      "tags"     : "",
+      "content"  : ""
 
     } ,
   
     {
 
-      "title"    : "What I learnt from Fencing",
+      "title"    : "Fencing",
       "url"      : "/notes/fencing",
-      "category" : "workout",
-      "tags"     : "fencing",
-      "content"  : "Sabre - Fencing\nAll I found is that Fencing may not be a ND-friendly sport."
+      "category" : "",
+      "tags"     : "",
+      "content"  : ""
 
     } ,
   
     {
 
-      "title"    : "Adobe Target 페이지의 오역부분",
+      "title"    : "Kor.adobetranslation",
       "url"      : "/notes/Kor.AdobeTranslation",
       "category" : "",
-      "tags"     : "마케팅테크",
-      "content"  : "어도비 타겟 페이지의 한글어 번역의 오역된 부분에 대한 부가 설명."
+      "tags"     : "",
+      "content"  : ""
 
     } ,
   
     {
 
-      "title"    : "How does Target perform A/B testing?",
+      "title"    : "How To Install Marketing Technology on your website?",
       "url"      : "/notes/TechStackTest",
       "category" : "Martech",
-      "tags"     : "Target",
-      "content"  : "This page will describe what the target is."
+      "tags"     : "Marketing",
+      "content"  : "This page will describe install processes of some marketing tools, such as target or google analytics."
 
     } ,
   
     {
 
-      "title"    : "ADHD/ASD accomodations",
+      "title"    : "Neurodivergency",
       "url"      : "/notes/Neurodivergency",
-      "category" : "NeuroDivergency",
-      "tags"     : "Neurodivergent",
-      "content"  : "This post is about how neurodivergent struggles at work or school and what support they may need."
+      "category" : "",
+      "tags"     : "",
+      "content"  : ""
 
     } ,
   
     {
 
-      "title"    : "Privacy Act. and GDPR",
+      "title"    : "Privacy Law",
       "url"      : "/notes/privacy-law",
-      "category" : "Privacy",
-      "tags"     : "Privacy",
-      "content"  : "This page will talk about privacy policies, politics, and law."
+      "category" : "",
+      "tags"     : "",
+      "content"  : ""
 
     } 
   

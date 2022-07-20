@@ -7,9 +7,9 @@ permalink: /showcase
 
 <div class="intro grid">
 	<div class="col">
-		<div class="figure">
-		<img src= "/assets/images/mydrawings/munch.jpg"/>
-		</div>
+		<figure>
+			<img src= "/assets/images/mydrawings/Edward.jpg"/>
+		</figure>
 	</div>
 	<div class="col">
 		<div class="meta">
@@ -19,6 +19,7 @@ permalink: /showcase
 				</div>
 			</div>
 			<div class="summary">
+			<em><b>**I am still recovering my contents including project documents and images relating to this page.</b></em>
 				<p>I have been working for digital banks, government-sponsored events, commercial platform, brand promotion, and so on.</p>
 				<p>On those development projects, those are stacks that I work with: </p>
 				<ul>
@@ -36,6 +37,7 @@ permalink: /showcase
 	</div>
 </div>
 <div id="showcase" class="posts">
+<!-- Web UI -->
 	<div class="grid">
 		<div class="col">
 			<div class="post"><a href="/pages/macquarie">
@@ -58,20 +60,10 @@ permalink: /showcase
 						</div>
 					</div>
 				</a></div>
-				<div class="post"><a href="/pages/sample">
-					<div class="cover">
-						<h2>This page is WIP</h2>
-						<div class="image-outer-wrapper">
-							<div class="image-wrapper">
-								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
-							</div>
-						</div>
-					</div>
-				</a></div>
 		</div>
 		<!--  Right Columns !-->
 		<div class="col">
-		<div class="post"><a href="/work/tourismoz">
+		<div class="post"><a href="/pages/tourismoz">
 					<div class="cover">
 						<h2>Tourism Australia</h2>
 						<div class="image-outer-wrapper">
@@ -81,36 +73,5 @@ permalink: /showcase
 						</div>
 					</div>
 				</a></div>
-		<div class="post"><a href="/pages/sample">
-					<div class="cover">
-						<h2>This page is WIP</h2>
-						<div class="image-outer-wrapper">
-							<div class="image-wrapper">
-								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
-							</div>
-						</div>
-					</div>
-				</a></div>
-			<div class="post"><a href="/pages/sample">
-					<div class="cover">
-						<h2>This page is WIP</h2>
-						<div class="image-outer-wrapper">
-							<div class="image-wrapper">
-								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
-							</div>
-						</div>
-					</div>
-				</a></div>
-			<div class="post"><a href="/pages/sample">
-					<div class="cover">
-						<h2>This page is WIP</h2>
-						<div class="image-outer-wrapper">
-							<div class="image-wrapper">
-								<div></div><img src= "/assets/images/mydrawings/binkie.jpg" />
-							</div>
-						</div>
-					</div>
-				</a></div>
-		</div>
 	</div>
 </div>

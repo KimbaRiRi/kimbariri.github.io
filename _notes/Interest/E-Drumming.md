@@ -1,4 +1,6 @@
 ---
+---
+<!-- ---
 title: My current Franken drumkit
 layout: note
 category: music
@@ -12,4 +14,4 @@ favicon:
 
 I name my drum Franken from Frankenstein. 
 
-I found learning drumming is somehow linked to [[fencing]]
+I found learning drumming is somehow linked to [[fencing]]%%ound learning drumming is somehow linked to [[fencing]] -->
