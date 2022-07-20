@@ -4,7 +4,7 @@
 
       "title"    : "Update log on 22.07.20",
       "url"      : "/posts/Update-Logs-of-day.22.07.20",
-      "content"  : "Website Update\n\nAdding grid stylings on works and side-project/sparkle page section on SCSS.\nWIP Google Analytics library with correct ads Id\nAdded more typography setups for posts and notes\nFor the internal link outside of the “note” folder, I have to use [Link Text](&lt;/‘filepath’&gt;) Syntax\n\n\nMarketing Tech Integration\n\nWIP with Google Analytics\nWIP with Adobe Target"
+      "content"  : "Website Update\n\nAdding grid stylings on works and side-project/sparkle page section on SCSS.\nWIP Google Analytics library with correct ads Id\nAdded more typography setups for posts and notes\nFor the internal link outside of the “note” folder, I have to use [Link Text](&lt;/‘filepath’&gt;) Syntax\nHowever, If I apply this to the page, it will work as external.\nAdded two project showcase pages.\nAdded posts that are linking to the “about-this-page” note.\n\nExamples of changes are below:\nI added the portfolio showcase project “Macquarie Bank - Wealth Product.”\n\n\nAnother one is polishing typography styling.\n\nMarketing Tech Integration\nI planned to implement Marketing tech tools on my page but it seems like adding a new showcase page took longer than I thought.\n\nWIP with Google Analytics\nWIP with Adobe Target"
 
     },
   
@@ -28,9 +28,49 @@
   
     {
 
+      "title"    : "E Drumming",
+      "url"      : "/notes/E-Drumming",
+      "content"  : ""
+
+    },
+  
+    {
+
+      "title"    : "Fencing",
+      "url"      : "/notes/fencing",
+      "content"  : ""
+
+    },
+  
+    {
+
+      "title"    : "Kor.adobetranslation",
+      "url"      : "/notes/Kor.AdobeTranslation",
+      "content"  : ""
+
+    },
+  
+    {
+
       "title"    : "How To Install Marketing Technology on your website?",
       "url"      : "/notes/TechStackTest",
       "content"  : "This page will describe install processes of some marketing tools, such as target or google analytics."
+
+    },
+  
+    {
+
+      "title"    : "Neurodivergency",
+      "url"      : "/notes/Neurodivergency",
+      "content"  : ""
+
+    },
+  
+    {
+
+      "title"    : "Privacy Law",
+      "url"      : "/notes/privacy-law",
+      "content"  : ""
 
     }
   

@@ -63,7 +63,7 @@ permalink: /showcase
 		</div>
 		<!--  Right Columns !-->
 		<div class="col">
-		<div class="post"><a href="/work/tourismoz">
+		<div class="post"><a href="/pages/tourismoz">
 					<div class="cover">
 						<h2>Tourism Australia</h2>
 						<div class="image-outer-wrapper">

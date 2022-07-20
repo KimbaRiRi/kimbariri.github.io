@@ -1,3 +1,5 @@
+---
+---
 <!-- ---
 title: Privacy Act. and GDPR
 layout: note

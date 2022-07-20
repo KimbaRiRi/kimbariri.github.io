@@ -1,3 +1,5 @@
+---
+---
 <!-- ---
 title: My current Franken drumkit
 layout: note

@@ -1,3 +1,5 @@
+---
+---
 <!-- ---
 title: ADHD/ASD accomodations
 layout: note

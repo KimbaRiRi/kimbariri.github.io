@@ -2,11 +2,61 @@
   
     {
 
+      "title"    : "E Drumming",
+      "url"      : "/notes/E-Drumming",
+      "category" : "",
+      "tags"     : "",
+      "content"  : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Fencing",
+      "url"      : "/notes/fencing",
+      "category" : "",
+      "tags"     : "",
+      "content"  : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Kor.adobetranslation",
+      "url"      : "/notes/Kor.AdobeTranslation",
+      "category" : "",
+      "tags"     : "",
+      "content"  : ""
+
+    } ,
+  
+    {
+
       "title"    : "How To Install Marketing Technology on your website?",
       "url"      : "/notes/TechStackTest",
       "category" : "Martech",
       "tags"     : "Marketing",
       "content"  : "This page will describe install processes of some marketing tools, such as target or google analytics."
+
+    } ,
+  
+    {
+
+      "title"    : "Neurodivergency",
+      "url"      : "/notes/Neurodivergency",
+      "category" : "",
+      "tags"     : "",
+      "content"  : ""
+
+    } ,
+  
+    {
+
+      "title"    : "Privacy Law",
+      "url"      : "/notes/privacy-law",
+      "category" : "",
+      "tags"     : "",
+      "content"  : ""
 
     } 
   
