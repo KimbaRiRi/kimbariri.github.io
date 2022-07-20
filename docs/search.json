@@ -2,17 +2,25 @@
   
     {
 
-      "title"    : "Testing Post 2",
-      "url"      : "/posts/testingPost2",
-      "content"  : "Post 2"
+      "title"    : "Update log on 22.07.20",
+      "url"      : "/posts/Update-Logs-of-day.22.07.20",
+      "content"  : "Website Update\n\nAdding grid stylings on works and side-project/sparkle page section on SCSS.\nWIP Google Analytics library with correct ads Id\nAdded more typography setups for posts and notes\nFor the internal link outside of the “note” folder, I have to use [Link Text](&lt;/‘filepath’&gt;) Syntax\n\n\nMarketing Tech Integration\n\nWIP with Google Analytics\nWIP with Adobe Target"
 
     },
   
     {
 
-      "title"    : "Testing Post 1",
-      "url"      : "/posts/testingPost1",
-      "content"  : "Post 1\nLink to 2022-07-19-testingPost2"
+      "title"    : "Update log on 22.07.19",
+      "url"      : "/posts/Update-Logs-of-day.22.07.19",
+      "content"  : "The search box is polished.\nThe wiki-image link is working correctly now.\nAdded redirect from options on posts.\nInternal links between notes\nThe graph section is currently off as it needs to be amended for mobile-responsive sizing on SVG.\n\nIf you want to check the previous update log, click this link: 2022-07-14-Update-Logs-of-day.22.07.14"
+
+    },
+  
+    {
+
+      "title"    : "Update log on 22.07.14",
+      "url"      : "/posts/Update-Logs-of-day.22.07.14",
+      "content"  : "What have I done?\n\nUpdated the nav menu. Now it has quite multiple selections.\nBuilt the digital garden page. It’s a sort of wiki page type of architecture that is organised by tag words.\n\n\n\nSome of the styling improvements.\nChanged all CSS structures into scss structures.\nAdded extra page stylings for art presentation page and showcase of commercial projects.\n\n\nIf you want to check the next update log, click this link: 2022-07-19-Update-Logs-of-day.22.07.19"
 
     },
   
@@ -20,49 +28,9 @@
   
     {
 
-      "title"    : "My current Franken drumkit",
-      "url"      : "/notes/E-Drumming",
-      "content"  : "My Franken’s current statusI name my drum Franken from Frankenstein.I found learning drumming is somehow linked to fencing"
-
-    },
-  
-    {
-
-      "title"    : "What I learnt from Fencing",
-      "url"      : "/notes/fencing",
-      "content"  : "Sabre - FencingAll I found is that Fencing may not be a ND-friendly sport."
-
-    },
-  
-    {
-
-      "title"    : "Adobe Target 페이지의 오역부분",
-      "url"      : "/notes/Kor.AdobeTranslation",
-      "content"  : "어도비 타겟 페이지의 한글어 번역의 오역된 부분에 대한 부가 설명."
-
-    },
-  
-    {
-
-      "title"    : "How does Target perform A/B testing?",
+      "title"    : "How To Install Marketing Technology on your website?",
       "url"      : "/notes/TechStackTest",
-      "content"  : "This page will describe what the target is."
-
-    },
-  
-    {
-
-      "title"    : "ADHD/ASD accomodations",
-      "url"      : "/notes/Neurodivergency",
-      "content"  : "This post is about how neurodivergent struggles at work or school and what support they may need."
-
-    },
-  
-    {
-
-      "title"    : "Privacy Act. and GDPR",
-      "url"      : "/notes/privacy-law",
-      "content"  : "This page will talk about privacy policies, politics, and law."
+      "content"  : "This page will describe install processes of some marketing tools, such as target or google analytics."
 
     }
   

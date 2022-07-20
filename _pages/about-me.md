@@ -7,9 +7,9 @@ permalink: /about-me
 
 <div class="intro grid">
 	<div class="col">
-		<div class="figure">
+		<figure>
 			<img src= "/assets/images/mydrawings/josh.jpg"/>
-		</div>
+		</figure>
 	</div>
 	<div class="col">
 		<div class="meta">
@@ -38,6 +38,6 @@ You can perhaps find me somewhere else on my meta id <em>'Kimba.RiRi'</em> or <e
 
 Even the AI picks it up perfectly, y'all.
 
-Other than commercial projects, I also have lots of small side projects. They are listed here in <a class="" href="/sideproject">Side Projects</a>.
+<!-- Other than commercial projects, I also have lots of small side projects. They are listed here in <a class="" href="/sideproject">Side Projects</a>. -->
 <!-- ## What I am good at it?  -->
 

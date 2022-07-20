@@ -11,9 +11,8 @@ favicon:
 		<p>Below are lists with every notes in this digital-garden. Each of notes has a tag. All notes are sorted by written language and tag word.</p>
 		<!-- Html Elements for Search -->
 		<div class="searchbar search-container sans">
-			<i aria-hidden="true" class="fa fa-search"></i>
 			<input autocomplete="off" id="search-input" oninput="changeResultContainerDisp(this.value)"
-				placeholder="Search Enjoyment Work..." type="text" />
+				placeholder="Search My Memorial Notes..." type="text" />
 			<label for="search-input"></label>
 			<ul id="results-container"></ul>
 		</div>
@@ -25,7 +24,7 @@ favicon:
 			{% for tag in tags %}
 			{%- for note in site.notes -%}
 			{%- if note.tags contains tag and note.language == 'English' -%}
-			<h3 id="{{ tag }}">{{ tag | capitalize }}</h3>
+			<p id="{{ tag }}" class="tagTitle">{{ tag | capitalize }}</p>
 			<a href="{{note.url}}">{{ note.title }}</a>
 			{%- endif -%}
 			{%- endfor -%}
@@ -38,7 +37,7 @@ favicon:
 			{% for tag in tags %}
 			{%- for note in site.notes -%}
 			{%- if note.tags contains tag and note.language == 'Korean' -%}
-			<h3 id="{{ tag }}">{{ tag | capitalize }}</h3>
+			<p id="{{ tag }}" class="tagTitle">{{ tag | capitalize }}</p>
 			<a href="{{note.url}}">{{ note.title }}</a>
 			{%- endif -%}
 			{%- endfor -%}
@@ -49,7 +48,7 @@ favicon:
 
 
 <p>Idea was inspired & referenced from <a href='https://tomcritchlow.com/wiki/'>Tom Critchlow's Digital
-		Garden</a> and StrikingLoo's <a href="https://github.com/StrikingLoo/strikingloo.github.io/">git repository</a></p>
+		Garden</a></p>
 
 
 <!-- Script pointing to search-script.js -->

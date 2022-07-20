@@ -15,8 +15,11 @@
   --subprimary-color: rgb(153, 214, 204);
   --callout-background: rgba(156, 213, 56, .08);
   --color-button-primary: #381fd1;
+  --color-button-hover: #193f76;
   --color-sea-blue: #04A5BB;
+  --color-type-gray: #4b4b4e;
   --primary-font: "Inter Variable", "Inter", -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+  --subprimary-font: RobotoMono,sans-serif;
   --heading-font: "Wremena", "Times", "Times New Roman", serif;
   /* Set headings to large size by increasing :root em font size */
   /* Calc with vw makes font sizes intrinsically responsive */
@@ -30,6 +33,7 @@
   --unit-quarter: calc(var(--unit) / 4);
   --unit-double: calc(var(--unit) * 2);
   --content-width: 1140px;
+  --spacer-half: 0.5rem;
 }
 
 $color-text: hsl(0, 0%, 20%);
@@ -40,7 +44,6 @@ $small-width: 600px;
 $medium-width: 1024px;
 $large-width: 1140px;
 $unit-half: 1.5rem;
-
 
 /*
  * Mixins

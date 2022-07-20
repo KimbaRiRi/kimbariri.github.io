@@ -21,6 +21,16 @@ nav {
 
 /* Page Intro*/
 .intro {
+  hgroup {
+    h2 {
+      margin-top: 0.2em;
+    }
+
+    h6 {
+      font-family: var(--subprimary-font);
+    }
+  }
+
   position: relative;
   display: flex;
   flex-flow: wrap;
@@ -29,7 +39,7 @@ nav {
 
   @include small {
     margin-bottom: var(--unit);
-    padding-top: calc(48px + var(--unit-double));
+    padding-top: calc(5px);
 
     &.grid {
       flex-flow: column-reverse;
@@ -50,6 +60,18 @@ nav {
 
   p:last-child {
     margin-bottom: 0;
+  }
+
+  .summary {
+    ul {
+      width: 100%;
+      padding: 0;
+      li {
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+    }
   }
 
   .meta {
@@ -115,7 +137,8 @@ nav {
     }
 
     img {
-      max-width: calc(50% - var(--unit));
+      margin-top: calc(var(--unit) - 1rem);
+      // max-width: calc(50% - var(--unit));
     }
 
     @include small {
@@ -143,8 +166,6 @@ nav {
 }
 
 /* Post Tiles */
-
-
 .post {
   position: relative;
   margin-bottom: var(--unit);
@@ -240,11 +261,6 @@ nav {
   }
 }
 
-/* Footer */
-footer {
-  margin: 2em 0;
-  padding-top: 1em
-}
 
 /* Archive Page */
 ul.archive,
@@ -304,57 +320,47 @@ a.footnote-backref {
   font-size: inherit;
 }
 
-/* Article */
-header,
-.archive span {
-  font-feature-settings: "ss01" 1, "zero" 1, "case" 1;
-  font-variant-numeric: slashed-zero;
-}
+/* Digital Garden Page*/
+#digitalgarden {
 
-header p {
-  color: var(--text-color-faded);
-  font-size: 0.5rem;
-  margin-top: 0;
-  padding-bottom: 2em;
-}
-
-section.callout {
-  padding: 3em 2em;
-  background: var(--callout-background);
-  border-radius: 4px;
-  margin: 1em 0;
-}
-
-
-/* Search box */
-
-.searchbar {
-  flex: 0 0 auto;
-  vertical-align: top;
-  display: inline-block;
-  position: relative;
-  margin-right: 1rem;
-  #search-input {
-    cursor: text;
-    width: 15rem;
-    height: 3rem;
-    color: #4e6e8e;
+  /* Search box */
+  .searchbar {
+    flex: 0 0 auto;
+    vertical-align: top;
     display: inline-block;
-    border: 1px solid #cfd4db;
-    border-radius: 2rem;
-    font-size: .9rem;
-    line-height: 2rem;
-    padding: 0 0.5rem 0 1rem;
-    outline: none;
-    transition: all .2s ease;
-    background: #fff 0.6rem 0.5rem no-repeat;
-    background-size: 2rem;
-    white-space: nowrap;
-  }
-}
+    position: relative;
+    margin-right: 1rem;
 
-#results-container {
-  list-style: lower-greek;
+    #search-input {
+      cursor: text;
+      width: 15rem;
+      height: 3rem;
+      color: #4e6e8e;
+      display: inline-block;
+      border: 1px solid #cfd4db;
+      border-radius: 2rem;
+      font-size: .9rem;
+      line-height: 2rem;
+      padding: 0 0.5rem 0 1rem;
+      outline: none;
+      transition: all .2s ease;
+      background: #fff 0.6rem 0.5rem no-repeat;
+      background-size: 2rem;
+      white-space: nowrap;
+    }
+  }
+
+  #results-container {
+    list-style: lower-greek;
+  }
+
+  p.tagTitle {
+    color: var(--color-button-primary);
+    margin-bottom: var(--spacer-half);
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
 }
 
 /* Backlink box */
@@ -384,10 +390,10 @@ section.graphs {
 }
 
 /* Wiki commands */
-.wiki-item {
-  display: inline-block;
-  margin: 3px;
-}
+// .wiki-item {
+//   display: inline-block;
+//   margin: 3px;
+// }
 
 
 /* Code blocks */
