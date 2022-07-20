@@ -9,6 +9,7 @@ git_source(:github) {|repo_name| "https://github.com/#{repo_name}" }
 gem "jekyll", "~> 4.2"
 gem "webrick", "~> 1.7"
 gem "nokogiri"
+gem "jekyll-redirect-from", "~> 0.15"
 # gem "github-pages"
 # gem "github-pages", group: :jekyll_plugins
 
