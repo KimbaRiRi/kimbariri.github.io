@@ -1,10 +1,9 @@
 ---
 layout: page
-title: Kimbo's Tremendous Repository of Knowledge, Opinions, Notes, Inspirations, and Obsession.
+title: Kimbo's Tremendous Repository of Knowledge, Opinions, Memos, Inspirations, and Obsessions.
 permalink: /digital-garden
 favicon:
 ---
-
 
 <article id="digitalgarden">
 	<div>
@@ -19,66 +18,17 @@ favicon:
 		</div>
 	</div>
 	<div>
-<!-- This one grabs all notes -->
-		{% for collection in site.collections %}
-		{% if collection.label != "pages" %}
-
-		<h2>Items from {{ collection.label }}</h2>
-		<ul>
-			{% for item in site[collection.label] %}
-			<li><a href="{{ item.url }}">{{ item.title }}</a></li>
-			{% endfor %}
-		</ul>
-		{% endif %}
-		{% endfor %}
-		<br />
-<!-- This one grabs all posts -->
-		{% for category in site.categories %}
-		<h3 id="{{ category | first }}">{{ category | first | capitalize }}</h3>
-		{% for post in category.last %}
-		<li id="category-content" style="padding-bottom: 0.6em; list-style: none;"><a
-				href="{{post.url}}">{{ post.title }}</a></li>
-		{% endfor %}
-		{% endfor %}
-		<br />
-		<br />
-<!-- This one sort by dates -->
-		{% assign postsByDay =
-			site.posts | group_by_exp:"post", "post.date | date: '%d-%B-%Y'" %}
-	
-			{% for day in postsByDay %}
-				<h3 id="{{ day.name }}">{{ day.name }}</h3>
-						{% for post in day.items %}
-							<li id="date-content" style="padding-bottom: 0.6em; list-style: none;"><a href="{{ post.url }}">{{ post.title }}</a></li>
-						{% endfor %}
-			{% endfor %}
-	
-					<br/>
-					<br/>
-	
 
 		<!-- This won't differentiate the multiple contents under the same tag-->
 		<div class="block" style="margin-top: 1%;">
-			<h2>Notes in English</h2>
-			{% assign tags =  site.notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
+			<!-- <h2>Notes in English</h2> -->
+			<h2>Notes</h2>
+			{% assign tags =  site.notes | map: 'tags' |  uniq %}
 			{% for tag in tags %}
+			<p id="{{ tag }}" class="tagTitle">{{ tag | capitalize }}</p>
 			{%- for note in site.notes -%}
 			{%- if note.tags contains tag and note.language == 'English' -%}
-			<p id="{{ tag }}" class="tagTitle">{{ tag | capitalize }}</p>
-			<a href="{{note.url}}">{{ note.title }}</a>
-			{%- endif -%}
-			{%- endfor -%}
-			{%- endfor -%}
-		</div>
-
-		<div class="block" style="margin-top: 1%;">
-			<h2>Notes in Korean</h2>
-			{% assign tags =  site.notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
-			{% for tag in tags %}
-			{%- for note in site.notes -%}
-			{%- if note.tags contains tag and note.language == 'Korean' -%}
-			<p id="{{ tag }}" class="tagTitle">{{ tag | capitalize }}</p>
-			<a href="{{note.url}}">{{ note.title }}</a>
+			<a href="{{note.url}}">{{ note.title }}</a><br/>
 			{%- endif -%}
 			{%- endfor -%}
 			{%- endfor -%}
@@ -87,8 +37,8 @@ favicon:
 </article>
 
 
-<p>Idea was inspired & referenced from <a href='https://tomcritchlow.com/wiki/'>Tom Critchlow's Digital
-		Garden</a></p>
+<!-- <p>Idea was inspired & referenced from <a href='https://tomcritchlow.com/wiki/'>Tom Critchlow's Digital
+		Garden</a></p> -->
 
 
 <!-- Script pointing to search-script.js -->
@@ -99,6 +49,6 @@ favicon:
 	SimpleJekyllSearch({
 		searchInput: document.getElementById('search-input'),
 		resultsContainer: document.getElementById('results-container'),
-		json: '/search.json'
+		json: '/search_notes.json'
 	})
 </script>

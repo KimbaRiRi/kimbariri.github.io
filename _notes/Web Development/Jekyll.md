@@ -3,7 +3,7 @@ title: Useful Jekyll Command
 layout: note
 category: Technology
 description:
-tags: Web-Development
+tags: [Web Development]  
 language: English
 favicon: 
 ---

@@ -3,12 +3,37 @@ layout: post
 title: "Marketing Suite installation, Ableton Live, and Markdown"
 favicon:
 redirect_from: 
-excerpt: My plan is implementing Marketing Tech injector inside of my Jekyll based website. 
+excerpt: I plan to implement a Marketing Tech injector inside of my Jekyll-based website. 
 ---
+
+#### To-do list
+
+"I found an error about categories of notes. Noooooo!!!"
+
+![[Screen Shot 2022-07-21 at 4.24.00 pm.png]]
+
+
+
+`Implementing Adobe suite and google suite took longer than I thought. Injecting the library was not a matter, but the correct configuration along with Jekyll and github.io was tricky.`
+
+
+#### Today's website update
+
+
+Due to the issue I found above; I struggled to solve the problems. I was toying around with permalink setups, tag for loop syntax, changing the note folder structures, etc. None of them worked. While I was frustrated about it, one slightest idea came up to my head. I put all tags inside of the '[]' brackets. Since so, the tag categorisation amazingly works fine. 
+
+
+![[Screen Shot 2022-07-22 at 12.32.43 am.png]]
+<br/>
+
+![[Screen Shot 2022-07-22 at 12.33.12 am.png]]
+
+It seems to be working fine now :) 
 
 #### Ableton Beginner Chapter 
 
 [Ableton Tutorial Document](<http://intro.online.berklee.edu/?mkt_tok=NDk3LUdFSC00MzAAAAGCgjw0QA6eqLMklSAi5TCIZ8OOSEPT6qnzSPJNSdcZCdWk0oYGTSYkMPenaemX8RvgOLd6tY5HI-ivWqwmIa2vJAvcul08nTlGi60ZzoB6g6Z9JhY#/247/Online+Courses+REVMPRD-278.01/247/1/sessions-and-arrangements>)
+
 
 #### Google Tag Manager
 
@@ -22,11 +47,11 @@ Data Layer guide: [Google Data Layer](<https://developers.google.com/tag-platfor
 Go to the Google Tag Manager. GTM is equivalent to Adobe Target. 
 
 
-![[Screen Shot 2022-07-21 at 2.27.24 pm.png]]
+<!-- ![[Screen Shot 2022-07-21 at 2.27.24 pm.png]] -->
 
-Paste your Google Tag Manager snippets into your partial html file. (inside of '\_includes')
+Paste your Google Tag Manager snippets into your partial HTML file. (inside of '\_includes')
 
-![[Screen Shot 2022-07-21 at 2.44.40 pm.png]]
+<!-- ![[Screen Shot 2022-07-21 at 2.44.40 pm.png]] -->
 
 
 #### Google Optimize 
@@ -45,7 +70,7 @@ https://michaelsoolee.com/google-analytics-jekyll/
 Of course, The google Analytics must link to the Google Optimize.
 
 
-![[Screen Shot 2022-07-21 at 3.06.07 pm.png]]
+<!-- ![[Screen Shot 2022-07-21 at 3.06.07 pm.png]] -->
 
 
 For extra step, I also installed the '' of MicroSoft. 
@@ -59,12 +84,7 @@ https://www.pedromonjo.com/
 https://www.stevefenton.co.uk/category/analytics/
 
 
-#### To do list
 
-- I found an error about categories of notes. Noooooo
-
-
-![[Screen Shot 2022-07-21 at 4.24.00 pm.png]]
 
 
 #### Adobe Extension Installation is not easy...because 
@@ -86,7 +106,7 @@ Another tricky step was finding the extension menu. Adobe document did not menti
 After hopping through a couple of confusions, I finally managed to find the production and development library.
 
 
-![[Screen Shot 2022-07-21 at 4.55.02 pm.png]]
+<!-- ![[Screen Shot 2022-07-21 at 4.55.02 pm.png]] -->
 
 
 And finally installed required extensions. From my organisation's sandbox, I was not allowed to adopt the webSDK. Well, I at least was able to install experience client ID service so this should be enough. 
@@ -113,3 +133,7 @@ https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new
 This link was quite useful. Nice to have. 
 
 https://blog.bianxi.com/2021/09/25/how-to-use-markdown-for-writing-technical-documentation/
+
+
+##### **Once enough contexts are formulated for certain subjects, some of content blocks will be moved to notes.
+

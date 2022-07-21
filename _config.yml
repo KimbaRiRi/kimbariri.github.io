@@ -33,13 +33,16 @@ sass:
 collections:
   notes:
     output: true
+    # permalink: /notes/:slug
     permalink: /notes/:title
   pages:
     output: true
     permalink: /pages/:title
+    # permalink: /pages/:slug
   posts:
     output: true
     permalink: /posts/:title
+    # permalink: /posts/:slug
 
 defaults:
   - scope:
@@ -80,4 +83,4 @@ open_external_links_in_new_tab: true
 page_excerpts: true
 
 # MarTech Ids
-google_analytics: UA-XXXXXXXXX-X
+# google_analytics: UA-XXXXXXXXX-X

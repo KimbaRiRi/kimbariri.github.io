@@ -9,9 +9,10 @@ favicon:
 ---
 
 ## Welcome!
-This is my first note on this website. This website is based on <a href="https://help.obsidian.md/How+to/Internal+link" target="_blank">Obsidian</a> and Megumi's <a  href="https://github.com/meewgumi/green-web-template" target="_blank">Green Template</a>. 
+This is my first note on this website. This website is based on <a href="https://help.obsidian.md/How+to/Internal+link" target="_blank">Obsidian</a> and Site Generator - Jekyll</a>. 
 
-In terms of the conceptual structure, This spouting experience is heavily inspired by <a href="https://github.com/MaggieAppleton/digital-gardeners" target="_blank">Maggie's Digital Gardening Project</a> and 기계인간 Machinery Human's <a href="https://johngrib.github.io/wiki/my-wiki/" target="_blank">My Wiki with Vim</a>. 
+In terms of the conceptual structure, This spouting experience is heavily inspired by <a href="https://github.com/MaggieAppleton/digital-gardeners" class="external-link" target="_blank">Maggie's Digital Gardening Project</a>, 기계인간 Machinery Human's <a href="https://johngrib.github.io/wiki/my-wiki/" class="external-link" target="_blank">My Wiki with Vim</a>, and Megumi's <a class="external-link"
+		href="https://garden.megu.space/" target="_blank">Digital Garden Green Template </a>. 
 
 This website is currently being hosted on Github. The reason is that: 
 
