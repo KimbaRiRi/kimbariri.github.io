@@ -39,8 +39,8 @@ It was painstaking to fix the GitHub deployment issue. Alongside the gem depende
 - Check the passage of your gem env with "gem env" "which ruby" "which gem"
 - nano  ~/.bash_profile check where your home path is located. 
 - Bundle clean --force
--  if it looks a bit messy: rm -rf ~/.gem
--  Bundle Update
+- If it looks a bit messy: rm -rf ~/.gem
+- Bundle Update
 - Gem Update
 - Removing Gemfile.lock
 - Re-do Bundle Install --verbose
@@ -71,6 +71,14 @@ The log is described here.
 [Update-Logs-of-day on 22.07.20](</posts/Update-Logs-of-day.22.07.20>)
 
 
+##### 21 July 2022
+
+The log is described here. 
+
+[Update-Logs-of-day on 22.07.21](</posts/tag-manager-installation-and-day-log>)
+
+
+
 #### References 
 
 - https://github.github.com/gfm/
@@ -78,23 +86,27 @@ The log is described here.
 - https://garden.megu.space/your-first-note.html
 - https://johngrib.github.io/wiki/my-wiki/
 - https://notenote.link/notes/how-to-use-the-special-features
+- https://github.com/brennanbrown/enjoyment-work 
 
 
 ## Next Milestone is...
 - [x] Start migrating CSS to scss format.
 - [x] Add 2nd post placeholders.
-- [WIP] Start migrating all js within HTML pages and markdowns within organised folder structures.
+- [x] Start migrating all js within HTML pages and markdowns within organised folder structures.
 - [x] Configure the Obsidian redirect link based on the folder structure
 - [x] Adding Search Option
 - [x] Figuring out the Wiki stacks within this website
 - [x] Construct a page that shows sorted notes based on the tag word
-- [ ] Add a comments plugin (Disqus)
 - [WIP] Brushing up the Gallery and Showcase pages
-- [WIP] Brushing up styles on the Digital Garden page along with the search bar
+- [x] Brushing up styles on the Digital Garden page along with the search bar
 - [WIP] Implementing Adobe Target and Analytics
 - [WIP] Implementing Google Analytics, AdSense
 - [x] Figure out how image link insertion from Obsidian won't break the localhost links
 - [x] Make a blog page that shows the post journal sorted by written date.
+- [TBD] Integrating Insta Feed to website
+- [] Set the Googld Ads on note and post page (Let me have a bread on my table)
+- [] Brushing up graph node between notes. It's currently not-browser width responsive. 
+- [] The live preview tooltip is not working. Find some solutions
 
 
 ** Do not bloody be nip-picky about the broken grammar and words. No grammar nagging, please. 

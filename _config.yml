@@ -16,14 +16,12 @@ plugins:
   - jekyll-redirect-from  
   - jekyll-last-modified-at
 
-# markdown: kramdown
 # Enabled CommonMark instead of default kramdown. All extensions are enabled, but you can choose to remove some by referencing https://github.github.com/gfm/ and https://github.com/gjtorikian/commonmarker#options
 markdown: CommonMarkGhPages
 commonmark:
   options: ["SMART", "FOOTNOTES", "VALIDATE_UTF8", "GITHUB_PRE_LANG", "TABLE_PREFER_STYLE_ATTRIBUTES"]
   extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 
-# permarlink: slug
 permalink: pretty
 
 sass:
@@ -33,16 +31,13 @@ sass:
 collections:
   notes:
     output: true
-    # permalink: /notes/:slug
     permalink: /notes/:title
   pages:
     output: true
     permalink: /pages/:title
-    # permalink: /pages/:slug
   posts:
     output: true
     permalink: /posts/:title
-    # permalink: /posts/:slug
 
 defaults:
   - scope:
@@ -61,12 +56,6 @@ defaults:
     values:
       layout: post
       content-type: post
-  # - scope:
-  #     path: "_pages/**/*.md"
-  #     type: pages
-  #   values:
-  #     layout: "page"
-  #     content-type: pages
 
 # If you are using a host that cannot resolve URLs that do
 # not end with .html (such as Neocities or Dreamhost), set this to 'true'.

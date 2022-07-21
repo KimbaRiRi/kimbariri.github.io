@@ -47,11 +47,8 @@ Data Layer guide: [Google Data Layer](<https://developers.google.com/tag-platfor
 Go to the Google Tag Manager. GTM is equivalent to Adobe Target. 
 
 
-<!-- ![[Screen Shot 2022-07-21 at 2.27.24 pm.png]] -->
-
 Paste your Google Tag Manager snippets into your partial HTML file. (inside of '\_includes')
 
-<!-- ![[Screen Shot 2022-07-21 at 2.44.40 pm.png]] -->
 
 
 #### Google Optimize 
@@ -68,9 +65,6 @@ In order to install the GA into the Jekyll, you may face some configuration issu
 https://michaelsoolee.com/google-analytics-jekyll/
 
 Of course, The google Analytics must link to the Google Optimize.
-
-
-<!-- ![[Screen Shot 2022-07-21 at 3.06.07 pm.png]] -->
 
 
 For extra step, I also installed the '' of MicroSoft. 
@@ -105,8 +99,6 @@ Another tricky step was finding the extension menu. Adobe document did not menti
 
 After hopping through a couple of confusions, I finally managed to find the production and development library.
 
-
-<!-- ![[Screen Shot 2022-07-21 at 4.55.02 pm.png]] -->
 
 
 And finally installed required extensions. From my organisation's sandbox, I was not allowed to adopt the webSDK. Well, I at least was able to install experience client ID service so this should be enough. 
