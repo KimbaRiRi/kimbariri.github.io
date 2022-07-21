@@ -96,6 +96,17 @@ Adobe is powerful indeed but I already fill the setting progress is a bit overki
 
 ![[Screen Shot 2022-07-21 at 4.52.12 pm.png]]
 
+It was quite hustle to find correct document references within adobe experience league. I wish they could have arrayed the contents better. 
+
+Anyway, for the web base implementation - refer to this link. 
+
+https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=en
+
+And this is specifically for Analytics report suite. 
+
+https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en
+
+
 
 #### Useful link telling details about Markdown  
 
