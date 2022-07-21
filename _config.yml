@@ -78,3 +78,6 @@ open_external_links_in_new_tab: true
 
 # Set to 'true' to generate excerpts for pages. Notes are technically pages.
 page_excerpts: true
+
+# MarTech Ids
+google_analytics: UA-XXXXXXXXX-X

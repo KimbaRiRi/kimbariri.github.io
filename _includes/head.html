@@ -1,5 +1,4 @@
-<head>
-  <meta charset="UTF-8">
+
 
   {% if site.use_html_extension == false %}
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}.html">
@@ -46,19 +45,6 @@
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
   {% endif %}
 
-  <!-- Martech Google Data Studio Injection -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52642322-5"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-  
-    gtag('config', 'UA-52642322-5');
-  </script>
- <!-- Martech Google Data Studio Injection Ends-->
-
-   <!-- Martech Adobe Data Studio Injection -->
-    <!-- Martech Adobe Data Studio Injection Ends-->
   <title>
     {% if page.id == "home" %}
     {{ site.title }}

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+{% include analytics-head.html %}
 {% include head.html %}
-
 <body>
+  {% include analytics-body.html %}
   {% include nav.html %}
   <div class="wrapper">
     {%- if page.content-type == "notes" -%}
