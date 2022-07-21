@@ -3,7 +3,7 @@
     {
 
       "title"    : "Marketing Suite installation, Ableton Live, and Markdown",
-      "url"      : "/posts/tag-manager-installation-and-day-log",
+      "url"      : "poststag-manager-installation-and-day-log",
       "content"  : "Ableton Beginner Chapter\nAbleton Tutorial Document\nGoogle Tag Manager\nTutorial Link: Google Official Guide\nDashboard Google Tag Manager Admin\nData Layer guide: Google Data Layer\nGo to the Google Tag Manager. GTM is equivalent to Adobe Target.\n\nPaste your Google Tag Manager snippets into your partial html file. (inside of ‘_includes’)\n\nGoogle Optimize\nThis is the dashboard of Google Optimize. It’s similar to Adobe Target.\n\nGoogle Analytics\nIn order to install the GA into the Jekyll, you may face some configuration issues. In that case refer to this tutorial https://desiredpersona.com/google-analytics-jekyll/ and https://morotsman.github.io/blog,/google/analytics,/jekyll,/github/pages/2020/07/07/add-google-analytics.html\nhttps://michaelsoolee.com/google-analytics-jekyll/\nOf course, The google Analytics must link to the Google Optimize.\n\nFor extra step, I also installed the ‘’ of MicroSoft.\nSome Extra helpful links about Analytics\nhttps://www.pedromonjo.com/\nhttps://www.stevefenton.co.uk/category/analytics/\nTo do list\n\nI found an error about categories of notes. Noooooo\n\n\nAdobe Extension Installation is not easy…because\nTheir documentation deck is huge, thus not so well organised AT ALL!\nTo find an answer you seek on every single step, you will fell into the rabbit holes so easily.\nAnother thing that annoyed me was, the documentation is not so up-to-date while Adobe constantly changes their UI structures inside of AEP dashboards.\n\nAnother tricky step was finding the extension menu. Adobe document did not mention how to find extension. Aren’t you supposed to explain that I have to make a tag property first before finding extension tab? Gees…\n\nAfter hopping through a couple of confusions, I finally managed to find the production and development library.\n\nAnd finally installed required extensions. From my organisation’s sandbox, I was not allowed to adopt the webSDK. Well, I at least was able to install experience client ID service so this should be enough.\nAdobe is powerful indeed but I already fill the setting progress is a bit overkill now.\n\nIt was quite hustle to find correct document references within adobe experience league. I wish they could have arrayed the contents better.\nAnyway, for the web base implementation - refer to this link.\nhttps://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=en\nAnd this is specifically for Analytics report suite.\nhttps://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en\nUseful link telling details about Markdown\nThis link was quite useful. Nice to have.\nhttps://blog.bianxi.com/2021/09/25/how-to-use-markdown-for-writing-technical-documentation/"
 
     },
@@ -11,7 +11,7 @@
     {
 
       "title"    : "Update log on 22.07.20",
-      "url"      : "/posts/Update-Logs-of-day.22.07.20",
+      "url"      : "postsupdate-logs-of-day-22-07-20",
       "content"  : "Website Update\n\nAdding grid stylings on works and side-project/sparkle page section on SCSS.\nWIP Google Analytics library with correct ads Id\nAdded more typography setups for posts and notes\nFor the internal link outside of the “note” folder, I have to use [Link Text](&lt;/‘filepath’&gt;) Syntax\nHowever, If I apply this to the page, it will work as external.\nAdded two project showcase pages.\nAdded posts that are linking to the “about-this-page” note.\n\nExamples of changes are below:\nI added the portfolio showcase project “Macquarie Bank - Wealth Product.”\n\n\nAnother one is polishing typography styling.\n\nHere is the mobile view as well.\n\nMarketing Tech Integration\nI planned to implement Marketing tech tools on my page but it seems like adding a new showcase page took longer than I thought.\n\nWIP with Google Analytics\nWIP with Adobe Target"
 
     },
@@ -19,7 +19,7 @@
     {
 
       "title"    : "Update log on 22.07.19",
-      "url"      : "/posts/Update-Logs-of-day.22.07.19",
+      "url"      : "postsupdate-logs-of-day-22-07-19",
       "content"  : "The search box is polished.\nThe wiki-image link is working correctly now.\nAdded redirect from options on posts.\nInternal links between notes\nThe graph section is currently off as it needs to be amended for mobile-responsive sizing on SVG.\n\nIf you want to check the previous update log, click this link: 2022-07-14-Update-Logs-of-day.22.07.14"
 
     },
@@ -27,7 +27,7 @@
     {
 
       "title"    : "Update log on 22.07.14",
-      "url"      : "/posts/Update-Logs-of-day.22.07.14",
+      "url"      : "postsupdate-logs-of-day-22-07-14",
       "content"  : "What have I done?\n\nUpdated the nav menu. Now it has quite multiple selections.\nBuilt the digital garden page. It’s a sort of wiki page type of architecture that is organised by tag words.\n\n\n\nSome of the styling improvements.\nChanged all CSS structures into scss structures.\nAdded extra page stylings for art presentation page and showcase of commercial projects.\n\n\nIf you want to check the next update log, click this link: 2022-07-19-Update-Logs-of-day.22.07.19"
 
     },
@@ -37,7 +37,7 @@
     {
 
       "title"    : "E Drumming",
-      "url"      : "/notes/E-Drumming",
+      "url"      : "notese-drumming",
       "content"  : ""
 
     },
@@ -45,7 +45,7 @@
     {
 
       "title"    : "Fencing",
-      "url"      : "/notes/fencing",
+      "url"      : "notesfencing",
       "content"  : ""
 
     },
@@ -53,7 +53,7 @@
     {
 
       "title"    : "Trial of implementing Adobe Launch, Analytics, Target, and Jekyll",
-      "url"      : "/notes/Adobe-Target-and-Analytics-to-Jekyll",
+      "url"      : "notesadobe-target-and-analytics-to-jekyll",
       "content"  : "I found some articles regarding integrating Jekyll to Google Analytics but couldn’t find any material regarding Adobe suite.For Google Suite, Refer to this note Marketing-Product-Trials-with-Google"
 
     },
@@ -61,7 +61,7 @@
     {
 
       "title"    : "Kor.adobetranslation",
-      "url"      : "/notes/Kor.AdobeTranslation",
+      "url"      : "noteskor-adobetranslation",
       "content"  : ""
 
     },
@@ -69,7 +69,7 @@
     {
 
       "title"    : "How To Install Marketing Technology on your website?",
-      "url"      : "/notes/Marketing-Product-Trials-with-Google",
+      "url"      : "notesmarketing-product-trials-with-google",
       "content"  : "This page will describe install processes of some marketing tools, such as target or google analytics.I am currently logging my progress of integrating between my Jekyll based website and Google Analytics suites.After completing this, I plan to implement Analytics Experience Suite as well for a trial. I hope the sample sandbox allows me to extend multi-platforms including my website.Currently the progress interim logs are tracked down at Journal posts.For instance, this post. 2022-07-21-tag-manager-installation-and-day-log"
 
     },
@@ -77,7 +77,7 @@
     {
 
       "title"    : "Neurodivergency",
-      "url"      : "/notes/Neurodivergency",
+      "url"      : "notesneurodivergency",
       "content"  : ""
 
     },
@@ -85,7 +85,7 @@
     {
 
       "title"    : "Privacy Law",
-      "url"      : "/notes/privacy-law",
+      "url"      : "notesprivacy-law",
       "content"  : ""
 
     },
@@ -93,7 +93,7 @@
     {
 
       "title"    : "Useful Jekyll Command",
-      "url"      : "/notes/Jekyll",
+      "url"      : "notesjekyll",
       "content"  : "Useful Jekyll Commandhttps://shafi.com.au/code/useful-jekyll-commands/"
 
     }

@@ -33,13 +33,16 @@ sass:
 collections:
   notes:
     output: true
+    # permalink: /notes/:slug
     permalink: /notes/:title
   pages:
     output: true
     permalink: /pages/:title
+    # permalink: /pages/:slug
   posts:
     output: true
     permalink: /posts/:title
+    # permalink: /posts/:slug
 
 defaults:
   - scope:

@@ -19,9 +19,11 @@ favicon:
 		</div>
 	</div>
 	<div>
-<!-- This one grabs all notes -->
-		{% for collection in site.collections %}
-		{% if collection.label != "pages" %}
+
+		<!-- reference: https://github.com/brennanbrown/enjoyment-work -->
+<!-- This one grabs all notes and posts -->
+		<!-- {% for collection in site.collections %}
+		{% if collection.label != "pages" and collection.label != "posts" %}
 
 		<h2>Items from {{ collection.label }}</h2>
 		<ul>
@@ -31,19 +33,42 @@ favicon:
 		</ul>
 		{% endif %}
 		{% endfor %}
-		<br />
-<!-- This one grabs all posts -->
-		{% for category in site.categories %}
-		<h3 id="{{ category | first }}">{{ category | first | capitalize }}</h3>
-		{% for post in category.last %}
-		<li id="category-content" style="padding-bottom: 0.6em; list-style: none;"><a
-				href="{{post.url}}">{{ post.title }}</a></li>
+		<br /> -->
+
+
+		<!-- Based on folder, it's sectionising the list of full set of folders -->
+		<!-- {% assign folders = site.notes | where_exp:"item", "item.path contains '_notes'" %}
+		{% assign notefolders = "" | split:"" %}
+		
+		{% for folder in folders %}
+			{% assign tempvar = folder.path | split:"/" %}
+			{% assign notefolders = notefolders | push:tempvar[1] %}
 		{% endfor %}
+		
+		{% assign notefolders = notefolders | uniq | sort %}
+		
+		<div class="w-100 cf">
+		{% for folder in notefolders %}
+			{% unless folder contains 'md' or folder contains 'html' %}
+				<div class="fl w-third-l w-100 mb1 mt1 pr4-l">
+					<a class="link black" href="/notes/{{folder}}/"><div class="bg-near-white pa3">{{folder | capitalize}}</div></a>
+				</div>
+			{% endunless %}
 		{% endfor %}
-		<br />
-		<br />
-<!-- This one sort by dates -->
-		{% assign postsByDay =
+		</div> -->
+
+
+		<!-- Based on notes, it's sectionising the list of full set of notes -->
+		<!-- <h3>All notes</h3>
+		
+		{% assign folder1 = site.notes | where_exp: "item" , "item.path contains 'notes'" | sort:"path" %}
+		{% for item in folder1 %}
+		<a href="{{ item.url }}">{{item.path}}</a>
+		<br>
+		{% endfor %} -->
+
+		<!-- This one sort by dates -->
+		<!-- {% assign postsByDay =
 			site.posts | group_by_exp:"post", "post.date | date: '%d-%B-%Y'" %}
 	
 			{% for day in postsByDay %}
@@ -54,24 +79,25 @@ favicon:
 			{% endfor %}
 	
 					<br/>
-					<br/>
+					<br/> -->
 	
 
 		<!-- This won't differentiate the multiple contents under the same tag-->
 		<div class="block" style="margin-top: 1%;">
-			<h2>Notes in English</h2>
-			{% assign tags =  site.notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
+			<!-- <h2>Notes in English</h2> -->
+			<h2>Notes</h2>
+			{% assign tags =  site.notes | map: 'tags' |  uniq %}
 			{% for tag in tags %}
+			<p id="{{ tag }}" class="tagTitle">{{ tag | capitalize }}</p>
 			{%- for note in site.notes -%}
 			{%- if note.tags contains tag and note.language == 'English' -%}
-			<p id="{{ tag }}" class="tagTitle">{{ tag | capitalize }}</p>
-			<a href="{{note.url}}">{{ note.title }}</a>
+			<a href="{{note.url}}">{{ note.title }}</a><br/>
 			{%- endif -%}
 			{%- endfor -%}
 			{%- endfor -%}
 		</div>
 
-		<div class="block" style="margin-top: 1%;">
+		<!-- <div class="block" style="margin-top: 1%;">
 			<h2>Notes in Korean</h2>
 			{% assign tags =  site.notes | map: 'tags' | join: ' '  | split: ' ' | uniq %}
 			{% for tag in tags %}
@@ -82,7 +108,7 @@ favicon:
 			{%- endif -%}
 			{%- endfor -%}
 			{%- endfor -%}
-		</div>
+		</div> -->
 	</div>
 </article>
 
