@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="https://kimbariri.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://kimbariri.github.io//" rel="alternate" type="text/html" /><updated>2022-07-22T21:32:27+10:00</updated><id>https://kimbariri.github.io//feed.xml</id><title type="html">My Brain Dumpster</title><entry><title type="html">Website and MarTech Memo Logs</title><link href="https://kimbariri.github.io//posts/website-martech-memo-logs-22-07-22" rel="alternate" type="text/html" title="Website and MarTech Memo Logs" /><published>2022-07-22T00:00:00+10:00</published><updated>2022-07-22T16:34:15+10:00</updated><id>https://kimbariri.github.io//posts/Website-MarTech-memo-logs.22.07.22</id><content type="html" xml:base="https://kimbariri.github.io//posts/website-martech-memo-logs-22-07-22"><![CDATA[<h2 id="section"></h2>
+<h3 id="obsidian-template-links">Obsidian Template Links</h3>
+<p>I found crazy-awesome obsidian template references:</p>
+<ul>
+<li>
+<p><a href="https://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/">https://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/</a></p>
+<p>⬆️ This one is freaking awesome. You should check one too.</p>
+</li>
+<li>
+<p><a href="https://agileadam.com/2022/07/obsidian-daily-note-implementation-v2/">https://agileadam.com/2022/07/obsidian-daily-note-implementation-v2/</a></p>
+</li>
+<li>
+<p><a href="https://kevinquinn.fun/blog/get-started-with-obsidian-periodic-notes-and-templater/">https://kevinquinn.fun/blog/get-started-with-obsidian-periodic-notes-and-templater/</a></p>
+</li>
+<li>
+<p><a href="https://andrewm.codes/minimalist-habit-tracker-template-for-obsidian/">https://andrewm.codes/minimalist-habit-tracker-template-for-obsidian/</a></p>
+</li>
+<li>
+<p><a href="https://help.obsidian.md/Plugins/Templates">https://help.obsidian.md/Plugins/Templates</a></p>
+</li>
+<li>
+<p><a href="https://dannb.org/blog/2022/obsidian-daily-note-template/">https://dannb.org/blog/2022/obsidian-daily-note-template/</a></p>
+</li>
+</ul>
+<h3 id="public-site-error-founding">Public Site Error Founding</h3>
+<h4 id="error-while-no-issue-on-localhost">404 error while no issue on localhost</h4>
+<p>I didn’t know this till now. Oh my god. What a disaster. Haven’t I checked this? Of course, I did.
+The cause was from github.io’s quirk.</p>
+<p>Urrrrrrrr!!! 😩</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.00.54 am.png">
+<br/>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.00.41 am.png">
+<p>If you see that, It’s not a problem on localhost at all.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.30.39 am.png">
+<p>And I found some script that is lowering the capital case of URLs into the lowercase-Jekyll template URL. Let’s try that.</p>
+<p>Nope. 404 errors due to XSS policies on the browser.</p>
+<p>Bugger!</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.47.53 am.png">
+<br/>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.51.16 am.png">
+<br/>
+<p>In the end, I solved this issue by changing it from ‘: title’ to ‘: slug.’</p>
+<h5 id="references">References:</h5>
+<p><a href="https://mademistakes.com/mastering-jekyll/how-to-link/">https://mademistakes.com/mastering-jekyll/how-to-link/</a>
+<a href="https://gist.github.com/sbliven/0ca4dee4e0190a6b3dc7e3d8040cc395?permalink_comment_id=3526205">https://gist.github.com/sbliven/0ca4dee4e0190a6b3dc7e3d8040cc395?permalink_comment_id=3526205</a></p>
+<h4 id="image-link-does-not-correctly-work-on-posts">Image link does not correctly work on posts</h4>
+<p>This issue is also, again, due to the file path. It may require me to write some Ruby Plugin…but it’s too much hustle to think about.</p>
+<p>This is what it looks like when I attach the images to the posts.</p>
+<!-- <img src="/assets/images/Screen Shot 2022-07-22 at 11.52.15 am.png"> -->
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.52.15 am.png">
+<p>When they are HTML-fied, Those image links get broken.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.52.04 am.png">
+<p>I manually changed the location via visual studio code for a quick solution.</p>
+<p>This issue only happens within the journal post. The note is absolutely fine.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.57.49 am.png">
+<p>The trick is just simply changing the file path.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 12.08.17 pm.png">
+<p>This only applies to posts for now.</p>
+<p>Thing is, even though everything is looking alright with localhost, you never know with the deployment. QA is a big job, indeed.</p>
+<h4 id="archive-list-problems">Archive List Problems</h4>
+<p><em>Oops, I forgot to capture the screenshot of the issues about this.</em></p>
+<p>Briefly speaking, the archive page did not show any posts and notes. I tried to figure out why. The Archive page was working fine before, and I didn’t amend that function much. Was it permalink? Was it the wrong path? I was spending almost 2 hrs figuring out this.</p>
+<p>Now it’s solved. Hugh.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 10.32.37 am.png">
+<p>However, it shows all notes, including notes I don’t want to publish.</p>
+<p>So I added the ‘Public’ option inside the frontmatter and changed the liquid loop slightly.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 10.46.34 am.png">
+<br/>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 10.46.41 am.png">
+<p>Now it’s showing correct results.</p>
+<p>For all issues, Did I write the wrong liquid syntax? Did I forget to close the brackets? None of them happened. The shitty part of the liquid syntax is, It’s very sensitive to any line braces or white space within the template. That means I have to give up some of the ‘beautify’ options within the template. 😩</p>
+<h3 id="how-do-i-setup-seo-on-jekyll--github">How Do I Setup SEO on Jekyll + Github?</h3>
+<p>This is still ongoing test. I am not sure how github.io is webcrowler friendly.</p>
+<p>As I already wrote quite bits of meta tags, I don’t feel like installing Jekyll gem for feed and SEO is necessary. We will see.</p>
+<p>This is all I added on head.html.</p>
+<img src="/assets/images/Screen Shot 2022-07-22 at 9.05.44 pm.png">
+<p>References:</p>
+<p><a href="https://jsinibardy.com/optimize-seo-jekyll#install-jekyll-sitemap-and-optimize-date-management">https://jsinibardy.com/optimize-seo-jekyll#install-jekyll-sitemap-and-optimize-date-management</a>
+<a href="https://blog.mastykarz.nl/improve-jekyll-seo/">https://blog.mastykarz.nl/improve-jekyll-seo/</a>
+<a href="https://talk.jekyllrb.com/t/help-on-google-indexing-and-seo-plugin/5729">https://talk.jekyllrb.com/t/help-on-google-indexing-and-seo-plugin/5729</a>
+<a href="http://jekyll.github.io/jekyll-seo-tag/advanced-usage/">http://jekyll.github.io/jekyll-seo-tag/advanced-usage/</a></p>
+<h3 id="how-do-i-write-the-posts-and-publish-to-kimbaririgithubio">How Do I Write the Posts and Publish to KimbaRiRi.Github.io?</h3>
+<p>I write most of my notes via Obsidian. Most of the codes are, of course, written through visual studio code. However, I need grammar, typo, and wording checkup support as I skim texts a lot. (Typical for ADHDers)</p>
+<p>That is why for the posting, I use Obsidian. You can see that Grammarly pick up some word reviews within the notes.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.02.50 am.png">
+<p>Within the Obsidian, Enable the template core plugin. Inside of obsidian templates, you can set up the skeleton template.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.31.02 pm.png">
+<p>Inside of each template, they do have the skeleton format.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.32.25 pm.png">
+<p>And this plugin helps me to write the post as Jekyll only accept the post file name starting from a date like this ‘Year-Month-Day’</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.34.33 pm.png">
+<p>In order to generate the correct image and HTML file link, I borrowed the plug-in from <a href="https://github.com/maximevaillancourt/maximevaillancourt.com">https://github.com/maximevaillancourt/maximevaillancourt.com</a></p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.35.52 pm.png">
+<p>However, this plug-in is only specified for notes and posts. The way I formulate notes and posts is different to their Ruby plugin sets. For that reason, I have to write separate plugins only for posts.</p>
+<p>Well, if I have some time. Unfortunately, I don’t 😭 . Also, I sometimes move what I wrote from posts to notes, so It’s no use to config existing note plugins. I am treating my daily posts as some kind of quick draft stage before populating notes.</p>
+<p>For that reason, I am happy with manually replacing some file routes if I need to. For now.</p>
+<p>This is the base folder of notes.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.39.42 pm.png">
+<br/>
+<p>For now, the asset path is based on the posts folder, but this will be changed to notes at some point.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.39.47 pm.png">
+<p>You can generate vaults from the existing folder.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.43.38 pm.png">
+<p>And Based on the setup of Jekyll, your writings on markdown files via Obsidian will be generated into HTML format.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.44.52 pm.png">
+<p>After doing so, you got now rendered HTML files. The last step is deploying your generated HTML files into your GitHub or bitbucket (whatever your deployment cycle is)</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.45.59 pm.png">
+<p>Indeed, I do have multiple vaults. Personal Wiki is for this Jekyll posting. BrainDumpster is literally for dumpling any random thought pieces. Cross-Device is a lightweight vault as I sometimes write stuff on my phone while I have no access to the laptop (e.g. commuting).</p>
+<p>Luckly, git-note from Android Phone does enable me to do this. I am not sure about iPhone. There was a terminal source management app within iPad but it was bloody slow.</p>
+<p>I also often write my thought notes via Google Voice Keyboard. It’s not perfect but helps me to write when I don’t want to look at the screen. For accuracy-wise, Otter.io would be the better option though.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.48.08 pm.png">
+<p>You may need web programming skills to publish your obsidian posts and notes. If that is you, consider subscribing to obsidian ‘Publish’ service. As I am quite confident to utilise Git, I don’t need one.</p>
+<h3 id="how-to-solve-conflicts">How to solve conflicts</h3>
+<p>In the most laziest way?</p>
+<p>If you don’t give a F about losing your changes, simple choose “Resolve Using ‘Theirs’”.</p>
+<p>I often do this when I know exactly what my changes are or all I need to replace is a compiled build.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 5.46.50 pm.png">
+<p>More conveniently, If you open the conflict files via VSC, VSC will smartly show which parts are conflicting. You can choose either accept current (your local codes) or incoming changes (merging one).</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 5.47.06 pm.png">
+<h3 id="random-rant">Random Rant</h3>
+<p>I am a crazy purple shipper. Even my VSC theme is ‘shade of purple’.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 2.22.15 pm.png">]]></content><author><name></name></author><summary type="html"><![CDATA[Website logs and Today's findings on 22.07.22]]></summary></entry><entry><title type="html">Marketing Suite installation, Ableton Live, and Markdown</title><link href="https://kimbariri.github.io//posts/tag-manager-installation-and-day-log" rel="alternate" type="text/html" title="Marketing Suite installation, Ableton Live, and Markdown" /><published>2022-07-21T00:00:00+10:00</published><updated>2022-07-22T16:34:15+10:00</updated><id>https://kimbariri.github.io//posts/tag-manager-installation-and-day-log</id><content type="html" xml:base="https://kimbariri.github.io//posts/tag-manager-installation-and-day-log"><![CDATA[<h4 id="to-do-list">To-do list</h4>
+<p>“I found an error about categories of notes. Noooooo!!!”</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-21 at 4.24.00 pm.png">
+<p><code>Implementing Adobe suite and google suite took longer than I thought. Injecting the library was not a matter, but the correct configuration along with Jekyll and github.io was tricky.</code></p>
+<h4 id="whats-implemented">What’s implemented?</h4>
+<p>Clarity is WIP.</p>
+<p>References:
+<a href="https://clarity.microsoft.com/">https://clarity.microsoft.com/</a>
+<a href="https://docs.microsoft.com/en-us/clarity/clarity-setup">https://docs.microsoft.com/en-us/clarity/clarity-setup</a></p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 3.31.49 pm.png">
+<p>Or you can do manually.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 3.33.10 pm.png">
+<h4 id="todays-website-update">Today’s website update</h4>
+<p>Due to the issue I found above; I struggled to solve the problems. I was toying around with permalink setups, tag for loop syntax, changing the note folder structures, etc. None of them worked. While I was frustrated about it, one slightest idea came up to my head. I put all tags inside of the ‘[]’ brackets. Since so, the tag categorisation amazingly works fine.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 12.32.43 am.png">
+<br/>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 12.33.12 am.png">
+<p>It seems to be working fine now :)</p>
+<h4 id="ableton-beginner-chapter">Ableton Beginner Chapter</h4>
+<p><a href="http://intro.online.berklee.edu/?mkt_tok=NDk3LUdFSC00MzAAAAGCgjw0QA6eqLMklSAi5TCIZ8OOSEPT6qnzSPJNSdcZCdWk0oYGTSYkMPenaemX8RvgOLd6tY5HI-ivWqwmIa2vJAvcul08nTlGi60ZzoB6g6Z9JhY#/247/Online+Courses+REVMPRD-278.01/247/1/sessions-and-arrangements">Ableton Tutorial Document</a></p>
+<h4 id="google-tag-manager">Google Tag Manager</h4>
+<p>Tutorial Link: <a href="https://developers.google.com/tag-platform/tag-manager/web">Google Official Guide</a></p>
+<p>Dashboard <a href="https://tagmanager.google.com/#/admin/">Google Tag Manager Admin</a></p>
+<p>Data Layer guide: <a href="https://developers.google.com/tag-platform/tag-manager/web/datalayer">Google Data Layer</a></p>
+<p>Go to the Google Tag Manager. GTM is equivalent to Adobe Target.</p>
+<p>Paste your Google Tag Manager snippets into your partial HTML file. (inside of ‘_includes’)</p>
+<h4 id="google-optimize">Google Optimize</h4>
+<p>This is the dashboard of Google Optimize. It’s similar to Adobe Target.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-21 at 2.42.17 pm.png">
+<h5 id="google-analytics">Google Analytics</h5>
+<p>In order to install the GA into the Jekyll, you may face some configuration issues. In that case refer to this tutorial <a href="https://desiredpersona.com/google-analytics-jekyll/">https://desiredpersona.com/google-analytics-jekyll/</a> and <a href="https://morotsman.github.io/blog,/google/analytics,/jekyll,/github/pages/2020/07/07/add-google-analytics.html">https://morotsman.github.io/blog,/google/analytics,/jekyll,/github/pages/2020/07/07/add-google-analytics.html</a>
+<a href="https://michaelsoolee.com/google-analytics-jekyll/">https://michaelsoolee.com/google-analytics-jekyll/</a></p>
+<p>Of course, The google Analytics must link to the Google Optimize.</p>
+<p>For extra step, I also installed the ‘’ of MicroSoft.</p>
+<h4 id="some-extra-helpful-links-about-analytics">Some Extra helpful links about Analytics</h4>
+<p><a href="https://www.pedromonjo.com/">https://www.pedromonjo.com/</a></p>
+<p><a href="https://www.stevefenton.co.uk/category/analytics/">https://www.stevefenton.co.uk/category/analytics/</a></p>
+<h4 id="adobe-extension-installation-is-not-easybecause">Adobe Extension Installation is not easy…because</h4>
+<p>Their documentation deck is huge, thus not so well organised AT ALL!</p>
+<p>To find an answer you seek on every single step, you will fell into the rabbit holes so easily.
+Another thing that annoyed me was, the documentation is not so up-to-date while Adobe constantly changes their UI structures inside of AEP dashboards.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-21 at 4.22.10 pm.png">
+<p>Another tricky step was finding the extension menu. Adobe document did not mention how to find extension. Aren’t you supposed to explain that I have to make a tag property first before finding extension tab? Gees…</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-21 at 4.55.27 pm.png">
+<p>After hopping through a couple of confusions, I finally managed to find the production and development library.</p>
+<p>And finally installed required extensions. From my organisation’s sandbox, I was not allowed to adopt the webSDK. Well, I at least was able to install experience client ID service so this should be enough.</p>
+<p>Adobe is powerful indeed but I already fill the setting progress is a bit overkill now.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-21 at 4.52.12 pm.png">
+<p>It was quite hustle to find correct document references within adobe experience league. I wish they could have arrayed the contents better.</p>
+<p>Anyway, for the web base implementation - refer to this link.</p>
+<p><a href="https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=en">https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html?lang=en</a></p>
+<p>And this is specifically for Analytics report suite.</p>
+<p><a href="https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en">https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=en</a></p>
+<h4 id="useful-link-telling-details-about-markdown">Useful link telling details about Markdown</h4>
+<p>This link was quite useful. Nice to have.</p>
+<p><a href="https://blog.bianxi.com/2021/09/25/how-to-use-markdown-for-writing-technical-documentation/">https://blog.bianxi.com/2021/09/25/how-to-use-markdown-for-writing-technical-documentation/</a></p>
+<h5 id="once-enough-contexts-are-formulated-for-certain-subjects-some-of-content-blocks-will-be-moved-to-notes">**Once enough contexts are formulated for certain subjects, some of content blocks will be moved to notes.</h5>]]></content><author><name></name></author><summary type="html"><![CDATA[I plan to implement a Marketing Tech injector inside of my Jekyll-based website.]]></summary></entry><entry><title type="html">Update log on 22.07.20</title><link href="https://kimbariri.github.io//posts/update-logs-of-day-22-07-20" rel="alternate" type="text/html" title="Update log on 22.07.20" /><published>2022-07-20T00:00:00+10:00</published><updated>2022-07-22T12:59:23+10:00</updated><id>https://kimbariri.github.io//posts/Update-Logs-of-day.22.07.20</id><content type="html" xml:base="https://kimbariri.github.io//posts/update-logs-of-day-22-07-20"><![CDATA[<h3 id="website-update">Website Update</h3>
+<ul>
+<li>Adding grid stylings on works and side-project/sparkle page section on SCSS.</li>
+<li>WIP Google Analytics library with correct ads Id</li>
+<li>Added more typography setups for posts and notes</li>
+<li>For the internal link outside of the “note” folder, I have to use [Link Text](&lt;/‘filepath’&gt;) Syntax</li>
+<li>However, If I apply this to the page, it will work as external.</li>
+<li>Added two project showcase pages.</li>
+<li>Added posts that are linking to the “about-this-page” note.</li>
+</ul>
+<h4 id="examples-of-changes-are-below">Examples of changes are below:</h4>
+<p>I added the portfolio showcase project “Macquarie Bank - Wealth Product.”</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-20 at 11.11.54 pm.png">
+<br/>
+<p>Another one is polishing typography styling.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-20 at 11.23.38 pm.png">
+<p>Here is the mobile view as well.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-21 at 12.05.39 am 1.png">
+<h3 id="marketing-tech-integration">Marketing Tech Integration</h3>
+<p>I planned to implement Marketing tech tools on my page but it seems like adding a new showcase page took longer than I thought.</p>
+<ul>
+<li>WIP with Google Analytics</li>
+<li>WIP with Adobe Target</li>
+</ul>]]></content><author><name></name></author><summary type="html"><![CDATA[Update about the website and MarTech integration]]></summary></entry><entry><title type="html">Update log on 22.07.19</title><link href="https://kimbariri.github.io//posts/update-logs-of-day-22-07-19" rel="alternate" type="text/html" title="Update log on 22.07.19" /><published>2022-07-19T00:00:00+10:00</published><updated>2022-07-22T10:47:32+10:00</updated><id>https://kimbariri.github.io//posts/Update-Logs-of-day.22.07.19</id><content type="html" xml:base="https://kimbariri.github.io//posts/update-logs-of-day-22-07-19"><![CDATA[<img src="/assets/images/purple-theme.jpeg">
+<ul>
+<li>The search box is polished.</li>
+<li>The wiki-image link is working correctly now.</li>
+<li>Added redirect from options on posts.</li>
+<li>Internal links between notes</li>
+<li>The graph section is currently off as it needs to be amended for mobile-responsive sizing on SVG.</li>
+</ul>
+<p>If you want to check the previous update log, click this link: <a class='internal-link' href='/posts/update-logs-of-day-22-07-14.html'>2022-07-14-Update-Logs-of-day.22.07.14</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Update log on 22.07.19]]></summary></entry><entry><title type="html">Update log on 22.07.14</title><link href="https://kimbariri.github.io//posts/update-logs-of-day-22-07-14" rel="alternate" type="text/html" title="Update log on 22.07.14" /><published>2022-07-14T00:00:00+10:00</published><updated>2022-07-22T11:28:54+10:00</updated><id>https://kimbariri.github.io//posts/Update-Logs-of-day.22.07.14</id><content type="html" xml:base="https://kimbariri.github.io//posts/update-logs-of-day-22-07-14"><![CDATA[<h4 id="what-have-i-done">What have I done?</h4>
+<ul>
+<li>Updated the nav menu. Now it has quite multiple selections.</li>
+<li>Built the digital garden page. It’s a sort of wiki page type of architecture that is organised by tag words.</li>
+</ul>
+<img src="/assets/images//notes/Screen Shot 2022-07-14 at 11.45.47 am.png">
+<ul>
+<li>Some of the styling improvements.</li>
+<li>Changed all CSS structures into scss structures.</li>
+<li>Added extra page stylings for art presentation page and showcase of commercial projects.</li>
+</ul>
+<img src="/assets/images//notes/Screen Shot 2022-07-14 at 11.45.59 am.png">
+<p>If you want to check the next update log, click this link: <a class='internal-link' href='/posts/update-logs-of-day-22-07-19.html'>2022-07-19-Update-Logs-of-day.22.07.19</a></p>]]></content><author><name></name></author><summary type="html"><![CDATA[Update log on 22.07.14]]></summary></entry></feed>
