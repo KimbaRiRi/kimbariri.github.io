@@ -35,6 +35,9 @@ Urrrrrrrr!!! 😩
 
 ![[assets/images/notes/Screen Shot 2022-07-22 at 11.00.41 am.png]]
 
+If you see that, It's not a problem on localhost at all. 
+
+![[Screen Shot 2022-07-22 at 11.30.39 am.png]]
 
 ##### References: 
 
