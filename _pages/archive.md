@@ -13,10 +13,10 @@ permalink: /archive
 {% if note.public == true %}
 <li>
 	<a href="{{ note.url }}{%- if site.use_html_extension -%}.html{%- endif -%}" class="internal-link">{{note.title}}</a>
-	{% if note.category != null %} in {{note.category}}
+	<!-- {% if note.category != null %} in {{note.category}} -->
 		<span>({{ note.last_modified_at | date: "%B %Y" }})</span>
 		<p>{{ note.excerpt | strip_html | truncate: 60, "..." }}</p> 
-	{% endif %}
+	<!-- {% endif %} -->
 </li>
 {% endif %}
 {% endfor %}
@@ -29,10 +29,8 @@ permalink: /archive
 {% if post.public == true %}
 <li>
 	<a href="{{ post.url }}{%- if site.use_html_extension -%}.html{%- endif -%}" class="internal-link">{{post.title}}</a>
-	{% if post.category != null %} in {{post.category}}
 		<span>({{ post.last_modified_at | date: "%B %Y" }})</span>
 		<p>{{ post.excerpt | strip_html | truncate: 60, "..." }}</p>
-	{% endif %} 
 </li>
 {% endif %}
 {% endfor %}

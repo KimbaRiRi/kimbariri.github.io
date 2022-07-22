@@ -8,13 +8,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 # Comment out .htaccess if you're uploading to a non-Apache server such as Netlify
 # include:             ['.htaccess']
 # Remove obsidian-templates and delete the folder if you aren't using Obsidian Templates plugin
-exclude: ["_includes/notes_graph.json", "obsidian-templates"]
+exclude: ["_includes/notes_graph.json", "obsidian-templates", ".obsidian"]
 destination:        docs
 
 # Build settings
 plugins:
   - jekyll-redirect-from  
   - jekyll-last-modified-at
+  - jekyll-feed
+  - jekyll-seo-tag
 
 # Enabled CommonMark instead of default kramdown. All extensions are enabled, but you can choose to remove some by referencing https://github.github.com/gfm/ and https://github.com/gjtorikian/commonmarker#options
 markdown: CommonMarkGhPages
