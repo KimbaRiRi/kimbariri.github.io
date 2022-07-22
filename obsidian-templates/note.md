@@ -1,10 +1,11 @@
 ---
 title: 
 layout: note
-category:
+category: 
 description:
-tags:
-language:
+tags: []
+public : true
+language: English
 favicon: 
 ---
 

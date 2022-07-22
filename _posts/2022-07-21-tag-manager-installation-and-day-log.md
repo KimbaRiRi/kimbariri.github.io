@@ -11,7 +11,7 @@ excerpt: I plan to implement a Marketing Tech injector inside of my Jekyll-based
 
 "I found an error about categories of notes. Noooooo!!!"
 
-![[Screen Shot 2022-07-21 at 4.24.00 pm.png]]
+![[assets/images/notes/Screen Shot 2022-07-21 at 4.24.00 pm.png]]
 
 
 
@@ -24,10 +24,10 @@ excerpt: I plan to implement a Marketing Tech injector inside of my Jekyll-based
 Due to the issue I found above; I struggled to solve the problems. I was toying around with permalink setups, tag for loop syntax, changing the note folder structures, etc. None of them worked. While I was frustrated about it, one slightest idea came up to my head. I put all tags inside of the '[]' brackets. Since so, the tag categorisation amazingly works fine. 
 
 
-![[Screen Shot 2022-07-22 at 12.32.43 am.png]]
+![[assets/images/notes/Screen Shot 2022-07-22 at 12.32.43 am.png]]
 <br/>
 
-![[Screen Shot 2022-07-22 at 12.33.12 am.png]]
+![[assets/images/notes/Screen Shot 2022-07-22 at 12.33.12 am.png]]
 
 It seems to be working fine now :) 
 
@@ -57,7 +57,7 @@ Paste your Google Tag Manager snippets into your partial HTML file. (inside of '
 This is the dashboard of Google Optimize. It's similar to Adobe Target. 
 
 
-![[Screen Shot 2022-07-21 at 2.42.17 pm.png]]
+![[assets/images/notes/Screen Shot 2022-07-21 at 2.42.17 pm.png]]
 
 
 ##### Google Analytics 
@@ -90,13 +90,13 @@ To find an answer you seek on every single step, you will fell into the rabbit h
 Another thing that annoyed me was, the documentation is not so up-to-date while Adobe constantly changes their UI structures inside of AEP dashboards. 
 
 
-![[Screen Shot 2022-07-21 at 4.22.10 pm.png]]
+![[assets/images/notes/Screen Shot 2022-07-21 at 4.22.10 pm.png]]
 
 
 Another tricky step was finding the extension menu. Adobe document did not mention how to find extension. Aren't you supposed to explain that I have to make a tag property first before finding extension tab? Gees...
 
 
-![[Screen Shot 2022-07-21 at 4.55.27 pm.png]]
+![[assets/images/notes/Screen Shot 2022-07-21 at 4.55.27 pm.png]]
 
 After hopping through a couple of confusions, I finally managed to find the production and development library.
 
@@ -107,7 +107,7 @@ And finally installed required extensions. From my organisation's sandbox, I was
 Adobe is powerful indeed but I already fill the setting progress is a bit overkill now. 
 
 
-![[Screen Shot 2022-07-21 at 4.52.12 pm.png]]
+![[assets/images/notes/Screen Shot 2022-07-21 at 4.52.12 pm.png]]
 
 It was quite hustle to find correct document references within adobe experience league. I wish they could have arrayed the contents better. 
 

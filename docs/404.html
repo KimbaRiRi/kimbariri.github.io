@@ -88,7 +88,48 @@
   <h1>Oops, that's a 404. 🙈</h1>
   
   <p>Looks like this page doesn't exist. <a href="/" class="internal-link">Return home</a> to get a fresh start.</p>
-</div></main><footer><p>Here's the the <a class="internal-link" href="/archive.html">Archive of contents</a> if you want to see the contents by 'last modified at' order.</p></footer>
+</div>
+
+<script>
+  var jekyllPages = [];
+
+// Notes
+
+jekyllPages.push("http://localhost:4000/notes/E-Drumming");
+
+jekyllPages.push("http://localhost:4000/notes/fencing");
+
+jekyllPages.push("http://localhost:4000/notes/Adobe-Target-and-Analytics-to-Jekyll");
+
+jekyllPages.push("http://localhost:4000/notes/Kor.AdobeTranslation");
+
+jekyllPages.push("http://localhost:4000/notes/Marketing-Product-Trials-with-Google");
+
+jekyllPages.push("http://localhost:4000/notes/Neurodivergency");
+
+jekyllPages.push("http://localhost:4000/notes/privacy-law");
+
+jekyllPages.push("http://localhost:4000/notes/Jekyll");
+
+
+function jekyllFixCaseSensitiveUrl() {
+    var url = window.location.toString();
+    
+    if (url.slice(-1) === "/"){
+        url = url.slice(0, -1);
+    }
+    
+    var note = jekyllPages.map(function(value) {
+        return value.toLowerCase();
+    });
+    var i = note.indexOf(url.toLowerCase());
+    
+    if (i !== -1) {
+        window.location = jekyllPages[i];
+    }
+}
+window.onload = jekyllFixCaseSensitiveUrl;
+</script></main><footer><p>Here's the the <a class="internal-link" href="/archive.html">Archive of contents</a> if you want to see the contents by 'last modified at' order.</p></footer>
   </div>
   <!-- That file is not particularly elegant. This will need a refactor at some point. -->
 <style>
