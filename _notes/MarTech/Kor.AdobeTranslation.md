@@ -4,6 +4,7 @@
 title: Adobe Target 페이지의 오역부분
 layout: note
 tags: 마케팅테크
+public : false
 language: Korean
 ---
 

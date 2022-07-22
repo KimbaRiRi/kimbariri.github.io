@@ -1,8 +1,12 @@
 ---
 title: How To Install Marketing Technology on your website?
-category: MarTech
+layout: note
+category: martech
+description:
 language: English
 tags: [Marketing Techs]  
+public : true
+favicon: 
 ---
 
 This page will describe install processes of some marketing tools, such as target or google analytics. 

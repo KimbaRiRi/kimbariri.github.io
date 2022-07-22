@@ -6,6 +6,7 @@ layout: note
 category: workout
 description:
 tags: fencing
+public : false
 language: English
 favicon: 
 ---

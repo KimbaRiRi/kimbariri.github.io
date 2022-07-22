@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Marketing Suite installation, Ableton Live, and Markdown"
+public: true
 favicon:
 redirect_from: 
 excerpt: I plan to implement a Marketing Tech injector inside of my Jekyll-based website. 

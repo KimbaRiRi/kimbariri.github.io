@@ -7,7 +7,7 @@ layout: null
     {
 
       "title"    : "{{ post.title | strip_html | escape }}",
-      "url"      : "{{ post.url | remove: "/"}}",
+      "url"      : "{{ post.url }}",
       "category" : "{{post.categories | join: ', '}}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "content"  : {{ post.content | strip_html | strip_newline | strip | jsonify }}

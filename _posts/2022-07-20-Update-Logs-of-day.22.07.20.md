@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Update log on 22.07.20"
+public: true
 favicon:
 redirect_from: 
 excerpt: Update about the website and MarTech integration
+public : true
 ---
 
 

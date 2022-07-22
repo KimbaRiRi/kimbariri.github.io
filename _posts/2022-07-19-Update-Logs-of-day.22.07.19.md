@@ -2,10 +2,12 @@
 layout: post
 favicon: 
 title: "Update log on 22.07.19"
+public: true
 redirect_from: 
   - "/about-this-page"
   - "/Update-Logs-of-day.22.07.14"
 excerpt: Update log on 22.07.19
+public : true
 ---
 
 

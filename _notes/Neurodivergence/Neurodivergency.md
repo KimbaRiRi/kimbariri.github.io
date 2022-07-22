@@ -6,6 +6,7 @@ layout: note
 category: NeuroDivergency
 date: [[2022-07-11]]
 tags: Neurodivergent
+public : false
 language: English
 favicon: 
 ---

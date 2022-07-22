@@ -107,6 +107,8 @@ The log is described here.
 - [] Set the Googld Ads on note and post page (Let me have a bread on my table)
 - [] Brushing up graph node between notes. It's currently not-browser width responsive. 
 - [] The live preview tooltip is not working. Find some solutions
+- [] Fixing the permalink on digital garden
+- [] Adding pagination and backlink
 
 
 ** Do not bloody be nip-picky about the broken grammar and words. No grammar nagging, please. 
