@@ -134,6 +134,7 @@ The cause was from github.io’s quirk.</p>
 <p>The trick is just simply changing the file path.</p>
 <img src="/assets/images//notes/Screen Shot 2022-07-22 at 12.08.17 pm.png">
 <p>This only applies to posts for now.</p>
+<p>Thing is, even though everything is looking alright with localhost, you never know with the deployment. QA is a big job, indeed.</p>
 <h4 id="archive-list-problems">Archive List Problems</h4>
 <p><em>Oops, I forgot to capture the screenshot of the issues about this.</em></p>
 <p>Briefly speaking, the archive page did not show any posts and notes. I tried to figure out why. The Archive page was working fine before, and I didn’t amend that function much. Was it permalink? Was it the wrong path? I was spending almost 2 hrs figuring out this.</p>
@@ -146,10 +147,38 @@ The cause was from github.io’s quirk.</p>
 <img src="/assets/images//notes/Screen Shot 2022-07-22 at 10.46.41 am.png">
 <p>Now it’s showing correct results.</p>
 <p>For all issues, Did I write the wrong liquid syntax? Did I forget to close the brackets? None of them happened. The shitty part of the liquid syntax is, It’s very sensitive to any line braces or white space within the template. That means I have to give up some of the ‘beautify’ options within the template. 😩</p>
-<h4 id="how-do-i-write-the-posts">How Do I Write the Posts</h4>
+<h4 id="how-do-i-write-the-posts-and-publish-to-kimbaririgithubio">How Do I Write the Posts and Publish to KimbaRiRi.Github.io?</h4>
 <p>I write most of my notes via Obsidian. Most of the codes are, of course, written through visual studio code. However, I need grammar, typo, and wording checkup support as I skim texts a lot. (Typical for ADHDers)</p>
-<p>That is why for the posting, I use Obsidian.</p>
+<p>That is why for the posting, I use Obsidian. You can see that Grammarly pick up some word reviews within the notes.</p>
 <img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.02.50 am.png">
+<p>Within the Obsidian, Enable the template core plugin. Inside of obsidian templates, you can set up the skeleton template.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.31.02 pm.png">
+<p>Inside of each template, they do have the skeleton format.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.32.25 pm.png">
+<p>And this plugin helps me to write the post as Jekyll only accept the post file name starting from a date like this ‘Year-Month-Day’</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.34.33 pm.png">
+<p>In order to generate the correct image and HTML file link, I borrowed the plug-in from <a href="https://github.com/maximevaillancourt/maximevaillancourt.com">https://github.com/maximevaillancourt/maximevaillancourt.com</a></p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.35.52 pm.png">
+<p>However, this plug-in is only specified for notes and posts. The way I formulate notes and posts is different to their Ruby plugin sets. For that reason, I have to write separate plugins only for posts.</p>
+<p>Well, if I have some time. Unfortunately, I don’t 😭 . Also, I sometimes move what I wrote from posts to notes, so It’s no use to config existing note plugins. I am treating my daily posts as some kind of quick draft stage before populating notes.</p>
+<p>For that reason, I am happy with manually replacing some file routes if I need to. For now.</p>
+<p>This is the base folder of notes.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.39.42 pm.png">
+<br/>
+<p>For now, the asset path is based on the posts folder, but this will be changed to notes at some point.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.39.47 pm.png">
+<p>You can generate vaults from the existing folder.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.43.38 pm.png">
+<p>And Based on the setup of Jekyll, your writings on markdown files via Obsidian will be generated into HTML format.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.44.52 pm.png">
+<p>After doing so, you got now rendered HTML files. The last step is deploying your generated HTML files into your GitHub or bitbucket (whatever your deployment cycle is)</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.45.59 pm.png">
+<p>Indeed, I do have multiple vaults. Personal Wiki is for this Jekyll posting. BrainDumpster is literally for dumpling any random thought pieces. Cross-Device is a lightweight vault as I sometimes write stuff on my phone while I have no access to the laptop (e.g. commuting).</p>
+<p>Luckly, git-note from Android Phone does enable me to do this. I am not sure about iPhone. There was a terminal source management app within iPad but it was bloody slow.</p>
+<p>I also often write my thought notes via Google Voice Keyboard. It’s not perfect but helps me to write when I don’t want to look at the screen. For accuracy-wise, Otter.io would be the better option though.</p>
+<img src="/assets/images//posts/Screen Shot 2022-07-22 at 12.48.08 pm.png">
+<p>You may need web programming skills to publish your obsidian posts and notes. If that is you, consider subscribing to obsidian ‘Publish’ service. As I am quite confident to utilise Git, I don’t need one.</p>
+<h3 id="adobe-target">Adobe Target</h3>
 
 </section></main><footer><p>Here's the the <a class="internal-link" href="/archive.html">Archive of contents</a> if you want to see the contents by 'last modified at' order.</p></footer>
   </div>
