@@ -1,6 +1,6 @@
 # Generated website directory
 _site/
-docs/
+
 # Jekyll cache & metadata
 .jekyll-cache/
 .jekyll-metadata
