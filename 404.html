@@ -11,29 +11,5 @@ id: "not-found"
   <p>Looks like this page doesn't exist. <a href="/" class="internal-link">Return home</a> to get a fresh start.</p>
 </div>
 
-<script>
-  var jekyllPages = [];
-
-// Notes
-{% for note in site.notes %}
-jekyllPages.push("{{ site.url }}{{ note.url }}");
-{% endfor %}
-
-function jekyllFixCaseSensitiveUrl() {
-    var url = window.location.toString();
-    
-    if (url.slice(-1) === "/"){
-        url = url.slice(0, -1);
-    }
-    
-    var note = jekyllPages.map(function(value) {
-        return value.toLowerCase();
-    });
-    var i = note.indexOf(url.toLowerCase());
-    
-    if (i !== -1) {
-        window.location = jekyllPages[i];
-    }
-}
-window.onload = jekyllFixCaseSensitiveUrl;
-</script>
+<!-- Script pointing to search-script.js -->
+<script src="/assets/js/case-sensitive-url.js" type="text/javascript"></script>
