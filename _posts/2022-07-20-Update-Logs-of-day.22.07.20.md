@@ -23,7 +23,7 @@ public : true
 
 I added the portfolio showcase project "Macquarie Bank - Wealth Product." 
 
-![[/notes/images/notes/Screen Shot 2022-07-20 at 11.11.54 pm.png]]
+![[/notes/Screen Shot 2022-07-20 at 11.11.54 pm.png]]
 
 <br/>
 
