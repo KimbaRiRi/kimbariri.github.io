@@ -38,7 +38,7 @@ collections:
     permalink: /pages/:title
   posts:
     output: true
-    permalink: /posts/:title
+    permalink: /posts/:slug
 
 defaults:
   - scope:

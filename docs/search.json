@@ -3,7 +3,7 @@
     {
 
       "title"    : "Website and MarTech Memo Logs on 22.07.22",
-      "url"      : "/posts/website-MarTech-memo-logs.22.07.22",
+      "url"      : "/posts/website-martech-memo-logs-22-07-22",
       "content"  : "Website logs and Today’s findings\nObsidian Template Links\nI found crazy-awesome obsidian template references:\n\nhttps://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/\nhttps://agileadam.com/2022/07/obsidian-daily-note-implementation-v2/\n\nPublic Site Error Founding\n404 error while no issue on localhost\nI didn’t know this till now. Oh my god. What a disaster. Haven’t I checked this? Of course, I did.\nThe cause was from github.io’s quirk.\nUrrrrrrrr!!! 😩\n\n\n\nIf you see that, It’s not a problem on localhost at all.\n\nAnd I found some script that is lowering the capital case of URLs into the lowercase-Jekyll template URL. Let’s try that.\nNope. 404 errors due to XSS policies on the browser.\nBugger!\n\n\n\n\nIn the end, I solved this issue by changing it from ‘: title’ to ‘: slug.’\nReferences:\nhttps://mademistakes.com/mastering-jekyll/how-to-link/\nhttps://gist.github.com/sbliven/0ca4dee4e0190a6b3dc7e3d8040cc395?permalink_comment_id=3526205\nImage link does not correctly work on posts\nThis issue is also, again, due to the file path. It may require me to write some Ruby Plugin…but it’s too much hustle to think about.\nThis is what it looks like when I attach the images to the posts.\n\n\nWhen they are HTML-fied, Those image links get broken.\n\nI manually changed the location via visual studio code for a quick solution.\nThis issue only happens within the journal post. The note is absolutely fine.\n\nThe trick is just simply changing the file path.\n\nThis only applies to posts for now.\nArchive List Problems\nOops, I forgot to capture the screenshot of the issues about this.\nBriefly speaking, the archive page did not show any posts and notes. I tried to figure out why. The Archive page was working fine before, and I didn’t amend that function much. Was it permalink? Was it the wrong path? I was spending almost 2 hrs figuring out this.\nNow it’s solved. Hugh.\n\nHowever, it shows all notes, including notes I don’t want to publish.\nSo I added the ‘Public’ option inside the frontmatter and changed the liquid loop slightly.\n\n\n\nNow it’s showing correct results.\nFor all issues, Did I write the wrong liquid syntax? Did I forget to close the brackets? None of them happened. The shitty part of the liquid syntax is, It’s very sensitive to any line braces or white space within the template. That means I have to give up some of the ‘beautify’ options within the template. 😩\nHow Do I Write the Posts\nI write most of my notes via Obsidian. Most of the codes are, of course, written through visual studio code. However, I need grammar, typo, and wording checkup support as I skim texts a lot. (Typical for ADHDers)\nThat is why for the posting, I use Obsidian."
 
     },
@@ -19,7 +19,7 @@
     {
 
       "title"    : "Update log on 22.07.20",
-      "url"      : "/posts/Update-Logs-of-day.22.07.20",
+      "url"      : "/posts/update-logs-of-day-22-07-20",
       "content"  : "Website Update\n\nAdding grid stylings on works and side-project/sparkle page section on SCSS.\nWIP Google Analytics library with correct ads Id\nAdded more typography setups for posts and notes\nFor the internal link outside of the “note” folder, I have to use [Link Text](&lt;/‘filepath’&gt;) Syntax\nHowever, If I apply this to the page, it will work as external.\nAdded two project showcase pages.\nAdded posts that are linking to the “about-this-page” note.\n\nExamples of changes are below:\nI added the portfolio showcase project “Macquarie Bank - Wealth Product.”\n\n\nAnother one is polishing typography styling.\n\nHere is the mobile view as well.\n\nMarketing Tech Integration\nI planned to implement Marketing tech tools on my page but it seems like adding a new showcase page took longer than I thought.\n\nWIP with Google Analytics\nWIP with Adobe Target"
 
     },
@@ -27,7 +27,7 @@
     {
 
       "title"    : "Update log on 22.07.19",
-      "url"      : "/posts/Update-Logs-of-day.22.07.19",
+      "url"      : "/posts/update-logs-of-day-22-07-19",
       "content"  : "The search box is polished.\nThe wiki-image link is working correctly now.\nAdded redirect from options on posts.\nInternal links between notes\nThe graph section is currently off as it needs to be amended for mobile-responsive sizing on SVG.\n\nIf you want to check the previous update log, click this link: 2022-07-14-Update-Logs-of-day.22.07.14"
 
     },
@@ -35,7 +35,7 @@
     {
 
       "title"    : "Update log on 22.07.14",
-      "url"      : "/posts/Update-Logs-of-day.22.07.14",
+      "url"      : "/posts/update-logs-of-day-22-07-14",
       "content"  : "What have I done?\n\nUpdated the nav menu. Now it has quite multiple selections.\nBuilt the digital garden page. It’s a sort of wiki page type of architecture that is organised by tag words.\n\n\n\nSome of the styling improvements.\nChanged all CSS structures into scss structures.\nAdded extra page stylings for art presentation page and showcase of commercial projects.\n\n\nIf you want to check the next update log, click this link: 2022-07-19-Update-Logs-of-day.22.07.19"
 
     },

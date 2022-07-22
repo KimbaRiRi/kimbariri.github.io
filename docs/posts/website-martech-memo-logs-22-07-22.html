@@ -30,7 +30,7 @@
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Update log on 22.07.19">
+  <meta name="description" content="Website logs and Today's findings on 22.07.22">
   <meta property="og:site_name" content="My Brain Dumpster">
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
 
@@ -40,28 +40,28 @@
 
   
   
-  <meta property="og:description" content="Update log on 22.07.19">
+  <meta property="og:description" content="Website logs and Today's findings on 22.07.22">
   
 
   
-  <meta property="og:title" content="Update log on 22.07.19">
+  <meta property="og:title" content="Website and MarTech Memo Logs on 22.07.22">
   <meta property="og:type" content="article">
   
 
   
-  <meta property="article:published_time" content="2022-07-19T00:00:00+10:00">
+  <meta property="article:published_time" content="2022-07-22T00:00:00+10:00">
   <meta property="article:author" content="http://localhost:4000/">
   
 
   
-  <meta property="og:url" content="http://localhost:4000/posts/Update-Logs-of-day.22.07.19.html">
+  <meta property="og:url" content="http://localhost:4000/posts/website-martech-memo-logs-22-07-22.html">
   
 
   
 
   <title>
     
-    Update log on 22.07.19 &mdash; My Brain Dumpster
+    Website and MarTech Memo Logs on 22.07.22 &mdash; My Brain Dumpster
     
   </title>
 </head>
@@ -88,20 +88,68 @@
 
 
   <div class="wrapper"><main class="container"><section>
-  <time datetime="2022-07-19T00:00:00+10:00" class="faded">
-    July 19, 2022
+  <time datetime="2022-07-22T00:00:00+10:00" class="faded">
+    July 22, 2022
     
   </time>
-  <h1>Update log on 22.07.19</h1>
-  <img src="/assets/images/purple-theme.jpeg">
+  <h1>Website and MarTech Memo Logs on 22.07.22</h1>
+  <h2 id="website-logs-and-todays-findings">Website logs and Today’s findings</h2>
+<h3 id="obsidian-template-links">Obsidian Template Links</h3>
+<p>I found crazy-awesome obsidian template references:</p>
 <ul>
-<li>The search box is polished.</li>
-<li>The wiki-image link is working correctly now.</li>
-<li>Added redirect from options on posts.</li>
-<li>Internal links between notes</li>
-<li>The graph section is currently off as it needs to be amended for mobile-responsive sizing on SVG.</li>
+<li><a href="https://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/">https://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/</a></li>
+<li><a href="https://agileadam.com/2022/07/obsidian-daily-note-implementation-v2/">https://agileadam.com/2022/07/obsidian-daily-note-implementation-v2/</a></li>
 </ul>
-<p>If you want to check the previous update log, click this link: <a class='internal-link' href='/posts/Update-Logs-of-day.22.07.14.html'>2022-07-14-Update-Logs-of-day.22.07.14</a></p>
+<h3 id="public-site-error-founding">Public Site Error Founding</h3>
+<h4 id="error-while-no-issue-on-localhost">404 error while no issue on localhost</h4>
+<p>I didn’t know this till now. Oh my god. What a disaster. Haven’t I checked this? Of course, I did.
+The cause was from github.io’s quirk.</p>
+<p>Urrrrrrrr!!! 😩</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.00.54 am.png">
+<br/>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.00.41 am.png">
+<p>If you see that, It’s not a problem on localhost at all.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.30.39 am.png">
+<p>And I found some script that is lowering the capital case of URLs into the lowercase-Jekyll template URL. Let’s try that.</p>
+<p>Nope. 404 errors due to XSS policies on the browser.</p>
+<p>Bugger!</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.47.53 am.png">
+<br/>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.51.16 am.png">
+<br/>
+<p>In the end, I solved this issue by changing it from ‘: title’ to ‘: slug.’</p>
+<h5 id="references">References:</h5>
+<p><a href="https://mademistakes.com/mastering-jekyll/how-to-link/">https://mademistakes.com/mastering-jekyll/how-to-link/</a>
+<a href="https://gist.github.com/sbliven/0ca4dee4e0190a6b3dc7e3d8040cc395?permalink_comment_id=3526205">https://gist.github.com/sbliven/0ca4dee4e0190a6b3dc7e3d8040cc395?permalink_comment_id=3526205</a></p>
+<h4 id="image-link-does-not-correctly-work-on-posts">Image link does not correctly work on posts</h4>
+<p>This issue is also, again, due to the file path. It may require me to write some Ruby Plugin…but it’s too much hustle to think about.</p>
+<p>This is what it looks like when I attach the images to the posts.</p>
+<!-- <img src="/assets/images/Screen Shot 2022-07-22 at 11.52.15 am.png"> -->
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.52.15 am.png">
+<p>When they are HTML-fied, Those image links get broken.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.52.04 am.png">
+<p>I manually changed the location via visual studio code for a quick solution.</p>
+<p>This issue only happens within the journal post. The note is absolutely fine.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.57.49 am.png">
+<p>The trick is just simply changing the file path.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 12.08.17 pm.png">
+<p>This only applies to posts for now.</p>
+<h4 id="archive-list-problems">Archive List Problems</h4>
+<p><em>Oops, I forgot to capture the screenshot of the issues about this.</em></p>
+<p>Briefly speaking, the archive page did not show any posts and notes. I tried to figure out why. The Archive page was working fine before, and I didn’t amend that function much. Was it permalink? Was it the wrong path? I was spending almost 2 hrs figuring out this.</p>
+<p>Now it’s solved. Hugh.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 10.32.37 am.png">
+<p>However, it shows all notes, including notes I don’t want to publish.</p>
+<p>So I added the ‘Public’ option inside the frontmatter and changed the liquid loop slightly.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 10.46.34 am.png">
+<br/>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 10.46.41 am.png">
+<p>Now it’s showing correct results.</p>
+<p>For all issues, Did I write the wrong liquid syntax? Did I forget to close the brackets? None of them happened. The shitty part of the liquid syntax is, It’s very sensitive to any line braces or white space within the template. That means I have to give up some of the ‘beautify’ options within the template. 😩</p>
+<h4 id="how-do-i-write-the-posts">How Do I Write the Posts</h4>
+<p>I write most of my notes via Obsidian. Most of the codes are, of course, written through visual studio code. However, I need grammar, typo, and wording checkup support as I skim texts a lot. (Typical for ADHDers)</p>
+<p>That is why for the posting, I use Obsidian.</p>
+<img src="/assets/images//notes/Screen Shot 2022-07-22 at 11.02.50 am.png">
 
 </section></main><footer><p>Here's the the <a class="internal-link" href="/archive.html">Archive of contents</a> if you want to see the contents by 'last modified at' order.</p></footer>
   </div>
