@@ -23,18 +23,18 @@ public : true
 
 I added the portfolio showcase project "Macquarie Bank - Wealth Product." 
 
-![[/posts/Screen Shot 2022-07-20 at 11.11.54 pm.png]]
+![[/assets/images/notes/Screen Shot 2022-07-20 at 11.11.54 pm.png]]
 
 <br/>
 
 Another one is polishing typography styling. 
 
-![[/posts/Screen Shot 2022-07-20 at 11.23.38 pm.png]]
+![[/assets/images/notes/Screen Shot 2022-07-20 at 11.23.38 pm.png]]
 
 Here is the mobile view as well. 
 
 
-![[Screen Shot 2022-07-21 at 12.05.39 am 1.png]]
+![[assets/images/notes/Screen Shot 2022-07-21 at 12.05.39 am 1.png]]
 
 
 ### Marketing Tech Integration

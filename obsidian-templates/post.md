@@ -1,8 +1,10 @@
 ---
 layout: post
-title: w
+title: ""
+public: true
 favicon:
 redirect_from: 
-  - ""
 excerpt: 
 ---
+
+##

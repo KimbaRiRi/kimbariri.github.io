@@ -6,7 +6,6 @@ public: true
 redirect_from: 
   - "/Update-Logs-of-day.22.07.19"
 excerpt: Update log on 22.07.14
-public : true
 ---
 
 
