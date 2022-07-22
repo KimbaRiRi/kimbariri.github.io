@@ -23,13 +23,13 @@ public : true
 
 I added the portfolio showcase project "Macquarie Bank - Wealth Product." 
 
-![[/notes/Screen Shot 2022-07-20 at 11.11.54 pm.png]]
+![[/posts/Screen Shot 2022-07-20 at 11.11.54 pm.png]]
 
 <br/>
 
 Another one is polishing typography styling. 
 
-![[/notes/Screen Shot 2022-07-20 at 11.23.38 pm.png]]
+![[/posts/Screen Shot 2022-07-20 at 11.23.38 pm.png]]
 
 Here is the mobile view as well. 
 

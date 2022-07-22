@@ -90,6 +90,8 @@ The trick is just simply changing the file path.
 
 This only applies to posts for now. 
 
+Thing is, even though everything is looking alright with localhost, you never know with the deployment. QA is a big job, indeed. 
+
 #### Archive List Problems 
 
 
@@ -119,11 +121,80 @@ Now it's showing correct results.
 
 For all issues, Did I write the wrong liquid syntax? Did I forget to close the brackets? None of them happened. The shitty part of the liquid syntax is, It's very sensitive to any line braces or white space within the template. That means I have to give up some of the 'beautify' options within the template. 😩
 
-#### How Do I Write the Posts
+#### How Do I Write the Posts and Publish to KimbaRiRi.Github.io? 
 
 I write most of my notes via Obsidian. Most of the codes are, of course, written through visual studio code. However, I need grammar, typo, and wording checkup support as I skim texts a lot. (Typical for ADHDers)
 
 
-That is why for the posting, I use Obsidian. 
+That is why for the posting, I use Obsidian. You can see that Grammarly pick up some word reviews within the notes. 
 
 ![[/notes/Screen Shot 2022-07-22 at 11.02.50 am.png]]
+
+Within the Obsidian, Enable the template core plugin. Inside of obsidian templates, you can set up the skeleton template. 
+
+![[/posts/Screen Shot 2022-07-22 at 12.31.02 pm.png]]
+
+Inside of each template, they do have the skeleton format. 
+
+![[/posts/Screen Shot 2022-07-22 at 12.32.25 pm.png]]
+
+And this plugin helps me to write the post as Jekyll only accept the post file name starting from a date like this 'Year-Month-Day'
+
+
+![[/posts/Screen Shot 2022-07-22 at 12.34.33 pm.png]]
+
+
+In order to generate the correct image and HTML file link, I borrowed the plug-in from https://github.com/maximevaillancourt/maximevaillancourt.com
+
+
+![[/posts/Screen Shot 2022-07-22 at 12.35.52 pm.png]]
+
+However, this plug-in is only specified for notes and posts. The way I formulate notes and posts is different to their Ruby plugin sets. For that reason, I have to write separate plugins only for posts. 
+
+Well, if I have some time. Unfortunately, I don't 😭 . Also, I sometimes move what I wrote from posts to notes, so It's no use to config existing note plugins. I am treating my daily posts as some kind of quick draft stage before populating notes.
+
+
+For that reason, I am happy with manually replacing some file routes if I need to. For now. 
+
+This is the base folder of notes. 
+
+
+![[/posts/Screen Shot 2022-07-22 at 12.39.42 pm.png]]
+
+
+<br/>
+
+
+For now, the asset path is based on the posts folder, but this will be changed to notes at some point. 
+
+
+![[/posts/Screen Shot 2022-07-22 at 12.39.47 pm.png]]
+
+You can generate vaults from the existing folder. 
+
+![[/posts/Screen Shot 2022-07-22 at 12.43.38 pm.png]]
+
+And Based on the setup of Jekyll, your writings on markdown files via Obsidian will be generated into HTML format. 
+
+
+![[/posts/Screen Shot 2022-07-22 at 12.44.52 pm.png]]
+
+
+
+After doing so, you got now rendered HTML files. The last step is deploying your generated HTML files into your GitHub or bitbucket (whatever your deployment cycle is)
+
+
+
+![[/posts/Screen Shot 2022-07-22 at 12.45.59 pm.png]]
+
+Indeed, I do have multiple vaults. Personal Wiki is for this Jekyll posting. BrainDumpster is literally for dumpling any random thought pieces. Cross-Device is a lightweight vault as I sometimes write stuff on my phone while I have no access to the laptop (e.g. commuting). 
+
+Luckly, git-note from Android Phone does enable me to do this. I am not sure about iPhone. There was a terminal source management app within iPad but it was bloody slow.
+
+I also often write my thought notes via Google Voice Keyboard. It's not perfect but helps me to write when I don't want to look at the screen. For accuracy-wise, Otter.io would be the better option though. 
+
+
+![[/posts/Screen Shot 2022-07-22 at 12.48.08 pm.png]]
+
+
+You may need web programming skills to publish your obsidian posts and notes. If that is you, consider subscribing to obsidian 'Publish' service. As I am quite confident to utilise Git, I don't need one. 
