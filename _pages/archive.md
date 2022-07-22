@@ -28,8 +28,8 @@ permalink: /archive
 {% for post in site.posts %}
 {% if post.public == true %}
 <li>
-	<a href="{{ note.url }}{%- if site.use_html_extension -%}.html{%- endif -%}" class="internal-link">{{post.title}}</a>
-	{% if post.category != null %} in {{note.category}}
+	<a href="{{ post.url }}{%- if site.use_html_extension -%}.html{%- endif -%}" class="internal-link">{{post.title}}</a>
+	{% if post.category != null %} in {{post.category}}
 		<span>({{ post.last_modified_at | date: "%B %Y" }})</span>
 		<p>{{ post.excerpt | strip_html | truncate: 60, "..." }}</p>
 	{% endif %} 
