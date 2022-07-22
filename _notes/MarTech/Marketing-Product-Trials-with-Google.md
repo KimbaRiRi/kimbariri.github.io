@@ -1,6 +1,6 @@
 ---
 title: How To Install Marketing Technology on your website?
-category: Martech
+category: MarTech
 language: English
 tags: [Marketing Techs]  
 ---

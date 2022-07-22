@@ -24,7 +24,7 @@
 
       "title"    : "Trial of implementing Adobe Launch, Analytics, Target, and Jekyll",
       "url"      : "notesAdobe-Target-and-Analytics-to-Jekyll",
-      "category" : "Martech",
+      "category" : "MarTech",
       "tags"     : "Marketing Techs, CMS",
       "content"  : "I found some articles regarding integrating Jekyll to Google Analytics but couldn’t find any material regarding Adobe suite.\nFor Google Suite, Refer to this note Marketing-Product-Trials-with-Google"
 
@@ -44,7 +44,7 @@
 
       "title"    : "How To Install Marketing Technology on your website?",
       "url"      : "notesMarketing-Product-Trials-with-Google",
-      "category" : "Martech",
+      "category" : "MarTech",
       "tags"     : "Marketing Techs",
       "content"  : "This page will describe install processes of some marketing tools, such as target or google analytics.\nI am currently logging my progress of integrating between my Jekyll based website and Google Analytics suites.\nAfter completing this, I plan to implement Analytics Experience Suite as well for a trial. I hope the sample sandbox allows me to extend multi-platforms including my website.\nCurrently the progress interim logs are tracked down at Journal posts.\nFor instance, this post. 2022-07-21-tag-manager-installation-and-day-log"
 
@@ -74,7 +74,7 @@
 
       "title"    : "Useful Jekyll Command",
       "url"      : "notesJekyll",
-      "category" : "Technology",
+      "category" : "Web-Development",
       "tags"     : "Web Development",
       "content"  : "Useful Jekyll Command\nhttps://shafi.com.au/code/useful-jekyll-commands/"
 

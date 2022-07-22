@@ -1,6 +1,6 @@
 ---
 title: Trial of implementing Adobe Launch, Analytics, Target, and Jekyll
-category: Martech
+category: MarTech
 language: English
 tags: [Marketing Techs, CMS]
 ---

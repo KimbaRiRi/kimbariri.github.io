@@ -1,7 +1,7 @@
 ---
 title: Useful Jekyll Command 
 layout: note
-category: Technology
+category: Web-Development
 description:
 tags: [Web Development]  
 language: English
