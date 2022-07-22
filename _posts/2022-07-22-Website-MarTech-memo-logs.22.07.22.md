@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Website and MarTech Memo Logs"
-public: false
+public: true
 favicon:
 redirect_from: 
 excerpt: "Website logs and Today's findings on 22.07.22"
@@ -128,7 +128,27 @@ Now it's showing correct results.
 
 For all issues, Did I write the wrong liquid syntax? Did I forget to close the brackets? None of them happened. The shitty part of the liquid syntax is, It's very sensitive to any line braces or white space within the template. That means I have to give up some of the 'beautify' options within the template. 😩
 
-#### How Do I Write the Posts and Publish to KimbaRiRi.Github.io? 
+
+### How Do I Setup SEO on Jekyll + Github? 
+
+This is still ongoing test. I am not sure how github.io is webcrowler friendly. 
+
+As I already wrote quite bits of meta tags, I don't feel like installing Jekyll gem for feed and SEO is necessary. We will see. 
+
+This is all I added on head.html. 
+
+![[Screen Shot 2022-07-22 at 9.05.44 pm.png]]
+
+References: 
+
+https://jsinibardy.com/optimize-seo-jekyll#install-jekyll-sitemap-and-optimize-date-management
+https://blog.mastykarz.nl/improve-jekyll-seo/
+https://talk.jekyllrb.com/t/help-on-google-indexing-and-seo-plugin/5729
+http://jekyll.github.io/jekyll-seo-tag/advanced-usage/
+
+
+
+### How Do I Write the Posts and Publish to KimbaRiRi.Github.io? 
 
 I write most of my notes via Obsidian. Most of the codes are, of course, written through visual studio code. However, I need grammar, typo, and wording checkup support as I skim texts a lot. (Typical for ADHDers)
 
@@ -206,6 +226,20 @@ I also often write my thought notes via Google Voice Keyboard. It's not perfect 
 
 You may need web programming skills to publish your obsidian posts and notes. If that is you, consider subscribing to obsidian 'Publish' service. As I am quite confident to utilise Git, I don't need one. 
 
+
+### How to solve conflicts
+
+In the most laziest way? 
+
+If you don't give a F about losing your changes, simple choose "Resolve Using 'Theirs'". 
+
+I often do this when I know exactly what my changes are or all I need to replace is a compiled build. 
+
+![[/posts/Screen Shot 2022-07-22 at 5.46.50 pm.png]]
+
+More conveniently, If you open the conflict files via VSC, VSC will smartly show which parts are conflicting. You can choose either accept current (your local codes) or incoming changes (merging one). 
+
+![[/posts/Screen Shot 2022-07-22 at 5.47.06 pm.png]]
 
 ### Random Rant
 

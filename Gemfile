@@ -16,6 +16,9 @@ gem "jekyll-redirect-from", "~> 0.15"
 group :jekyll_plugins do
   gem 'jekyll-commonmark-ghpages'
   gem "jekyll-last-modified-at"
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+  # gem "jekyll-redirect-from", "~> 0.15"
   # gem "jekyll-feed", "~> 0.12"
   # gem "jekyll-sitemap"
   # gem "jekyll-archives"
