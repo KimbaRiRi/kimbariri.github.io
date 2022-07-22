@@ -1,5 +1,6 @@
 
-
+<head>
+	<meta charset="UTF-8">
   {% if site.use_html_extension == false %}
   <link rel="canonical" href="{{ site.url }}{{ site.baseurl }}{{ page.url }}.html">
   {% endif %}
@@ -43,6 +44,11 @@
 
   {% if page.image %}
   <meta property="og:image" content="{{ site.url }}{{ site.baseurl }}{{ page.image }}">
+  {% endif %}
+
+
+  {% if jekyll.environment == 'production' %}
+    {% include analytics.html %}
   {% endif %}
 
   <title>
