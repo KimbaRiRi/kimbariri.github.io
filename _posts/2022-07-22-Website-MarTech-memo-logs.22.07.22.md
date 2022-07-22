@@ -198,3 +198,7 @@ I also often write my thought notes via Google Voice Keyboard. It's not perfect 
 
 
 You may need web programming skills to publish your obsidian posts and notes. If that is you, consider subscribing to obsidian 'Publish' service. As I am quite confident to utilise Git, I don't need one. 
+
+
+### Adobe Target 
+
