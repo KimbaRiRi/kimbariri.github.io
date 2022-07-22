@@ -73,4 +73,4 @@ open_external_links_in_new_tab: true
 page_excerpts: true
 
 # MarTech Ids
-# google_analytics: UA-XXXXXXXXX-X
+google_analytics: UA-40317122-1

@@ -20,3 +20,6 @@ Follow the [How to setup this site](https://notenote.link/notes/how-to-setup-thi
 
 ## More inspirations & references
 - [arboretum.link](https://www.arboretum.link/). 
+
+## Build command is this. 
+JEKYLL_ENV=production bundle exec jekyll build

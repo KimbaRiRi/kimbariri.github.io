@@ -17,6 +17,19 @@ excerpt: I plan to implement a Marketing Tech injector inside of my Jekyll-based
 
 `Implementing Adobe suite and google suite took longer than I thought. Injecting the library was not a matter, but the correct configuration along with Jekyll and github.io was tricky.`
 
+#### What's implemented? 
+
+Clarity is WIP. 
+
+References: 
+https://clarity.microsoft.com/
+https://docs.microsoft.com/en-us/clarity/clarity-setup
+
+![[Screen Shot 2022-07-22 at 3.31.49 pm.png]]
+
+Or you can do manually. 
+
+![[Screen Shot 2022-07-22 at 3.33.10 pm.png]]
 
 #### Today's website update
 

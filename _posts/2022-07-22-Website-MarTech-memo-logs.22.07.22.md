@@ -1,20 +1,27 @@
 ---
 layout: post
-title: "Website and MarTech Memo Logs on 22.07.22"
+title: "Website and MarTech Memo Logs"
 public: false
 favicon:
 redirect_from: 
 excerpt: "Website logs and Today's findings on 22.07.22"
 ---
 
-## Website logs and Today's findings
+## 
 
 
 ### Obsidian Template Links
 
 I found crazy-awesome obsidian template references: 
-- https://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/
+- https://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/ 
+  
+  ⬆️ This one is freaking awesome. You should check one too. 
+  
 - https://agileadam.com/2022/07/obsidian-daily-note-implementation-v2/
+- https://kevinquinn.fun/blog/get-started-with-obsidian-periodic-notes-and-templater/
+- https://andrewm.codes/minimalist-habit-tracker-template-for-obsidian/
+- https://help.obsidian.md/Plugins/Templates
+- https://dannb.org/blog/2022/obsidian-daily-note-template/
 
 
 ### Public Site Error Founding
@@ -200,5 +207,9 @@ I also often write my thought notes via Google Voice Keyboard. It's not perfect 
 You may need web programming skills to publish your obsidian posts and notes. If that is you, consider subscribing to obsidian 'Publish' service. As I am quite confident to utilise Git, I don't need one. 
 
 
-### Adobe Target 
+### Random Rant
 
+I am a crazy purple shipper. Even my VSC theme is 'shade of purple'. 
+
+
+![[/posts/Screen Shot 2022-07-22 at 2.22.15 pm.png]]
