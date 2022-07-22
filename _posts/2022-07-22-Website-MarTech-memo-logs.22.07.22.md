@@ -29,21 +29,66 @@ Urrrrrrrr!!! 😩
 
 
 
-![[assets/images/notes/Screen Shot 2022-07-22 at 11.00.54 am.png]]
+![[/notes/Screen Shot 2022-07-22 at 11.00.54 am.png]]
 
+<br/>
 
-
-![[assets/images/notes/Screen Shot 2022-07-22 at 11.00.41 am.png]]
+![[/notes/Screen Shot 2022-07-22 at 11.00.41 am.png]]
 
 If you see that, It's not a problem on localhost at all. 
 
-![[Screen Shot 2022-07-22 at 11.30.39 am.png]]
+![[/notes/Screen Shot 2022-07-22 at 11.30.39 am.png]]
+
+And I found some script that is lowering the capital case of URLs into the lowercase-Jekyll template URL. Let's try that. 
+
+Nope. 404 errors due to XSS policies on the browser. 
+
+Bugger!
+
+
+![[/notes/Screen Shot 2022-07-22 at 11.47.53 am.png]]
+
+<br/>
+
+![[/notes/Screen Shot 2022-07-22 at 11.51.16 am.png]]
+<br/>
+
+In the end, I solved this issue by changing it from ': title' to ': slug.'
+
 
 ##### References: 
 
 https://mademistakes.com/mastering-jekyll/how-to-link/
 https://gist.github.com/sbliven/0ca4dee4e0190a6b3dc7e3d8040cc395?permalink_comment_id=3526205
 
+
+#### Image link does not correctly work on posts
+
+
+This issue is also, again, due to the file path. It may require me to write some Ruby Plugin...but it's too much hustle to think about. 
+
+This is what it looks like when I attach the images to the posts. 
+
+<!-- ![[Screen Shot 2022-07-22 at 11.52.15 am.png]] -->
+![[/notes/Screen Shot 2022-07-22 at 11.52.15 am.png]]
+
+When they are HTML-fied, Those image links get broken. 
+
+
+![[/notes/Screen Shot 2022-07-22 at 11.52.04 am.png]]
+
+
+I manually changed the location via visual studio code for a quick solution. 
+
+This issue only happens within the journal post. The note is absolutely fine. 
+
+![[/notes/Screen Shot 2022-07-22 at 11.57.49 am.png]]
+
+The trick is just simply changing the file path. 
+
+![[/notes/Screen Shot 2022-07-22 at 12.08.17 pm.png]]
+
+This only applies to posts for now. 
 
 #### Archive List Problems 
 
@@ -56,19 +101,19 @@ Briefly speaking, the archive page did not show any posts and notes. I tried to 
 Now it's solved. Hugh. 
 
 
-![[assets/images/notes/Screen Shot 2022-07-22 at 10.32.37 am.png]]
+![[/notes/Screen Shot 2022-07-22 at 10.32.37 am.png]]
 
 
 However, it shows all notes, including notes I don't want to publish. 
 
-So I added the 'Public' option inside of frontmatter and changed the liquid loop a bit. 
+So I added the 'Public' option inside the frontmatter and changed the liquid loop slightly. 
 
 
-![[assets/images/notes/Screen Shot 2022-07-22 at 10.46.34 am.png]]
+![[/notes/Screen Shot 2022-07-22 at 10.46.34 am.png]]
 
+<br/>
 
-
-![[assets/images/notes/Screen Shot 2022-07-22 at 10.46.41 am.png]]
+![[/notes/Screen Shot 2022-07-22 at 10.46.41 am.png]]
 
 Now it's showing correct results. 
 
@@ -81,4 +126,4 @@ I write most of my notes via Obsidian. Most of the codes are, of course, written
 
 That is why for the posting, I use Obsidian. 
 
-![[assets/images/notes/Screen Shot 2022-07-22 at 11.02.50 am.png]]
+![[/notes/Screen Shot 2022-07-22 at 11.02.50 am.png]]

@@ -4,7 +4,7 @@
 
       "title"    : "Website and MarTech Memo Logs on 22.07.22",
       "url"      : "/posts/Website-MarTech-memo-logs.22.07.22",
-      "content"  : "Website logs and Today’s findings\nObsidian Template Links\nI found crazy-awesome obsidian template references:\n\nhttps://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/\nhttps://agileadam.com/2022/07/obsidian-daily-note-implementation-v2/\n\nPublic Site Error Founding\n404 error while no issue on localhost\nI didn’t know this till now. Oh my god. What a disaster. Haven’t I checked this? Of course, I did.\nThe cause was from github.io’s quirk.\nUrrrrrrrr!!! 😩\n\n\nIf you see that, It’s not a problem on localhost at all.\n\nReferences:\nhttps://mademistakes.com/mastering-jekyll/how-to-link/\nhttps://gist.github.com/sbliven/0ca4dee4e0190a6b3dc7e3d8040cc395?permalink_comment_id=3526205\nArchive List Problems\nOops, I forgot to capture the screenshot of the issues about this.\nBriefly speaking, the archive page did not show any posts and notes. I tried to figure out why. The Archive page was working fine before, and I didn’t amend that function much. Was it permalink? Was it the wrong path? I was spending almost 2 hrs figuring out this.\nNow it’s solved. Hugh.\n\nHowever, it shows all notes, including notes I don’t want to publish.\nSo I added the ‘Public’ option inside of frontmatter and changed the liquid loop a bit.\n\n\nNow it’s showing correct results.\nFor all issues, Did I write the wrong liquid syntax? Did I forget to close the brackets? None of them happened. The shitty part of the liquid syntax is, It’s very sensitive to any line braces or white space within the template. That means I have to give up some of the ‘beautify’ options within the template. 😩\nHow Do I Write the Posts\nI write most of my notes via Obsidian. Most of the codes are, of course, written through visual studio code. However, I need grammar, typo, and wording checkup support as I skim texts a lot. (Typical for ADHDers)\nThat is why for the posting, I use Obsidian."
+      "content"  : "Website logs and Today’s findings\nObsidian Template Links\nI found crazy-awesome obsidian template references:\n\nhttps://thebuccaneersbounty.wordpress.com/2022/01/05/how-i-use-the-daily-notes-plugin-a-comprehensive-guide/\nhttps://agileadam.com/2022/07/obsidian-daily-note-implementation-v2/\n\nPublic Site Error Founding\n404 error while no issue on localhost\nI didn’t know this till now. Oh my god. What a disaster. Haven’t I checked this? Of course, I did.\nThe cause was from github.io’s quirk.\nUrrrrrrrr!!! 😩\n\n\n\nIf you see that, It’s not a problem on localhost at all.\n\nAnd I found some script that is lowering the capital case of URLs into the lowercase-Jekyll template URL. Let’s try that.\nNope. 404 errors due to XSS policies on the browser.\nBugger!\n\n\n\n\nIn the end, I solved this issue by changing it from ‘: title’ to ‘: slug.’\nReferences:\nhttps://mademistakes.com/mastering-jekyll/how-to-link/\nhttps://gist.github.com/sbliven/0ca4dee4e0190a6b3dc7e3d8040cc395?permalink_comment_id=3526205\nImage link does not correctly work on posts\nThis issue is also, again, due to the file path. It may require me to write some Ruby Plugin…but it’s too much hustle to think about.\nThis is what it looks like when I attach the images to the posts.\n\n\nWhen they are HTML-fied, Those image links get broken.\n\nI manually changed the location via visual studio code for a quick solution.\nThis issue only happens within the journal post. The note is absolutely fine.\n\nThe trick is just simply changing the file path.\n\nThis only applies to posts for now.\nArchive List Problems\nOops, I forgot to capture the screenshot of the issues about this.\nBriefly speaking, the archive page did not show any posts and notes. I tried to figure out why. The Archive page was working fine before, and I didn’t amend that function much. Was it permalink? Was it the wrong path? I was spending almost 2 hrs figuring out this.\nNow it’s solved. Hugh.\n\nHowever, it shows all notes, including notes I don’t want to publish.\nSo I added the ‘Public’ option inside the frontmatter and changed the liquid loop slightly.\n\n\n\nNow it’s showing correct results.\nFor all issues, Did I write the wrong liquid syntax? Did I forget to close the brackets? None of them happened. The shitty part of the liquid syntax is, It’s very sensitive to any line braces or white space within the template. That means I have to give up some of the ‘beautify’ options within the template. 😩\nHow Do I Write the Posts\nI write most of my notes via Obsidian. Most of the codes are, of course, written through visual studio code. However, I need grammar, typo, and wording checkup support as I skim texts a lot. (Typical for ADHDers)\nThat is why for the posting, I use Obsidian."
 
     },
   
@@ -45,7 +45,7 @@
     {
 
       "title"    : "My current Franken drumkit",
-      "url"      : "/notes/E-Drumming",
+      "url"      : "/notes/e-drumming",
       "content"  : "My Franken’s current statusI name my drum Franken from Frankenstein.I found learning drumming is somehow linked to fencing"
 
     },
@@ -61,7 +61,7 @@
     {
 
       "title"    : "Trial of implementing Adobe Launch, Analytics, Target, and Jekyll",
-      "url"      : "/notes/Adobe-Target-and-Analytics-to-Jekyll",
+      "url"      : "/notes/adobe-target-and-analytics-to-jekyll",
       "content"  : "I found some articles regarding integrating Jekyll to Google Analytics but couldn’t find any material regarding Adobe suite.For Google Suite, Refer to this note Marketing-Product-Trials-with-Google"
 
     },
@@ -69,7 +69,7 @@
     {
 
       "title"    : "Kor.adobetranslation",
-      "url"      : "/notes/Kor.AdobeTranslation",
+      "url"      : "/notes/kor-adobetranslation",
       "content"  : ""
 
     },
@@ -77,7 +77,7 @@
     {
 
       "title"    : "How To Install Marketing Technology on your website?",
-      "url"      : "/notes/Marketing-Product-Trials-with-Google",
+      "url"      : "/notes/marketing-product-trials-with-google",
       "content"  : "This page will describe install processes of some marketing tools, such as target or google analytics.I am currently logging my progress of integrating between my Jekyll based website and Google Analytics suites.After completing this, I plan to implement Analytics Experience Suite as well for a trial. I hope the sample sandbox allows me to extend multi-platforms including my website.Currently the progress interim logs are tracked down at Journal posts.For instance, this post. 2022-07-21-tag-manager-installation-and-day-log"
 
     },
@@ -85,7 +85,7 @@
     {
 
       "title"    : "Neurodivergency",
-      "url"      : "/notes/Neurodivergency",
+      "url"      : "/notes/neurodivergency",
       "content"  : ""
 
     },
@@ -101,7 +101,7 @@
     {
 
       "title"    : "Useful Jekyll Command",
-      "url"      : "/notes/Jekyll",
+      "url"      : "/notes/jekyll",
       "content"  : "Useful Jekyll Commandhttps://shafi.com.au/code/useful-jekyll-commands/"
 
     }

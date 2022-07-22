@@ -3,7 +3,7 @@
     {
 
       "title"    : "My current Franken drumkit",
-      "url"      : "/notes/E-Drumming",
+      "url"      : "/notes/e-drumming",
       "category" : "music",
       "tags"     : "drumming",
       "content"  : "My Franken’s current status\nI name my drum Franken from Frankenstein.\nI found learning drumming is somehow linked to fencing"
@@ -23,7 +23,7 @@
     {
 
       "title"    : "Trial of implementing Adobe Launch, Analytics, Target, and Jekyll",
-      "url"      : "/notes/Adobe-Target-and-Analytics-to-Jekyll",
+      "url"      : "/notes/adobe-target-and-analytics-to-jekyll",
       "category" : "martech",
       "tags"     : "Marketing Techs, CMS",
       "content"  : "I found some articles regarding integrating Jekyll to Google Analytics but couldn’t find any material regarding Adobe suite.\nFor Google Suite, Refer to this note Marketing-Product-Trials-with-Google"
@@ -33,7 +33,7 @@
     {
 
       "title"    : "Kor.adobetranslation",
-      "url"      : "/notes/Kor.AdobeTranslation",
+      "url"      : "/notes/kor-adobetranslation",
       "category" : "",
       "tags"     : "",
       "content"  : ""
@@ -43,7 +43,7 @@
     {
 
       "title"    : "How To Install Marketing Technology on your website?",
-      "url"      : "/notes/Marketing-Product-Trials-with-Google",
+      "url"      : "/notes/marketing-product-trials-with-google",
       "category" : "martech",
       "tags"     : "Marketing Techs",
       "content"  : "This page will describe install processes of some marketing tools, such as target or google analytics.\nI am currently logging my progress of integrating between my Jekyll based website and Google Analytics suites.\nAfter completing this, I plan to implement Analytics Experience Suite as well for a trial. I hope the sample sandbox allows me to extend multi-platforms including my website.\nCurrently the progress interim logs are tracked down at Journal posts.\nFor instance, this post. 2022-07-21-tag-manager-installation-and-day-log"
@@ -53,7 +53,7 @@
     {
 
       "title"    : "Neurodivergency",
-      "url"      : "/notes/Neurodivergency",
+      "url"      : "/notes/neurodivergency",
       "category" : "",
       "tags"     : "",
       "content"  : ""
@@ -73,7 +73,7 @@
     {
 
       "title"    : "Useful Jekyll Command",
-      "url"      : "/notes/Jekyll",
+      "url"      : "/notes/jekyll",
       "category" : "Web-Development",
       "tags"     : "Web Development",
       "content"  : "Useful Jekyll Command\nhttps://shafi.com.au/code/useful-jekyll-commands/"

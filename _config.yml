@@ -31,7 +31,8 @@ sass:
 collections:
   notes:
     output: true
-    permalink: /notes/:title
+    # permalink: /notes/:title
+    permalink: /notes/:slug
   pages:
     output: true
     permalink: /pages/:title
