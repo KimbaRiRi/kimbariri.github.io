@@ -69,5 +69,11 @@ So Adobe,
 
 ![[Screen Shot 2022-07-26 at 12.23.49 am.png]]
 
-Getting back to practicality, Web SDK is not supported within the organisation's sandbox. So this is out. The server-side is possibly out as well. This blog is based on static site generator so server-side implementation does not apply as well. 
+Getting back to practicality, Web SDK is not supported within the organisation's sandbox. So this is out. The server-side is possibly out as well. 
+
+This blog is based on a static site generator, so server-side implementation does not apply as well. However, I couldn't find the client-side option on Target 2, so I am not sure the device-only mode is just another labelling from the client side. Again, Adobe always changes the naming of functionalities of stacks, so I am not sure. 
+
+Just in case, I also downloaded at.js and 
+
+
 
