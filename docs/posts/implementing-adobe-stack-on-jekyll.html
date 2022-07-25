@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- More information: https://htmlhead.dev/ -->
+	<meta charset="UTF-8">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adobe, all you need to do is give me just one paragraph instead of 10 pages of implementation documents.">
+  <meta property="og:site_name" content="My Brain Dumpster">
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgo=">
+
+  
+  <link rel="stylesheet" href="/../styles.css">
+  
+
+  
+  
+  <meta property="og:description" content="Adobe, all you need to do is give me just one paragraph instead of 10 pages of implementation documents.">
+  
+
+  
+  <meta property="og:title" content="Why is that so tough to get things done with Adobe Stacks?">
+  <meta property="og:type" content="article">
+  
+
+  
+  <meta property="article:published_time" content="2022-07-25T00:00:00+10:00">
+  <meta property="article:author" content="https://kimbariri.github.io//">
+  
+
+  
+  <meta property="og:url" content="https://kimbariri.github.io//posts/implementing-adobe-stack-on-jekyll.html">
+  
+
+  
+
+ <!-- SEO robot set -->
+  <meta content="index,follow" name="robots"><!-- All Search Engines -->
+  <meta content="index,follow" name="googlebot"><!-- Google Specific -->
+ <!-- Site Feeds -->
+  <link rel="alternate" type="application/rss+xml" href="https://kimbariri.github.io//feed.xml"> 
+<!-- Analytics Import for production build -->
+  
+       <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+  </script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NP3NQP5');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Googla Analytics - UA -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40317122-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-40317122-1');
+    </script>
+    <!-- Googld AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4102224573550079"
+     crossorigin="anonymous"></script>
+    
+    <!-- MS clarity -->
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ccj80nwbk2");
+    </script>
+
+    <!-- Adobe Suites -->
+   
+    <!-- Adobe Alloy Extension -->
+    <!-- <script>
+      !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
+      []).push(o),n[o]=function(){var u=arguments;return new Promise(
+      function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
+      (window,["alloy"]);
+    </script>
+    <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.js" async></script>
+     -->
+
+<!-- hidden code for avoiding flicker from target 2 -->
+    <script>
+    (function(win, doc, style, timeout) {
+        var STYLE_ID = 'at-body-style';
+        function getParent() {
+          return doc.getElementsByTagName('head')[0];
+        }
+        function addStyle(parent, id, def) {
+          if (!parent) {
+            return;
+          }
+          var style = doc.createElement('style');
+          style.id = id;
+          style.innerHTML = def;
+          parent.appendChild(style);
+        }
+        function removeStyle(parent, id) {
+          if (!parent) {
+            return;
+          }
+          var style = doc.getElementById(id);
+          if (!style) {
+            return;
+          }
+          parent.removeChild(style);
+        }
+        addStyle(getParent(), STYLE_ID, style);
+        setTimeout(function() {
+          removeStyle(getParent(), STYLE_ID);
+        }, timeout);
+      }(window, document, "body {opacity: 0 !important}", 3000));
+    </script>
+    <!-- Adobe Extension Development - Launch -->
+    <script src="https://assets.adobedtm.com/86a7fd889dd8/63dcbf8eea56/launch-e954aa840a7c-development.min.js" async></script>
+
+    <!-- Adobe Extension Staging - Launch -->
+    <!-- <script src="https://assets.adobedtm.com/86a7fd889dd8/63dcbf8eea56/launch-b46ec11686a5-staging.min.js" async></script> -->
+
+    <!-- Adobe Extension Production - Launch -->
+    <!-- <script src="https://assets.adobedtm.com/86a7fd889dd8/63dcbf8eea56/launch-7c1c9c7f3d74.min.js" async></script> -->
+
+
+     <!-- Target Property -->
+     <!-- <script>
+      function targetPageParams() {
+        return {
+          "at_property": "e3ada24b-497a-82c0-8669-400309c2996d"
+        };
+      }
+    </script>
+    <script src="/assets/js/at-v2.js" async crossorigin="anonymous"></script> -->
+
+  
+
+  <title>
+    
+    Why is that so tough to get things done with Adobe Stacks? &mdash; My Brain Dumpster
+    
+  </title>
+</head>
+<body>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NP3NQP5" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <nav>
+  <ul>
+    <li><a class="internal-link" href="/"><b>Home</b></a></li>
+    <li><a class="internal-link" href="/about-me"><b>About Me</b></a></li>
+    <!-- <li><a class="external-link" target="_blank" href="/assets/files/GyuriKim_ui_dev_cv_IL.pdf">CV</a></li> -->
+    <li><a class="internal-link" href="/showcase">Showcases</a></li>
+    <!-- <li><a class="internal-link" href="/sideproject">Side project</a></li> -->
+    <li><a class="internal-link" href="/showmustgoon">My Sparkles</a></li>
+    <li><a class="internal-link" href="/digital-garden">Digital Garden</a></li>
+    <li><a class="internal-link" href="/journal">Journal</a></li>
+    <li><a class="external-link" target="_blank" href="https://brunch.co.kr/@kimba">블로그</a></li>
+  </ul>
+</nav>
+      
+
+
+  <div class="wrapper"><main class="container"><section>
+  <time datetime="2022-07-25T00:00:00+10:00" class="faded">
+    July 25, 2022
+    
+  </time>
+  <h1>Why is that so tough to get things done with Adobe Stacks?</h1>
+  <h2 id="why-is-adobe-implementation-tricky">Why is Adobe Implementation Tricky?</h2>
+<h3 id="adobe-needs-to-have-a-better-structure-for-any-technical-implementation">Adobe needs to have a better structure for any technical implementation.</h3>
+<p>Adobe, why do you have so many documents for the same subject?</p>
+<p>Unlike Google or other suite programs, Adobe provided three different documents for bloody library tagging. Gees.</p>
+<ul>
+<li>This website shows the Experience platform on a web tutorial.</li>
+</ul>
+<p><a href="https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html?lang=en">https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html?lang=en</a></p>
+<ul>
+<li>And this one shows how to implement stuff through tags.</li>
+</ul>
+<p><a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=en#adobe-target-extension-with-an-asynchronous-deployment">https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=en#adobe-target-extension-with-an-asynchronous-deployment</a></p>
+<ul>
+<li>
+<p>And this is the target implementation guide.
+<a href="https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=en">https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=en</a></p>
+</li>
+<li>
+<p>And this is an implementation guide from the documentation.</p>
+</li>
+</ul>
+<p><a href="https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=en">https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=en</a></p>
+<ul>
+<li>
+<p>And this is a deployment guide.
+<a href="https://experienceleague.adobe.com/docs/analytics/implementation/launch/deploy-dev.html?lang=en">https://experienceleague.adobe.com/docs/analytics/implementation/launch/deploy-dev.html?lang=en</a></p>
+</li>
+<li>
+<p>And this is from the developer guide.</p>
+</li>
+</ul>
+<p><a href="https://developer.adobe.com/target/implement/client-side/">https://developer.adobe.com/target/implement/client-side/</a></p>
+<ul>
+<li>And this is a Quickstart guide from Tags documentation.
+<a href="https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html">https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/quick-start.html</a></li>
+</ul>
+<p>None of them is aligned linearly.</p>
+<h4 id="are-you-kidding-me">Are you kidding me???</h4>
+<p>**So…Adobe, which one is the correct one?</p>
+<p>🙀</p>
+<p>Once you find the correct documentation, the technicality is not tricky.</p>
+<p>All problems always stem from the loophole of their massive documentation dumps.</p>
+<p>And also, there are multiple deployments. By AT.js, Tag, and Server Side implementation.</p>
+<p>So Adobe,</p>
+<h4 id="which-one-do-you-mean-i-have-to-choooooooseeeeee">Which one do you mean I have to choooooooseeeeee?</h4>
+<img src="/assets/images/Screen Shot 2022-07-26 at 12.23.49 am.png">
+<p>Getting back to practicality, Web SDK is not supported within the organisation’s sandbox. So this is out. The server-side is possibly out as well. This blog is based on static site generator so server-side implementation does not apply as well.</p>
+
+</section></main><footer><p>Here's the the <a class="internal-link" href="/archive.html">Archive of contents</a> if you want to see the contents by 'last modified at' order.</p>
+<em style="font-size: 11px;">For CRO/UX/SEO/Ads case studies, this page has some marketing techs implemented. However, No suspcious or anonymous scripts retrieving personal data through your browser installed, other than google/adobe/microsoft tag extensions.</em></footer>
+  </div>
+  <!-- That file is not particularly elegant. This will need a refactor at some point. -->
+<style>
+  content a.internal-link {
+    border-color: #8b88e6;
+    background-color: #efefff;
+  }
+
+  #tooltip-wrapper {
+    background: white;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    font-size: 0.8em;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transition: opacity 100ms;
+  }
+
+  #tooltip-wrapper:after {
+		content: "";
+		position: absolute;
+		z-index: 1;
+		bottom: 0;
+		left: 0;
+		pointer-events: none;
+		background-image: linear-gradient(to bottom, rgba(255,255,255, 0), rgba(255,255,255, 1) 90%);
+		width: 100%;
+		height: 75px;
+  }
+</style>
+
+<div style="opacity: 0; display: none;" id='tooltip-wrapper'>
+  <div id='tooltip-content'>
+  </div>
+</div>
+
+<iframe style="display: none; height: 0; width: 0;" id='link-preview-iframe' src="">
+</iframe>
+
+<script>
+  var opacityTimeout;
+  var contentTimeout;
+  var transitionDurationMs = 100;
+
+  var iframe = document.getElementById('link-preview-iframe')
+  var tooltipWrapper = document.getElementById('tooltip-wrapper')
+  var tooltipContent = document.getElementById('tooltip-content')
+
+  function hideTooltip() {
+    opacityTimeout = setTimeout(function() {
+      tooltipWrapper.style.opacity = 0;
+      contentTimeout = setTimeout(function() {
+        tooltipContent.innerHTML = '';
+        tooltipWrapper.style.display = 'none';
+      }, transitionDurationMs + 1);
+    }, transitionDurationMs)
+  }
+
+  function showTooltip(event) {
+    var elem = event.target;
+    var elem_props = elem.getClientRects()[elem.getClientRects().length - 1];
+    var top = window.pageYOffset || document.documentElement.scrollTop
+
+    if (event.target.host === window.location.host) {
+      iframe.src = event.target.href
+      iframe.onload = function() {
+        tooltipContentHtml = ''
+        tooltipContentHtml += '<div style="font-weight: bold;">' + iframe.contentWindow.document.querySelector('h1').innerHTML + '</div>'
+        tooltipContentHtml += iframe.contentWindow.document.querySelector('content').innerHTML
+
+        tooltipContent.innerHTML = tooltipContentHtml
+
+        tooltipWrapper.style.display = 'block';
+        setTimeout(function() {
+          tooltipWrapper.style.opacity = 1;
+        }, 1)
+      }
+
+      tooltipWrapper.style.left = elem_props.left - (tooltipWrapper.offsetWidth / 2) + (elem_props.width / 2) + "px";
+      if ((window.innerHeight - elem_props.top) < (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top - tooltipWrapper.offsetHeight - 10 + "px";
+      } else if ((window.innerHeight - elem_props.top) > (tooltipWrapper.offsetHeight)) {
+          tooltipWrapper.style.top = elem_props.top + top + 35 + "px";
+      }
+
+      if ((elem_props.left + (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = "10px";
+      } else if ((document.body.clientWidth - elem_props.left - (elem_props.width / 2)) < (tooltipWrapper.offsetWidth / 2)) {
+          tooltipWrapper.style.left = document.body.clientWidth - tooltipWrapper.offsetWidth - 20 + "px";
+      }
+    }
+  }
+
+  function setupListeners(linkElement) {
+    linkElement.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    tooltipWrapper.addEventListener('mouseleave', function(_event) {
+      hideTooltip();
+    });
+
+    linkElement.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+      showTooltip(event);
+    });
+
+    tooltipWrapper.addEventListener('mouseenter', function(event) {
+      clearTimeout(opacityTimeout);
+      clearTimeout(contentTimeout);
+    });
+  }
+
+  document.querySelectorAll('content a').forEach(setupListeners);
+</script>
+</body>
+
+</html>
