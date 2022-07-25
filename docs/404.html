@@ -41,41 +41,60 @@
 <!-- Analytics Import for production build -->
   
        <!-- Google Tag Manager -->
-  <script>
-    window.dataLayer = window.dataLayer || [];
-  </script>
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NP3NQP5');</script>
-    <!-- End Google Tag Manager -->
-    <!-- Googla Analytics - UA -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40317122-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-40317122-1');
-    </script>
-    <!-- Googld AdSense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4102224573550079"
-     crossorigin="anonymous"></script>
-    
-    <!-- MS clarity -->
-    <script type="text/javascript">
-      (function(c,l,a,r,i,t,y){
-          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-      })(window, document, "clarity", "script", "ccj80nwbk2");
-    </script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+   </script>
+   <script>
+     (function (w, d, s, l, i) {
+       w[l] = w[l] || [];
+       w[l].push({
+         'gtm.start': new Date().getTime(),
+         event: 'gtm.js'
+       });
+       var f = d.getElementsByTagName(s)[0],
+         j = d.createElement(s),
+         dl = l != 'dataLayer' ? '&l=' + l : '';
+       j.async = true;
+       j.src =
+         'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+       f.parentNode.insertBefore(j, f);
+     })(window, document, 'script', 'dataLayer', 'GTM-NP3NQP5');
+   </script>
+   <!-- End Google Tag Manager -->
+   <!-- Googla Analytics - UA -->
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40317122-1"></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
 
-    <!-- Adobe Suites -->
-   
-    <!-- Adobe Alloy Extension -->
-    <!-- <script>
+     function gtag() {
+       dataLayer.push(arguments);
+     }
+     gtag('js', new Date());
+     gtag('config', 'UA-40317122-1');
+   </script>
+   <!-- Googld AdSense -->
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4102224573550079"
+     crossorigin="anonymous"></script>
+
+   <!-- MS clarity -->
+   <script type="text/javascript">
+     (function (c, l, a, r, i, t, y) {
+       c[a] = c[a] || function () {
+         (c[a].q = c[a].q || []).push(arguments)
+       };
+       t = l.createElement(r);
+       t.async = 1;
+       t.src = "https://www.clarity.ms/tag/" + i;
+       y = l.getElementsByTagName(r)[0];
+       y.parentNode.insertBefore(t, y);
+     })(window, document, "clarity", "script", "ccj80nwbk2");
+   </script>
+
+   <!-- Adobe Suites -->
+
+   <!-- Adobe Alloy Extension -->
+   <!-- <script>
       !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
       []).push(o),n[o]=function(){var u=arguments;return new Promise(
       function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
@@ -84,58 +103,62 @@
     <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.js" async></script>
      -->
 
-<!-- hidden code for avoiding flicker from target 2 -->
-    <script>
-    (function(win, doc, style, timeout) {
-        var STYLE_ID = 'at-body-style';
-        function getParent() {
-          return doc.getElementsByTagName('head')[0];
-        }
-        function addStyle(parent, id, def) {
-          if (!parent) {
-            return;
-          }
-          var style = doc.createElement('style');
-          style.id = id;
-          style.innerHTML = def;
-          parent.appendChild(style);
-        }
-        function removeStyle(parent, id) {
-          if (!parent) {
-            return;
-          }
-          var style = doc.getElementById(id);
-          if (!style) {
-            return;
-          }
-          parent.removeChild(style);
-        }
-        addStyle(getParent(), STYLE_ID, style);
-        setTimeout(function() {
-          removeStyle(getParent(), STYLE_ID);
-        }, timeout);
-      }(window, document, "body {opacity: 0 !important}", 3000));
-    </script>
-    <!-- Adobe Extension Development - Launch -->
-    <script src="https://assets.adobedtm.com/86a7fd889dd8/63dcbf8eea56/launch-e954aa840a7c-development.min.js" async></script>
 
-    <!-- Adobe Extension Staging - Launch -->
-    <!-- <script src="https://assets.adobedtm.com/86a7fd889dd8/63dcbf8eea56/launch-b46ec11686a5-staging.min.js" async></script> -->
+   <!-- Adobe Extension Development - Launch -->
+   <script src="https://assets.adobedtm.com/86a7fd889dd8/63dcbf8eea56/launch-e954aa840a7c-development.min.js" async>
+   </script>
 
-    <!-- Adobe Extension Production - Launch -->
-    <!-- <script src="https://assets.adobedtm.com/86a7fd889dd8/63dcbf8eea56/launch-7c1c9c7f3d74.min.js" async></script> -->
+   <!-- Adobe Extension Staging - Launch -->
+   <!-- <script src="https://assets.adobedtm.com/86a7fd889dd8/63dcbf8eea56/launch-b46ec11686a5-staging.min.js" async></script> -->
 
+   <!-- Adobe Extension Production - Launch -->
+   <!-- <script src="https://assets.adobedtm.com/86a7fd889dd8/63dcbf8eea56/launch-7c1c9c7f3d74.min.js" async></script> -->
 
-     <!-- Target Property -->
-     <!-- <script>
+   <!-- hidden code for avoiding flicker from target 2 -->
+   <script>
+     (function (win, doc, style, timeout) {
+       var STYLE_ID = 'at-body-style';
+
+       function getParent() {
+         return doc.getElementsByTagName('head')[0];
+       }
+
+       function addStyle(parent, id, def) {
+         if (!parent) {
+           return;
+         }
+         var style = doc.createElement('style');
+         style.id = id;
+         style.innerHTML = def;
+         parent.appendChild(style);
+       }
+
+       function removeStyle(parent, id) {
+         if (!parent) {
+           return;
+         }
+         var style = doc.getElementById(id);
+         if (!style) {
+           return;
+         }
+         parent.removeChild(style);
+       }
+       addStyle(getParent(), STYLE_ID, style);
+       setTimeout(function () {
+         removeStyle(getParent(), STYLE_ID);
+       }, timeout);
+     }(window, document, "body {opacity: 0 !important}", 3000));
+   </script>
+   <!-- Target Property -->
+   <script>
       function targetPageParams() {
         return {
           "at_property": "e3ada24b-497a-82c0-8669-400309c2996d"
         };
       }
     </script>
-    <script src="/assets/js/at-v2.js" async crossorigin="anonymous"></script> -->
-
+    <script src="/assets/js/at-v1.js" async crossorigin="anonymous"></script>
+    <script src="/assets/js/at-v2.js" async crossorigin="anonymous"></script>
   
 
   <title>
