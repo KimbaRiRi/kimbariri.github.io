@@ -73,7 +73,22 @@ Getting back to practicality, Web SDK is not supported within the organisation's
 
 This blog is based on a static site generator, so server-side implementation does not apply as well. However, I couldn't find the client-side option on Target 2, so I am not sure the device-only mode is just another labelling from the client side. Again, Adobe always changes the naming of functionalities of stacks, so I am not sure. 
 
-Just in case, I also downloaded at.js and 
+Just in case, I also downloaded at.js and app management files from Adobe. 
+
+However, I don't think these steps are needed. 
 
 
+Whyyyyyy Target???? Why are you failing?!?!?
 
+![[Screen Shot 2022-07-26 at 1.29.19 am.png]]
+
+
+I can see that Adobe Analytics is correctly showing. 
+
+
+![[Screen Shot 2022-07-26 at 1.28.51 am.png]]
+
+I can see that launch and Analytics are loaded up correctly. Dang. 
+
+
+![[Screen Shot 2022-07-26 at 1.32.55 am.png]]
