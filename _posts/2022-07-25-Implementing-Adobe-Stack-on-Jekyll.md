@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why is that so tough to get things done with Adobe Stacks?"
-public: false
+public: true
 favicon:
 redirect_from: 
 excerpt: "Adobe, all you need to do is give me just one paragraph instead of 10 pages of implementation documents."
@@ -15,8 +15,10 @@ excerpt: "Adobe, all you need to do is give me just one paragraph instead of 10 
 
 Adobe, why do you have so many documents for the same subject?
 
-Unlike Google or other suite programs, Adobe provided three different documents for bloody library tagging. Gees. 
+Unlike Google or other suite programs, Adobe provided multiple documents for bloody library tagging. Gees. 
 
+
+No, seriously. To find out to correctly implement the target on my website, how many documents did I end up with?
 
 - This website shows the Experience platform on a web tutorial. 
 
@@ -45,12 +47,12 @@ https://experienceleague.adobe.com/docs/experience-platform/tags/get-started/qui
 
 
 
-None of them is aligned linearly. 
+<u>None of them is aligned linearly. </u>
 
 
 #### Are you kidding me???
 
-**So...Adobe, which one is the correct one? 
+#### So...Adobe, which one is the correct one? 
 
 
 🙀
@@ -67,28 +69,46 @@ So Adobe,
 #### Which one do you mean I have to choooooooseeeeee?
 
 
-![[Screen Shot 2022-07-26 at 12.23.49 am.png]]
+![[posts/Screen Shot 2022-07-26 at 12.23.49 am.png]]
+<br/>
 
 Getting back to practicality, Web SDK is not supported within the organisation's sandbox. So this is out. The server-side is possibly out as well. 
 
-This blog is based on a static site generator, so server-side implementation does not apply as well. However, I couldn't find the client-side option on Target 2, so I am not sure the device-only mode is just another labelling from the client side. Again, Adobe always changes the naming of functionalities of stacks, so I am not sure. 
+This blog is based on a static site generator, so server-side implementation also does not apply. However, I couldn't find the client-side option on Target 2, so I am not sure the device-only mode is just another labelling from the client side. Again, Adobe constantly changes the naming of functionalities of stacks, so I am not sure. 
 
-Just in case, I also downloaded at.js and app management files from Adobe. 
+Just in case, I also downloaded at.js and other adobe analytics libraries from code manager. However, the tag script handled analytics well, except for the target v2. 
 
-However, I don't think these steps are needed. 
+Hmmm...
 
+😑
 
-Whyyyyyy Target???? Why are you failing?!?!?
+As you see, the client ID and app measurement kick in alright. 
 
-![[Screen Shot 2022-07-26 at 1.29.19 am.png]]
-
-
-I can see that Adobe Analytics is correctly showing. 
+![[Screen Shot 2022-07-26 at 11.37.02 am.png]]
 
 
-![[Screen Shot 2022-07-26 at 1.28.51 am.png]]
+I checked the omnibug as well. 
 
-I can see that launch and Analytics are loaded up correctly. Dang. 
+Google Tag Manager, MS Clarity, Google Analytics, and Adobe Analytics appeared. 
+Wait, why do I have launch twice? We will worry about it later. 
+
+![[Screen Shot 2022-07-26 at 11.38.27 am.png]]
+
+<br />
+
+![[Screen Shot 2022-07-26 at 11.39.07 am.png]]
 
 
-![[Screen Shot 2022-07-26 at 1.32.55 am.png]]
+![[Screen Shot 2022-07-26 at 11.38.08 am.png]]
+
+![[Screen Shot 2022-07-26 at 11.37.58 am.png]]
+
+
+<u><i>Arhhhhh!!!!! (Pulls hairs)</i></u>
+<br/>
+
+🤬
+
+As I can see the analytics kicking in without problems, I don't know what tag I am missing to put, honestly.  <b>**Helllllp!</b>
+
+![[Screen Shot 2022-07-26 at 11.46.48 am.png]]
