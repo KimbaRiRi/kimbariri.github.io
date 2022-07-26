@@ -74,6 +74,10 @@ So Adobe,
 
 Getting back to practicality, Web SDK is not supported within the organisation's sandbox. So this is out. The server-side is possibly out as well. 
 
+
+#### Why not use the web SDK?
+
+
 This blog is based on a static site generator, so server-side implementation also does not apply. However, I couldn't find the client-side option on Target 2, so I am not sure the device-only mode is just another labelling from the client side. Again, Adobe constantly changes the naming of functionalities of stacks, so I am not sure. 
 
 Just in case, I also downloaded at.js and other adobe analytics libraries from code manager. However, the tag script handled analytics well, except for the target v2. 
